@@ -105,6 +105,54 @@ ggplot(dml_counts, aes(x = chr, y = DMLs, fill = status)) +
        y = "Number of DMLs", x = "Chromosome", fill = "Status")
 ```
 
+## Chromosome-wide Distribution of DMLs
+
+To visualize the spatial distribution of differentially methylated loci across the genome, we created a comprehensive plot showing all chromosomes and the precise locations of DMLs within each chromosome. This visualization reveals the genomic landscape of epigenetic variation and identifies potential hotspots of methylation change.
+
+```{r}
+#| fig-cap: "Distribution of differentially methylated loci (DMLs) across all chromosomes. Each point represents a DML positioned by its genomic coordinates. Red points indicate hypermethylated loci (higher methylation in Yaldad), while blue points show hypomethylated loci (lower methylation in Yaldad). Chromosomes are arranged vertically with genomic position (in base pairs) on the x-axis."
+
+library(ggplot2)
+library(readr)
+library(dplyr)
+library(forcats)
+
+# Read DML data
+dml <- read_tsv("data/DML.txt", col_types = cols())
+
+# Clean chromosome names and convert to factor for proper ordering
+dml <- dml %>%
+  mutate(
+    chr = factor(chr, levels = paste0("Chromosome_", 1:14)),
+    status = ifelse(meth.diff > 0, "Hypermethylated", "Hypomethylated"),
+    # Calculate midpoint position for each DML
+    position = (start + end) / 2
+  )
+
+# Create chromosome plot
+ggplot(dml, aes(x = position, y = chr, color = status)) +
+  geom_point(alpha = 0.7, size = 1.5) +
+  scale_color_manual(values = c("Hypermethylated" = "#E74C3C", "Hypomethylated" = "#3498DB")) +
+  scale_y_discrete(limits = rev(levels(dml$chr))) +
+  theme_minimal() +
+  theme(
+    panel.grid.major.y = element_line(color = "gray90"),
+    panel.grid.minor = element_blank(),
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 8),
+    axis.text.y = element_text(size = 10),
+    legend.position = "bottom",
+    plot.title = element_text(hjust = 0.5, size = 14, face = "bold")
+  ) +
+  labs(
+    title = "Genome-wide Distribution of Differentially Methylated Loci",
+    x = "Genomic Position (base pairs)",
+    y = "Chromosome",
+    color = "Methylation Status",
+    caption = "Each point represents a DML. Red: hypermethylated in Yaldad, Blue: hypomethylated in Yaldad"
+  ) +
+  scale_x_continuous(labels = function(x) paste0(x/1e6, " Mb"))
+```
+
 ## Location
 
 ![heatmap](images/dml-heatmap.png)
