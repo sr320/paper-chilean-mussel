@@ -78,18 +78,27 @@ Genome-wide cytosine methylation was assessed in CpG, CHG, and CHH contexts. Acr
 
 ```{r}
 library(ggplot2)
+library(readr)
+library(dplyr)
 
-chromosomes <- c("Chromosome_1", "Chromosome_2", "Chromosome_3", "Chromosome_4", "Chromosome_5",
-                 "Chromosome_6", "Chromosome_7", "Chromosome_8", "Chromosome_9", "Chromosome_10",
-                 "Chromosome_11", "Chromosome_12", "Chromosome_13", "Chromosome_14")
-counts <- c(115, 70, 83, 92, 96, 103, 36, 109, 83, 57, 123, 39, 30, 82)
+# Read methylKit output
+dml <- read_tsv("data/DML.txt", col_types = cols())
 
-df <- data.frame(Chromosome = chromosomes, DMLs = counts)
+# Classify loci
+dml <- dml %>%
+  mutate(status = ifelse(meth.diff > 0, "Hypermethylated", "Hypomethylated"))
 
-ggplot(df, aes(x = Chromosome, y = DMLs)) +
-  geom_bar(stat = "identity", fill = "skyblue") +
+# Count per chromosome and status
+dml_counts <- dml %>%
+  group_by(chr, status) %>%
+  summarise(DMLs = n(), .groups = "drop")
+
+# Stacked bar chart
+ggplot(dml_counts, aes(x = chr, y = DMLs, fill = status)) +
+  geom_bar(stat = "identity") +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  labs(title = "DMLs per Chromosome", y = "Number of DMLs", x = "Chromosome")
-```  
+  labs(title = "DMLs per Chromosome",
+       y = "Number of DMLs", x = "Chromosome", fill = "Status")
+```
 

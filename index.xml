@@ -446,7 +446,7 @@ shape genomic and epigenomic variation in a key aquaculture species.</p>
       </ref>
     </ref-list>
   </back>
-  <sub-article article-type="notebook" id="nb-4-nb-article">
+  <sub-article article-type="notebook" id="nb-6-nb-article">
     <front-stub>
       <title-group>
         <article-title>DNA methylation in Mytilus chileanis</article-title>
@@ -667,19 +667,41 @@ shape genomic and epigenomic variation in a key aquaculture species.</p>
     primarily restricted to CpG sites.</p>
           <sec specific-use="notebook-content">
             <code language="r script">library(ggplot2)
+library(readr)
+library(dplyr)</code>
+            <boxed-text>
+              <preformat>
+Attaching package: 'dplyr'</preformat>
+            </boxed-text>
+            <boxed-text>
+              <preformat>The following objects are masked from 'package:stats':
 
-chromosomes &lt;- c("Chromosome_1", "Chromosome_2", "Chromosome_3", "Chromosome_4", "Chromosome_5",
-                 "Chromosome_6", "Chromosome_7", "Chromosome_8", "Chromosome_9", "Chromosome_10",
-                 "Chromosome_11", "Chromosome_12", "Chromosome_13", "Chromosome_14")
-counts &lt;- c(115, 70, 83, 92, 96, 103, 36, 109, 83, 57, 123, 39, 30, 82)
+    filter, lag</preformat>
+            </boxed-text>
+            <boxed-text>
+              <preformat>The following objects are masked from 'package:base':
 
-df &lt;- data.frame(Chromosome = chromosomes, DMLs = counts)
+    intersect, setdiff, setequal, union</preformat>
+            </boxed-text>
+            <code language="r script"># Read methylKit output
+dml &lt;- read_tsv("data/DML.txt", col_types = cols())
 
-ggplot(df, aes(x = Chromosome, y = DMLs)) +
-  geom_bar(stat = "identity", fill = "skyblue") +
+# Classify loci
+dml &lt;- dml %&gt;%
+  mutate(status = ifelse(meth.diff &gt; 0, "Hypermethylated", "Hypomethylated"))
+
+# Count per chromosome and status
+dml_counts &lt;- dml %&gt;%
+  group_by(chr, status) %&gt;%
+  summarise(DMLs = n(), .groups = "drop")
+
+# Stacked bar chart
+ggplot(dml_counts, aes(x = chr, y = DMLs, fill = status)) +
+  geom_bar(stat = "identity") +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  labs(title = "DMLs per Chromosome", y = "Number of DMLs", x = "Chromosome")</code>
+  labs(title = "DMLs per Chromosome",
+       y = "Number of DMLs", x = "Chromosome", fill = "Status")</code>
             <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-1-1.png"/>
           </sec>
         </sec>
