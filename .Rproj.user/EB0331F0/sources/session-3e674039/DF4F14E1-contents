@@ -1,18 +1,31 @@
----
 title: DNA methylation in Mytilus chileanis 
 authors:
   - name: Cristian Gallardo
     affiliation: University of Concepcion
     roles: writing
     corresponding: true
+    orcid: 0000-0000-0000-0000
+    email: cgallardo@udec.cl
   - name: Valentina Venezuala
     affiliation: University of Concepcion
     roles: writing
     corresponding: true
+    orcid: 0000-0000-0000-0001
+    email: vvenezuala@udec.cl
   - name: Steven Roberts
     affiliation: University of Washington
     roles: writing
     corresponding: true
+    orcid: 0000-0000-0000-0002
+    email: sr320@uw.edu
+bibliography: references.bib
+subtitle: Epigenetic mechanisms of local adaptation
+date: 2025-08-12
+version: "1.0"
+keywords: [DNA methylation, Mytilus chilensis, epigenetics, adaptation, aquaculture]
+
+abstract: |
+  We investigate genome-wide DNA methylation patterns in Mytilus chilensis from two contrasting seedbeds—Cochamó and Yaldad—with the aim of identifying differentially methylated regions (DMRs) that may underlie local adaptation. By integrating this epigenetic information with known patterns of gene expression and environmental context, we seek to illuminate the molecular basis of ecological divergence and contribute new insights into how environmental and anthropogenic forces shape genomic and epigenomic variation in a key aquaculture species.
 bibliography: references.bib
 ---
 
