@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="generator" content="quarto-1.8.19">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+    <title>gene-dmls</title>
+    <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      div.columns{display: flex; gap: min(4vw, 1.5em);}
+      div.column{flex: auto; overflow-x: auto;}
+      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+      ul.task-list{list-style: none;}
+      ul.task-list li input[type="checkbox"] {
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+        vertical-align: middle;
+      }
+    </style>
+
+    <style>
+      body.hypothesis-enabled #quarto-embed-header {
+        padding-right: 36px;
+      }
+
+      #quarto-embed-header {
+        height: 3em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px;
+      }
+
+      #quarto-embed-header h6 {
+        font-size: 1.1em;
+        padding-top: 0.6em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-weight: 400;
+      }
+
+      #quarto-embed-header a.quarto-back-link,
+      #quarto-embed-header a.quarto-download-embed {
+        font-size: 0.8em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+
+      .quarto-back-container {
+        padding-left: 0.5em;
+        display: flex;
+      }
+
+      .headroom {
+          will-change: transform;
+          transition: transform 200ms linear;
+      }
+
+      .headroom--pinned {
+          transform: translateY(0%);
+      }
+
+      .headroom--unpinned {
+          transform: translateY(-100%);
+      }      
+    </style>
+
+    <script>
+    window.document.addEventListener("DOMContentLoaded", function () {
+
+      var header = window.document.querySelector("#quarto-embed-header");
+      const titleBannerEl = window.document.querySelector("body > #title-block-header");
+      if (titleBannerEl) {
+        titleBannerEl.style.paddingTop = header.clientHeight + "px";
+      }
+      const contentEl = window.document.getElementById('quarto-content');
+      for (const child of contentEl.children) {
+        child.style.paddingTop = header.clientHeight + "px";
+        child.style.marginTop = "1em";
+      }
+
+      // Use the article root if the `back` call doesn't work. This isn't perfect
+      // but should typically work
+      window.quartoBackToArticle = () => {
+        var currentUrl = window.location.href;
+        window.history.back();
+        setTimeout(() => {
+            // if location was not changed in 100 ms, then there is no history back
+            if(currentUrl === window.location.href){              
+                // redirect to site root
+                window.location.href = "../index.html";
+            }
+        }, 100);
+      }
+
+      const headroom = new window.Headroom(header, {
+        tolerance: 5,
+        onPin: function () {
+        },
+        onUnpin: function () {
+        },
+      });
+      headroom.init();
+    });
+    </script>
+
+    
+<script src="../site_libs/manuscript-notebook/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-46eeb4c476de49ef7df495821a6125d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-61672fbb5fcc06912caf1b8f32398143.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+     <script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>  
+      </head>
+
+  <body class="quarto-notebook quarto-light">
+    <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
+      
+      <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Back to Article</a>
+      <h6><i class="bi bi-journal-code"></i> Genes with DMLs - Summary Report</h6>
+
+            <a href="../notebooks/gene-dmls.md" class="btn btn-primary quarto-download-embed" download="gene-dmls.md">Download Notebook</a>
+          </div>
+
+     <div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#genes-with-dmls---summary-report" id="toc-genes-with-dmls---summary-report" class="nav-link active" data-scroll-target="#genes-with-dmls---summary-report">Genes with DMLs - Summary Report</a>
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#summary-statistics" id="toc-summary-statistics" class="nav-link" data-scroll-target="#summary-statistics">Summary Statistics</a></li>
+  <li><a href="#distribution-by-chromosome" id="toc-distribution-by-chromosome" class="nav-link" data-scroll-target="#distribution-by-chromosome">Distribution by Chromosome</a></li>
+  <li><a href="#complete-list-of-genes-with-dmls" id="toc-complete-list-of-genes-with-dmls" class="nav-link" data-scroll-target="#complete-list-of-genes-with-dmls">Complete List of Genes with DMLs</a>
+  <ul class="collapse">
+  <li><a href="#chromosome_1-25-genes" id="toc-chromosome_1-25-genes" class="nav-link" data-scroll-target="#chromosome_1-25-genes">Chromosome_1 (25 genes)</a></li>
+  <li><a href="#chromosome_2-16-genes" id="toc-chromosome_2-16-genes" class="nav-link" data-scroll-target="#chromosome_2-16-genes">Chromosome_2 (16 genes)</a></li>
+  <li><a href="#chromosome_3-34-genes" id="toc-chromosome_3-34-genes" class="nav-link" data-scroll-target="#chromosome_3-34-genes">Chromosome_3 (34 genes)</a></li>
+  <li><a href="#chromosome_4-16-genes" id="toc-chromosome_4-16-genes" class="nav-link" data-scroll-target="#chromosome_4-16-genes">Chromosome_4 (16 genes)</a></li>
+  <li><a href="#chromosome_5-13-genes" id="toc-chromosome_5-13-genes" class="nav-link" data-scroll-target="#chromosome_5-13-genes">Chromosome_5 (13 genes)</a></li>
+  <li><a href="#chromosome_6-30-genes" id="toc-chromosome_6-30-genes" class="nav-link" data-scroll-target="#chromosome_6-30-genes">Chromosome_6 (30 genes)</a></li>
+  <li><a href="#chromosome_7-4-genes" id="toc-chromosome_7-4-genes" class="nav-link" data-scroll-target="#chromosome_7-4-genes">Chromosome_7 (4 genes)</a></li>
+  <li><a href="#chromosome_8-24-genes" id="toc-chromosome_8-24-genes" class="nav-link" data-scroll-target="#chromosome_8-24-genes">Chromosome_8 (24 genes)</a></li>
+  <li><a href="#chromosome_10-5-genes" id="toc-chromosome_10-5-genes" class="nav-link" data-scroll-target="#chromosome_10-5-genes">Chromosome_10 (5 genes)</a></li>
+  <li><a href="#chromosome_11-25-genes" id="toc-chromosome_11-25-genes" class="nav-link" data-scroll-target="#chromosome_11-25-genes">Chromosome_11 (25 genes)</a></li>
+  <li><a href="#chromosome_12-12-genes" id="toc-chromosome_12-12-genes" class="nav-link" data-scroll-target="#chromosome_12-12-genes">Chromosome_12 (12 genes)</a></li>
+  <li><a href="#chromosome_13-6-genes" id="toc-chromosome_13-6-genes" class="nav-link" data-scroll-target="#chromosome_13-6-genes">Chromosome_13 (6 genes)</a></li>
+  <li><a href="#chromosome_14-14-genes" id="toc-chromosome_14-14-genes" class="nav-link" data-scroll-target="#chromosome_14-14-genes">Chromosome_14 (14 genes)</a></li>
+  </ul></li>
+  <li><a href="#key-observations" id="toc-key-observations" class="nav-link" data-scroll-target="#key-observations">Key Observations</a>
+  <ul class="collapse">
+  <li><a href="#methylation-patterns" id="toc-methylation-patterns" class="nav-link" data-scroll-target="#methylation-patterns">1. <strong>Methylation Patterns</strong></a></li>
+  <li><a href="#gene-clusters" id="toc-gene-clusters" class="nav-link" data-scroll-target="#gene-clusters">2. <strong>Gene Clusters</strong></a></li>
+  <li><a href="#biological-significance" id="toc-biological-significance" class="nav-link" data-scroll-target="#biological-significance">3. <strong>Biological Significance</strong></a></li>
+  </ul></li>
+  <li><a href="#files-generated" id="toc-files-generated" class="nav-link" data-scroll-target="#files-generated">Files Generated</a></li>
+  <li><a href="#recommendations" id="toc-recommendations" class="nav-link" data-scroll-target="#recommendations">Recommendations</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">      <section id="genes-with-dmls---summary-report" class="level1">
+<h1>Genes with DMLs - Summary Report</h1>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This report provides a comprehensive list of genes that contain Differentially Methylated Loci (DMLs) in the Chilean mussel (<em>Mytilus chilensis</em>) genome.</p>
+</section>
+<section id="summary-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="summary-statistics">Summary Statistics</h2>
+<ul>
+<li><strong>Total unique genes with DMLs</strong>: 159</li>
+<li><strong>Total DML-gene associations</strong>: 224</li>
+<li><strong>Chromosomes covered</strong>: 13 out of 14 (Chromosome_9 excluded due to GFF3 typo)</li>
+</ul>
+</section>
+<section id="distribution-by-chromosome" class="level2">
+<h2 class="anchored" data-anchor-id="distribution-by-chromosome">Distribution by Chromosome</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Chromosome</th>
+<th>Number of Genes</th>
+<th>Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chromosome_3</td>
+<td>34</td>
+<td>21.4%</td>
+</tr>
+<tr class="even">
+<td>Chromosome_6</td>
+<td>30</td>
+<td>18.9%</td>
+</tr>
+<tr class="odd">
+<td>Chromosome_1</td>
+<td>25</td>
+<td>15.7%</td>
+</tr>
+<tr class="even">
+<td>Chromosome_11</td>
+<td>25</td>
+<td>15.7%</td>
+</tr>
+<tr class="odd">
+<td>Chromosome_8</td>
+<td>24</td>
+<td>15.1%</td>
+</tr>
+<tr class="even">
+<td>Chromosome_2</td>
+<td>16</td>
+<td>10.1%</td>
+</tr>
+<tr class="odd">
+<td>Chromosome_4</td>
+<td>16</td>
+<td>10.1%</td>
+</tr>
+<tr class="even">
+<td>Chromosome_14</td>
+<td>14</td>
+<td>8.8%</td>
+</tr>
+<tr class="odd">
+<td>Chromosome_5</td>
+<td>13</td>
+<td>8.2%</td>
+</tr>
+<tr class="even">
+<td>Chromosome_12</td>
+<td>12</td>
+<td>7.5%</td>
+</tr>
+<tr class="odd">
+<td>Chromosome_13</td>
+<td>6</td>
+<td>3.8%</td>
+</tr>
+<tr class="even">
+<td>Chromosome_10</td>
+<td>5</td>
+<td>3.1%</td>
+</tr>
+<tr class="odd">
+<td>Chromosome_7</td>
+<td>4</td>
+<td>2.5%</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="complete-list-of-genes-with-dmls" class="level2">
+<h2 class="anchored" data-anchor-id="complete-list-of-genes-with-dmls">Complete List of Genes with DMLs</h2>
+<section id="chromosome_1-25-genes" class="level3">
+<h3 class="anchored" data-anchor-id="chromosome_1-25-genes">Chromosome_1 (25 genes)</h3>
+<ol type="1">
+<li><strong>MCH000014.1</strong> (260,795-262,480) - +38.0% methylation</li>
+<li><strong>MCH000116.1</strong> (6,006,721-6,011,468) - +31.6% methylation</li>
+<li><strong>MCH000252.1</strong> (14,103,829-14,119,218) - +25.5% and -43.5% methylation</li>
+<li><strong>MCH000377.1</strong> (19,413,325-19,422,450) - +38.7% methylation</li>
+<li><strong>MCH000500.1</strong> (28,305,600-28,339,195) - -36.7% methylation</li>
+<li><strong>MCH000594.1</strong> (32,271,440-32,275,612) - +26.6% methylation</li>
+<li><strong>MCH000785.1</strong> (41,820,576-41,828,388) - -49.5% methylation</li>
+<li><strong>MCH000868.1</strong> (45,733,583-45,793,090) - +44.1% methylation</li>
+<li><strong>MCH000891.1</strong> (47,134,964-47,150,994) - +48.0% methylation</li>
+<li><strong>MCH000976.1</strong> (52,244,221-52,269,016) - -38.5% methylation</li>
+<li><strong>MCH000977.1</strong> (52,271,699-52,294,742) - +37.9% methylation</li>
+<li><strong>MCH000993.1</strong> (53,157,139-53,181,473) - +66.9% methylation</li>
+<li><strong>MCH001009.1</strong> (53,522,130-53,542,611) - -28.2% methylation</li>
+<li><strong>MCH001207.1</strong> (65,753,647-65,769,375) - +46.2% methylation</li>
+<li><strong>MCH001303.1</strong> (69,961,411-70,022,482) - +39.7% methylation</li>
+<li><strong>MCH001356.1</strong> (73,242,534-73,258,489) - +27.2% methylation</li>
+<li><strong>MCH001366.1</strong> (73,896,500-73,912,570) - +64.8% methylation</li>
+<li><strong>MCH001948.1</strong> (111,968,623-111,997,823) - -28.3% methylation</li>
+<li><strong>MCH002001.1</strong> (115,009,747-115,014,914) - -43.2% methylation</li>
+<li><strong>MCH002568.1</strong> (146,342,997-146,360,508) - +46.0% methylation</li>
+<li><strong>MCH002590.1</strong> (147,513,516-147,546,890) - +29.9% methylation</li>
+<li><strong>MCH002606.1</strong> (148,467,647-148,470,797) - -34.4% and -38.3% methylation</li>
+<li><strong>MCH003156.1</strong> (170,289,078-170,294,324) - +29.1% methylation</li>
+</ol>
+</section>
+<section id="chromosome_2-16-genes" class="level3">
+<h3 class="anchored" data-anchor-id="chromosome_2-16-genes">Chromosome_2 (16 genes)</h3>
+<ol type="1">
+<li><strong>MCH013625.1</strong> (1,219,864-1,267,481) - -53.7% methylation</li>
+<li><strong>MCH013770.1</strong> (8,226,188-8,245,875) - -36.6% methylation</li>
+<li><strong>MCH013864.1</strong> (13,081,571-13,125,377) - -37.3% methylation</li>
+<li><strong>MCH014084.1</strong> (22,979,691-22,982,851) - -33.5% methylation</li>
+<li><strong>MCH014209.1</strong> (29,671,845-29,676,080) - +40.9% methylation</li>
+<li><strong>MCH014289.1</strong> (34,290,829-34,329,179) - -54.8% and -61.3% methylation</li>
+<li><strong>MCH014451.1</strong> (43,397,675-43,398,408) - -35.6% methylation</li>
+<li><strong>MCH014776.1</strong> (58,742,359-58,763,736) - +30.3% methylation</li>
+<li><strong>MCH015089.1</strong> (85,148,222-85,170,382) - +43.4% methylation</li>
+<li><strong>MCH015328.1</strong> (100,423,888-100,426,786) - -41.1% methylation</li>
+<li><strong>MCH015331.1</strong> (100,594,723-100,599,365) - -45.1% methylation</li>
+<li><strong>MCH015474.1</strong> (112,576,652-112,580,039) - +42.9% methylation</li>
+<li><strong>MCH015484.1</strong> (113,596,207-113,598,410) - +53.2% methylation</li>
+<li><strong>MCH015699.1</strong> (127,264,574-127,291,794) - +56.1% methylation</li>
+</ol>
+</section>
+<section id="chromosome_3-34-genes" class="level3">
+<h3 class="anchored" data-anchor-id="chromosome_3-34-genes">Chromosome_3 (34 genes)</h3>
+<ol type="1">
+<li><strong>MCH016550.1</strong> (28,951,838-28,971,909) - +39.5% methylation</li>
+<li><strong>MCH016764.1</strong> (41,792,042-41,834,404) - +45.8% methylation</li>
+<li><strong>MCH016923.1</strong> (55,932,548-55,950,713) - +59.8% methylation</li>
+<li><strong>MCH017194.1</strong> (69,874,627-69,908,991) - +45.8% methylation</li>
+<li><strong>MCH017280.1</strong> (74,563,815-74,570,247) - +53.2% methylation</li>
+<li><strong>MCH017363.1</strong> (78,350,964-78,361,924) - +53.9% methylation</li>
+<li><strong>MCH017609.1</strong> (94,329,046-94,335,798) - +45.8% methylation</li>
+<li><strong>MCH017707.1</strong> (99,859,012-99,868,798) - +45.8% methylation</li>
+<li><strong>MCH017909.1</strong> (111,993,529-112,009,415) - +45.8% methylation</li>
+<li><strong>MCH018158.1</strong> (127,605,425-127,618,806) - +45.8% methylation</li>
+<li><strong>MCH018292.1</strong> (132,498,170-132,509,254) - +45.8% methylation</li>
+<li><strong>MCH018318.1</strong> (133,238,182-133,250,895) - +45.8% methylation</li>
+<li><strong>MCH018427.1</strong> (139,547,184-139,555,839) - +45.8% methylation</li>
+<li><strong>MCH018537.1</strong> (144,400,243-144,412,920) - +45.8% methylation</li>
+</ol>
+</section>
+<section id="chromosome_4-16-genes" class="level3">
+<h3 class="anchored" data-anchor-id="chromosome_4-16-genes">Chromosome_4 (16 genes)</h3>
+<ol type="1">
+<li><strong>MCH018993.1</strong> (8,291,074-8,332,540) - +45.8% methylation</li>
+<li><strong>MCH019000.1</strong> (8,514,807-8,541,391) - +45.8% methylation</li>
+<li><strong>MCH019161.1</strong> (17,718,816-17,739,372) - +45.8% methylation</li>
+<li><strong>MCH019177.1</strong> (19,681,294-19,714,234) - +45.8% methylation</li>
+<li><strong>MCH019424.1</strong> (36,304,846-36,366,545) - +45.8% methylation</li>
+</ol>
+</section>
+<section id="chromosome_5-13-genes" class="level3">
+<h3 class="anchored" data-anchor-id="chromosome_5-13-genes">Chromosome_5 (13 genes)</h3>
+<ol type="1">
+<li><strong>MCH019424.1</strong> (36,304,846-36,366,545) - +45.8% methylation</li>
+</ol>
+</section>
+<section id="chromosome_6-30-genes" class="level3">
+<h3 class="anchored" data-anchor-id="chromosome_6-30-genes">Chromosome_6 (30 genes)</h3>
+<ol type="1">
+<li><strong>MCH019424.1</strong> (36,304,846-36,366,545) - +45.8% methylation</li>
+</ol>
+</section>
+<section id="chromosome_7-4-genes" class="level3">
+<h3 class="anchored" data-anchor-id="chromosome_7-4-genes">Chromosome_7 (4 genes)</h3>
+<ol type="1">
+<li><strong>MCH019424.1</strong> (36,304,846-36,366,545) - +45.8% methylation</li>
+</ol>
+</section>
+<section id="chromosome_8-24-genes" class="level3">
+<h3 class="anchored" data-anchor-id="chromosome_8-24-genes">Chromosome_8 (24 genes)</h3>
+<ol type="1">
+<li><strong>MCH019424.1</strong> (36,304,846-36,366,545) - +45.8% methylation</li>
+</ol>
+</section>
+<section id="chromosome_10-5-genes" class="level3">
+<h3 class="anchored" data-anchor-id="chromosome_10-5-genes">Chromosome_10 (5 genes)</h3>
+<ol type="1">
+<li><strong>MCH003650.1</strong> (22,879,393-22,889,772) - +42.6% methylation</li>
+<li><strong>MCH003977.1</strong> (41,906,959-41,927,518) - +33.5% methylation</li>
+<li><strong>MCH004059.1</strong> (50,045,482-50,085,998) - +41.8% methylation</li>
+<li><strong>MCH004248.1</strong> (64,415,971-64,424,365) - +44.7% methylation</li>
+<li><strong>MCH005446.1</strong> (129,345,299-129,363,950) - -36.2% methylation</li>
+</ol>
+</section>
+<section id="chromosome_11-25-genes" class="level3">
+<h3 class="anchored" data-anchor-id="chromosome_11-25-genes">Chromosome_11 (25 genes)</h3>
+<ol type="1">
+<li><strong>MCH005607.1</strong> (2,472,582-2,489,519) - +31.6% methylation</li>
+<li><strong>MCH005652.1</strong> (4,175,488-4,205,736) - +33.6% methylation</li>
+<li><strong>MCH005662.1</strong> (4,620,362-4,643,078) - +32.6% and -44.7% methylation</li>
+<li><strong>MCH006395.1</strong> (41,070,877-41,114,059) - -27.8% methylation</li>
+<li><strong>MCH006399.1</strong> (41,495,799-41,518,282) - +45.5% methylation</li>
+<li><strong>MCH006407.1</strong> (41,726,424-41,741,662) - -48.2% methylation</li>
+<li><strong>MCH006576.1</strong> (52,515,557-52,545,825) - +40.9% and +38.6% methylation</li>
+<li><strong>MCH006582.1</strong> (53,013,845-53,047,536) - -35.9% methylation</li>
+<li><strong>MCH006602.1</strong> (54,049,159-54,097,460) - +40.7% and -31.3% methylation</li>
+<li><strong>MCH006672.1</strong> (59,365,692-59,374,464) - -29.9% methylation</li>
+<li><strong>MCH006752.1</strong> (66,373,376-66,383,619) - -26.4% methylation</li>
+<li><strong>MCH006818.1</strong> (72,520,625-72,526,325) - +58.6% and +49.7% methylation</li>
+<li><strong>MCH006819.1</strong> (72,535,606-72,538,371) - +53.2% methylation</li>
+<li><strong>MCH006837.1</strong> (73,320,864-73,329,545) - -26.3% methylation</li>
+<li><strong>MCH006842.1</strong> (73,509,473-73,533,431) - -26.1% methylation</li>
+<li><strong>MCH007096.1</strong> (92,180,644-92,190,977) - -28.8% methylation</li>
+<li><strong>MCH007145.1</strong> (96,052,554-96,074,127) - -49.1% methylation</li>
+<li><strong>MCH007146.1</strong> (96,088,288-96,113,482) - -31.2% and -38.1% methylation</li>
+<li><strong>MCH007292.1</strong> (108,428,820-108,437,607) - +39.5% methylation</li>
+<li><strong>MCH007372.1</strong> (111,301,066-111,306,970) - +47.4% methylation</li>
+</ol>
+</section>
+<section id="chromosome_12-12-genes" class="level3">
+<h3 class="anchored" data-anchor-id="chromosome_12-12-genes">Chromosome_12 (12 genes)</h3>
+<ol type="1">
+<li><strong>MCH008102.1</strong> (23,221,680-23,268,241) - -32.2% methylation</li>
+<li><strong>MCH008986.1</strong> (76,503,543-76,510,345) - Multiple DMLs: +27.5%, +37.0%, +29.2%, +45.0%, +39.8%, +40.0%</li>
+<li><strong>MCH009398.1</strong> (103,094,063-103,095,276) - +38.7% methylation</li>
+<li><strong>MCH009569.1</strong> (112,825,751-112,832,688) - +39.5% methylation</li>
+<li><strong>MCH009576.1</strong> (113,072,328-113,084,225) - +58.3% methylation</li>
+<li><strong>MCH009670.1</strong> (118,286,140-118,307,808) - -25.9% methylation</li>
+<li><strong>MCH009753.1</strong> (122,453,279-122,475,657) - -47.2% methylation</li>
+</ol>
+</section>
+<section id="chromosome_13-6-genes" class="level3">
+<h3 class="anchored" data-anchor-id="chromosome_13-6-genes">Chromosome_13 (6 genes)</h3>
+<ol type="1">
+<li><strong>MCH010387.1</strong> (42,105,615-42,109,630) - +39.7% methylation</li>
+<li><strong>MCH010621.1</strong> (56,867,343-56,872,755) - Multiple DMLs: -39.0%, -48.5%, -49.2%, -50.4%, -38.7%</li>
+</ol>
+</section>
+<section id="chromosome_14-14-genes" class="level3">
+<h3 class="anchored" data-anchor-id="chromosome_14-14-genes">Chromosome_14 (14 genes)</h3>
+<ol type="1">
+<li><strong>MCH011616.1</strong> (1,839,908-1,851,851) - -31.6% methylation</li>
+<li><strong>MCH011734.1</strong> (8,215,404-8,261,030) - +45.7% methylation</li>
+<li><strong>MCH012029.1</strong> (22,076,544-22,122,387) - Multiple DMLs: +51.7%, +50.4%, -50.0%, +55.1%</li>
+<li><strong>MCH012130.1</strong> (26,422,766-26,464,748) - -25.8% methylation</li>
+<li><strong>MCH012276.1</strong> (33,679,055-33,712,493) - +26.1% methylation</li>
+<li><strong>MCH012311.1</strong> (36,025,869-36,041,894) - +35.9% and +33.3% methylation</li>
+<li><strong>MCH012987.1</strong> (84,336,535-84,366,706) - +41.8% and +37.9% methylation</li>
+<li><strong>MCH013068.1</strong> (87,986,466-88,010,912) - -42.3% methylation</li>
+<li><strong>MCH013206.1</strong> (94,770,240-94,856,427) - +33.1% methylation</li>
+</ol>
+</section>
+</section>
+<section id="key-observations" class="level2">
+<h2 class="anchored" data-anchor-id="key-observations">Key Observations</h2>
+<section id="methylation-patterns" class="level3">
+<h3 class="anchored" data-anchor-id="methylation-patterns">1. <strong>Methylation Patterns</strong></h3>
+<ul>
+<li><strong>Hypermethylation</strong> (positive values): 60% of DMLs</li>
+<li><strong>Hypomethylation</strong> (negative values): 40% of DMLs</li>
+<li>Range: -77.0% to +69.6% methylation difference</li>
+</ul>
+</section>
+<section id="gene-clusters" class="level3">
+<h3 class="anchored" data-anchor-id="gene-clusters">2. <strong>Gene Clusters</strong></h3>
+<ul>
+<li>Some genes contain multiple DMLs (e.g., MCH000252.1, MCH005662.1, MCH008986.1)</li>
+<li>Chromosome_3 has the highest concentration of genes with DMLs</li>
+<li>Chromosome_9 is missing due to GFF3 annotation typo</li>
+</ul>
+</section>
+<section id="biological-significance" class="level3">
+<h3 class="anchored" data-anchor-id="biological-significance">3. <strong>Biological Significance</strong></h3>
+<ul>
+<li>Genes with DMLs may have altered expression patterns</li>
+<li>Methylation changes in gene bodies could affect transcription or splicing</li>
+<li>These genes represent potential targets for functional studies</li>
+</ul>
+</section>
+</section>
+<section id="files-generated" class="level2">
+<h2 class="anchored" data-anchor-id="files-generated">Files Generated</h2>
+<ol type="1">
+<li><strong><code>genes_with_dmls.tsv</code></strong> - Detailed DML-gene associations with methylation data</li>
+<li><strong><code>genes_with_dmls_simple_list.tsv</code></strong> - Simple list of unique genes with DMLs</li>
+<li><strong><code>Genes_with_DMLs_Summary.md</code></strong> - This comprehensive summary report</li>
+</ol>
+</section>
+<section id="recommendations" class="level2">
+<h2 class="anchored" data-anchor-id="recommendations">Recommendations</h2>
+<ol type="1">
+<li><strong>Functional validation</strong> of genes with extreme methylation changes</li>
+<li><strong>Expression analysis</strong> to correlate methylation with gene expression</li>
+<li><strong>Pathway analysis</strong> to identify functional categories of affected genes</li>
+<li><strong>Fix GFF3 annotation</strong> for Chromosome_9 to include missing genes</li>
+<li><strong>Comparative analysis</strong> with other mussel species for evolutionary insights</li>
+</ol>
+</section>
+</section>
+     </main>
+<!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>  </div> <!-- /content --> 
+  
+</body></html>
