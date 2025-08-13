@@ -1,25 +1,27 @@
 % Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 \PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 %
 \documentclass[
 ]{agujournal2019}
-
+\usepackage{xcolor}
 \usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
 \else % if luatex or xetex
-  \usepackage{unicode-math}
+  \usepackage{unicode-math} % this also loads fontspec
   \defaultfontfeatures{Scale=MatchLowercase}
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
 \usepackage{lmodern}
-\ifPDFTeX\else  
-    % xetex/luatex font selection
+\ifPDFTeX\else
+  % xetex/luatex font selection
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -37,9 +39,6 @@
 }{% if KOMA class
   \KOMAoptions{parskip=half}}
 \makeatother
-\usepackage{xcolor}
-\setlength{\emergencystretch}{3em} % prevent overfull lines
-\setcounter{secnumdepth}{5}
 % Make \paragraph and \subparagraph free-standing
 \makeatletter
 \ifx\paragraph\undefined\else
@@ -65,8 +64,7 @@
 \makeatother
 
 
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -91,6 +89,20 @@
 % Set default figure placement to htbp
 \def\fps@figure{htbp}
 \makeatother
+
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
 
 \usepackage{url} %this package should fix any errors with URLs in refs.
 \usepackage{lineno}
@@ -138,12 +150,13 @@
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
 \makeatother
-
 \usepackage{bookmark}
-
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\urlstyle{same} % disable monospaced font for URLs
+\urlstyle{same}
 \hypersetup{
+  pdftitle={DNA methylation in Mytilus chileanis},
+  pdfkeywords={DNA methylation, Mytilus
+chilensis, epigenetics, adaptation, aquaculture},
   colorlinks=true,
   linkcolor={blue},
   filecolor={Maroon},
@@ -156,49 +169,36 @@
 \draftfalse
 
 \begin{document}
+\title{DNA methylation in Mytilus chileanis}
 
-\authors{}
+\authors{Cristian Gallardo\affil{1}, Valentina
+Venezuala\affil{1}, Steven Roberts\affil{2}}
+\affiliation{1}{University of Concepcion, }\affiliation{2}{University of
+Washington, }
+\correspondingauthor{Cristian
+Gallardo}{cgallardo@udec.cl}\correspondingauthor{Valentina
+Venezuala}{vvenezuala@udec.cl}\correspondingauthor{Steven
+Roberts}{sr320@uw.edu}
+
+
+\begin{abstract}
+We investigate genome-wide DNA methylation patterns in Mytilus chilensis
+from two contrasting seedbeds---Cochamó and Yaldad---with the aim of
+identifying differentially methylated regions (DMRs) that may underlie
+local adaptation. By integrating this epigenetic information with known
+patterns of gene expression and environmental context, we seek to
+illuminate the molecular basis of ecological divergence and contribute
+new insights into how environmental and anthropogenic forces shape
+genomic and epigenomic variation in a key aquaculture species.
+\end{abstract}
+
+\section*{Plain Language Summary}
+This study explores how DNA methylation may help Chilean blue mussels
+adapt to different environments, providing insights for aquaculture and
+conservation.
 
 
 
-
-
-
-
-
-
-title: DNA methylation in Mytilus chileanis authors: - name: Cristian
-Gallardo affiliation: University of Concepcion roles: writing
-corresponding: true orcid: 0000-0000-0000-0000 email: cgallardo@udec.cl
-- name: Valentina Venezuala affiliation: University of Concepcion roles:
-writing corresponding: true orcid: 0000-0000-0000-0001 email:
-vvenezuala@udec.cl - name: Steven Roberts affiliation: University of
-Washington roles: writing corresponding: true orcid: 0000-0000-0000-0002
-email: sr320@uw.edu bibliography: references.bib subtitle: Epigenetic
-mechanisms of local adaptation date: 2025-08-12 version: ``1.0''
-keywords: {[}DNA methylation, Mytilus chilensis, epigenetics,
-adaptation, aquaculture{]}
-
-abstract: \textbar{} We investigate genome-wide DNA methylation patterns
-in Mytilus chilensis from two contrasting seedbeds---Cochamó and
-Yaldad---with the aim of identifying differentially methylated regions
-(DMRs) that may underlie local adaptation. By integrating this
-epigenetic information with known patterns of gene expression and
-environmental context, we seek to illuminate the molecular basis of
-ecological divergence and contribute new insights into how environmental
-and anthropogenic forces shape genomic and epigenomic variation in a key
-aquaculture species.
-
-plain-language-summary: \textbar{} This study explores how DNA
-methylation may help Chilean blue mussels adapt to different
-environments, providing insights for aquaculture and conservation.
-
-key-points: - Genome-wide DNA methylation was compared between two
-populations of Mytilus chilensis. - Differentially methylated regions
-(DMRs) may underlie local adaptation. - Results inform both basic
-science and aquaculture practices.
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \section{Introduction}\label{introduction}
 
@@ -221,18 +221,19 @@ differential expression of genes involved in immunity, metabolism, and
 cellular stress responses, as well as tissue-specific shifts in
 mitochondrial gene expression linked to local environmental pressures,
 including aquaculture practices and variable oxygenation levels
-{[}@yevenes2021adaptive; @yevenes2022adaptive{]}. Experimental evidence
-from reciprocal transplants shows population-specific transcriptional
-responses and reduced growth performance upon translocation,
-highlighting functional divergence between seedbeds despite high larval
-connectivity {[}@yevenes2025decoding{]}.
+(\textbf{yevenes2021adaptive?}; \textbf{yevenes2022adaptive?}).
+Experimental evidence from reciprocal transplants shows
+population-specific transcriptional responses and reduced growth
+performance upon translocation, highlighting functional divergence
+between seedbeds despite high larval connectivity
+(\textbf{yevenes2025decoding?}).
 
 In addition to gene expression differences, recent work has uncovered
 epigenetic signatures that may contribute to adaptive divergence. Long
 non-coding RNAs (lncRNAs) were found to be differentially expressed
 between Cochamó and Yaldad populations, with associated changes in
-immune and metabolic gene networks {[}@yevenes2023epigenetic{]}. These
-findings underscore the potential for environmentally responsive
+immune and metabolic gene networks (\textbf{yevenes2023epigenetic?}).
+These findings underscore the potential for environmentally responsive
 regulatory elements---including DNA methylation---to mediate local
 adaptation.
 
@@ -244,8 +245,9 @@ sequence. In bivalves, DNA methylation is known to affect developmental
 and immune processes and may be responsive to environmental stressors
 such as hypoxia, toxins, and acidification---conditions that vary across
 the Chilean inner sea and have been shown to modulate gene expression
-and microbiota composition in M. chilensis {[}@montufar2024hypoxia;
-@castillo2017ocean; @montufar2025microbiota{]}.
+and microbiota composition in M. chilensis
+(\textbf{montufar2024hypoxia?}; \textbf{castillo2017ocean?};
+\textbf{montufar2025microbiota?}).
 
 In this study, we investigate genome-wide DNA methylation patterns in
 Mytilus chilensis from two contrasting seedbeds---Cochamó and
