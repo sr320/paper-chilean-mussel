@@ -280,7 +280,7 @@ ecological divergence and contribute new insights into how environmental
 and anthropogenic forces shape genomic and epigenomic variation in a key
 aquaculture species.
 
-\subsection{Methods}\label{methods}
+\section{Methods}\label{methods}
 
 To investigate DNA methylation differences between populations of
 Mytilus chilensis from Cochamó and Yaldad, whole-genome bisulfite
@@ -292,7 +292,7 @@ library preparation. Libraries were sequenced on an Illumina NovaSeq
 yielding approximately 120--160 million read pairs, providing
 \textgreater30× average coverage across the 1.93 Gb M. chilensis genome.
 
-\subsubsection{Read Processing and
+\subsection{Read Processing and
 Alignment}\label{read-processing-and-alignment}
 
 Raw sequencing reads were processed using the nf-core/methylseq pipeline
@@ -311,7 +311,7 @@ tracking. Output files were stored in a structured directory and
 included per-base CpG methylation calls, quality control metrics, and
 coverage files.
 
-\subsubsection{Methylation Data Processing and
+\subsection{Methylation Data Processing and
 Filtering}\label{methylation-data-processing-and-filtering}
 
 Downstream analysis was performed in R (version 4.3.1) using the
@@ -350,7 +350,7 @@ in Yaldad) and hypermethylated (higher in Yaldad) loci. Results were
 saved as tab-delimited text files for downstream annotation and
 visualization.
 
-\subsection{Results}\label{results}
+\section{Results}\label{results}
 
 Bisulfite sequencing across six libraries yielded approximately 99.8
 million reads per sample. Alignment to the reference genome was
@@ -375,7 +375,7 @@ methylation is primarily restricted to CpG sites.
 \href{https://sr320.github.io/paper-chilean-mussel/index.qmd.html}{Article
 Notebook}}
 
-\subsubsection{Location}\label{location}
+\subsection{Location}\label{location}
 
 \begin{figure}[H]
 
@@ -387,7 +387,7 @@ Notebook}}
 
 \end{figure}%
 
-\subsubsection{Genes harboring DMLs and overall methylation
+\subsection{Genes harboring DMLs and overall methylation
 pattern}\label{genes-harboring-dmls-and-overall-methylation-pattern}
 
 We identified 159 genes containing differentially methylated loci
@@ -399,7 +399,7 @@ Summary statistics (range: −77.04\% to +66.86\%; SD 40.48\%, median:
 values, indicating a shift toward hypomethylation among DML-associated
 genes.
 
-\subsubsection{Gene Ontology (GO): processes, functions, and
+\subsection{Gene Ontology (GO): processes, functions, and
 locations}\label{gene-ontology-go-processes-functions-and-locations}
 
 Across Biological Process terms, DML genes were most frequently
@@ -414,14 +414,14 @@ overrepresentation of regulatory and interaction-prone proteins.
 Cellular Component assignments placed many targets in cell/intracellular
 compartments (cell: 104 genes, 65.4\%; intracellular: 99 genes, 62.3\%),
 with frequent localization to the cytoplasm (80 genes, 50.3\%) and
-nucleus (53 genes, 33.3\%) (Fig. X; Supplementary Data S1).
+nucleus (53 genes, 33.3\%)
 
 These patterns indicate that DMLs are concentrated in genes mediating
 metabolism, developmental programs, and cellular organization, with many
 targets residing in cytoplasmic and nuclear contexts where gene
 regulation and signal processing occur.
 
-\subsubsection{KEGG pathways}\label{kegg-pathways}
+\subsection{KEGG pathways}\label{kegg-pathways}
 
 DML-associated genes mapped to 122 unique KEGG pathways, with most
 pathways represented by a single gene, reflecting broad functional
@@ -432,7 +432,7 @@ process categories. The prevalence of core metabolic routes aligns with
 the GO-based enrichment of metabolic processes and suggests potential
 epigenetic modulation of energy balance and biosynthesis.
 
-\subsubsection{Pfam domains}\label{pfam-domains}
+\subsection{Pfam domains}\label{pfam-domains}
 
 We detected 118 unique Pfam domains among DML-associated genes,
 generally with low redundancy (most domains present in one or two
@@ -446,7 +446,7 @@ lipid metabolism. Several domains of unknown function (DUFs) were
 present, indicating potentially novel or poorly characterized targets of
 methylation.
 
-\subsubsection{Directionality of methylation
+\subsection{Directionality of methylation
 changes}\label{directionality-of-methylation-changes}
 
 Given the negative median methylation difference, hypomethylation was
@@ -458,7 +458,7 @@ are consistent with widespread epigenetic remodeling across regulatory
 and metabolic layers, rather than changes confined to a single pathway
 or compartment.
 
-\subsubsection{Summary}\label{summary}
+\subsection{Summary}\label{summary}
 
 Together, these results show that genes harboring DMLs in Mytilus
 chilensis are functionally diverse. However, they converge on
