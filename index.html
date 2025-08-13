@@ -6,8 +6,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Steve Purves">
+<meta name="author" content="Rowan Cockett">
+<meta name="dcterms.date" content="2025-08-12">
+<meta name="keywords" content="La Palma, Earthquakes">
 
-<title>DNA methylation in Mytilus chileanis</title>
+<title>La Palma Earthquakes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -53,6 +57,9 @@ div.csl-indent {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-81e35ebdb4125010edbabe6010586085.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script async="" src="https://hypothes.is/embed.js"></script>
 <script>
   window.document.addEventListener("DOMContentLoaded", function (_event) {
@@ -60,19 +67,49 @@ div.csl-indent {
   });
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<meta name="citation_title" content="DNA methylation in Mytilus chileanis">
-<meta name="citation_author" content="Cristian Gallardo">
-<meta name="citation_author" content="Valentina Venezuala">
-<meta name="citation_author" content="Steven Roberts">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta name="citation_title" content="La Palma Earthquakes">
+<meta name="citation_abstract" content="In September 2021, a significant jump in seismic activity on the island of La Palma (Canary Islands, Spain) signaled the start of a volcanic crisis that still continues at the time of writing. Earthquake data is continually collected and published by the Instituto Geográphico Nacional (IGN). ...
+">
+<meta name="citation_keywords" content="La Palma,Earthquakes">
+<meta name="citation_author" content="Steve Purves">
+<meta name="citation_author" content="Rowan Cockett">
+<meta name="citation_publication_date" content="2025-08-12">
+<meta name="citation_cover_date" content="2025-08-12">
+<meta name="citation_year" content="2025">
+<meta name="citation_online_date" content="2025-08-12">
 <meta name="citation_language" content="en">
-<meta name="citation_reference" content="citation_title=Adaptive differences in gene expression in farm-impacted seedbeds of the native blue mussel *mytilus chilensis*;,citation_author=M Yévenes;,citation_author=G Núñez-Acuña;,citation_author=C Gallardo-Escárate;,citation_author=G Gajardo;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_doi=10.3389/fgene.2021.666539;,citation_volume=12;,citation_journal_title=Frontiers in Genetics;">
-<meta name="citation_reference" content="citation_title=Adaptive mitochondrial genome functioning in ecologically different farm-impacted natural seedbeds of the endemic blue mussel *mytilus chilensis*;,citation_author=M Yévenes;,citation_author=G Núñez-Acuña;,citation_author=C Gallardo-Escárate;,citation_author=G Gajardo;,citation_publication_date=2022;,citation_cover_date=2022;,citation_year=2022;,citation_doi=10.1016/j.cbd.2021.100955;,citation_volume=42;,citation_journal_title=Comparative Biochemistry and Physiology Part D: Genomics and Proteomics;">
-<meta name="citation_reference" content="citation_title=Decoding local adaptation in the exploited native marine mussel *mytilus chilensis*: Genomic evidence from a reciprocal transplant experiment;,citation_author=M Yévenes;,citation_author=G Gajardo;,citation_author=C Gallardo-Escárate;,citation_publication_date=2025;,citation_cover_date=2025;,citation_year=2025;,citation_issue=3;,citation_doi=10.3390/ijms26030931;,citation_volume=26;,citation_journal_title=International Journal of Molecular Sciences;">
-<meta name="citation_reference" content="citation_title=Epigenetic variation mediated by lncRNAs accounts for adaptive genomic differentiation of the endemic blue mussel *mytilus chilensis*;,citation_author=M Yévenes;,citation_author=C Gallardo-Escárate;,citation_author=G Gajardo;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_issue=1;,citation_doi=10.1016/j.heliyon.2023.e23695;,citation_volume=10;,citation_journal_title=Heliyon;">
-<meta name="citation_reference" content="citation_title=Hypoxia in the blue mussel *mytilus chilensis* induces a transcriptome shift associated with endoplasmic reticulum stress, metabolism, and immune response;,citation_author=M Montúfar-Romero;,citation_author=V Valenzuela-Muñoz;,citation_author=D Valenzuela-Miranda;,citation_author=C Gallardo-Escárate;,citation_publication_date=2024;,citation_cover_date=2024;,citation_year=2024;,citation_issue=6;,citation_doi=10.3390/genes15060658;,citation_volume=15;,citation_journal_title=Genes;">
-<meta name="citation_reference" content="citation_title=Ocean acidification and pathogen exposure modulate the immune response of the edible mussel *mytilus chilensis*;,citation_author=N Castillo;,citation_author=L M Saavedra;,citation_author=C A Vargas;,citation_author=C Gallardo-Escárate;,citation_author=C Détrée;,citation_publication_date=2017;,citation_cover_date=2017;,citation_year=2017;,citation_doi=10.1016/j.fsi.2017.08.047;,citation_volume=70;,citation_journal_title=Fish &amp;amp;amp; Shellfish Immunology;">
-<meta name="citation_reference" content="citation_title=Microbiota dysbiosis in *mytilus chilensis* is induced by hypoxia, leading to molecular and functional consequences;,citation_author=M Montúfar-Romero;,citation_author=D Valenzuela-Miranda;,citation_author=V Valenzuela-Muñoz;,citation_author=M F Morales-Rivera;,citation_author=C Gallardo-Escárate;,citation_publication_date=2025;,citation_cover_date=2025;,citation_year=2025;,citation_issue=4;,citation_doi=10.3390/microorganisms13040825;,citation_volume=13;,citation_journal_title=Microorganisms;">
+<meta name="citation_journal_title" content="Earth and Space Science">
+<meta name="citation_reference" content="citation_title=Strategies for the development of volcanic hazard maps in monogenetic volcanic fields: The example of La Palma (Canary Islands);,citation_author=José Marrero;,citation_author=Alicia García;,citation_author=Manuel Berrocoso;,citation_author=Ángeles Llinares;,citation_author=Antonio Rodríguez-Losada;,citation_author=R. Ortiz;,citation_publication_date=2019-07;,citation_cover_date=2019-07;,citation_year=2019;,citation_doi=10.1186/s13617-019-0085-5;,citation_volume=8;,citation_journal_title=Journal of Applied Volcanology;">
 </head>
 
 <body>
@@ -80,7 +117,7 @@ div.csl-indent {
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">DNA methylation in Mytilus chileanis</h1>
+      <h1 class="title">La Palma Earthquakes</h1>
           </div>
 
     
@@ -88,30 +125,22 @@ div.csl-indent {
       <div class="quarto-title-meta-column-start">
             <div class="quarto-title-meta-author">
           <div class="quarto-title-meta-heading">Authors</div>
-          <div class="quarto-title-meta-heading">Affiliations</div>
+          <div class="quarto-title-meta-heading">Affiliation</div>
           
                 <div class="quarto-title-meta-contents">
-            <p class="author">Cristian Gallardo </p>
+            <p class="author">Steve Purves <a href="mailto:steve@curvenote.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-0760-5497" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
           </div>
                 <div class="quarto-title-meta-contents">
                     <p class="affiliation">
-                        University of Concepcion
+                        Curvenote
                       </p>
                   </div>
                       <div class="quarto-title-meta-contents">
-            <p class="author">Valentina Venezuala </p>
+            <p class="author">Rowan Cockett <a href="https://orcid.org/0000-0002-7859-8394" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
           </div>
                 <div class="quarto-title-meta-contents">
                     <p class="affiliation">
-                        University of Concepcion
-                      </p>
-                  </div>
-                      <div class="quarto-title-meta-contents">
-            <p class="author">Steven Roberts </p>
-          </div>
-                <div class="quarto-title-meta-contents">
-                    <p class="affiliation">
-                        University of Washington
+                        Curvenote
                       </p>
                   </div>
                     </div>
@@ -119,6 +148,12 @@ div.csl-indent {
         <div class="quarto-title-meta">
 
                       
+                <div>
+            <div class="quarto-title-meta-heading">Published</div>
+            <div class="quarto-title-meta-contents">
+              <p class="date">August 12, 2025</p>
+            </div>
+          </div>
           
                 
               </div>
@@ -127,7 +162,19 @@ div.csl-indent {
       <div class="quarto-alternate-formats"><div class="quarto-title-meta-heading">Other Formats</div><div class="quarto-title-meta-contents"><p><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></p></div><div class="quarto-title-meta-contents"><p><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF (agu)</a></p></div><div class="quarto-title-meta-contents"><p><a href="index-meca.zip" data-meca-link="true"><i class="bi bi-archive"></i>MECA Bundle</a></p></div></div></div>
     </div>
 
+    <div>
+      <div class="abstract">
+        <div class="block-title">Abstract</div>
+        <p>In September 2021, a significant jump in seismic activity on the island of La Palma (Canary Islands, Spain) signaled the start of a volcanic crisis that still continues at the time of writing. Earthquake data is continually collected and published by the Instituto Geográphico Nacional (IGN). …</p>
+      </div>
+    </div>
 
+    <div>
+      <div class="keywords">
+        <div class="block-title">Keywords</div>
+        <p>La Palma, Earthquakes</p>
+      </div>
+    </div>
 
     <div class="quarto-other-links-text-target">
     </div>  </div>
@@ -137,17 +184,12 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
-  <ul class="collapse">
-  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a>
-  <ul class="collapse">
-  <li><a href="#read-processing-and-alignment" id="toc-read-processing-and-alignment" class="nav-link" data-scroll-target="#read-processing-and-alignment">Read Processing and Alignment</a></li>
-  <li><a href="#methylation-data-processing-and-filtering" id="toc-methylation-data-processing-and-filtering" class="nav-link" data-scroll-target="#methylation-data-processing-and-filtering">Methylation Data Processing and Filtering</a></li>
-  <li><a href="#exploratory-and-differential-methylation-analyses" id="toc-exploratory-and-differential-methylation-analyses" class="nav-link" data-scroll-target="#exploratory-and-differential-methylation-analyses">Exploratory and Differential Methylation Analyses</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
+  <li><a href="#sec-data-methods" id="toc-sec-data-methods" class="nav-link" data-scroll-target="#sec-data-methods"><span class="header-section-number">2</span> Data &amp; Methods</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">3</span> Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
-<div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="notebooks/explore-earthquakes-preview.html"><i class="bi bi-journal-code"></i>Explore Earthquakes</a></li></ul></div></nav>
+<div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="index-preview.html"><i class="bi bi-journal-code"></i>Article Notebook</a></li><li><a href="notebooks/explore-earthquakes-preview.html"><i class="bi bi-journal-code"></i>Explore Earthquakes</a></li></ul></div></nav>
 </div>
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
 </div>
@@ -158,57 +200,142 @@ div.csl-indent {
   
 
 
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
-<p>Understanding how marine species respond to environmental heterogeneity is critical for conserving locally adapted populations and sustaining aquaculture practices in the face of global change. The Chilean blue mussel, Mytilus chilensis, a key endemic species in southern Chile, supports one of the world’s largest mussel aquaculture industries. However, the biological foundation of population-level adaptation in this species remains underexplored. Emerging evidence suggests that both genetic and epigenetic mechanisms—particularly DNA methylation—may contribute to phenotypic plasticity and local adaptation in marine invertebrates.</p>
-<p>Previous studies have revealed extensive transcriptomic and mitochondrial differences between M. chilensis populations from ecologically distinct seedbeds, such as Cochamó (41°S) and Yaldad (43°S), in the inner sea of Chiloé Island. These differences include differential expression of genes involved in immunity, metabolism, and cellular stress responses, as well as tissue-specific shifts in mitochondrial gene expression linked to local environmental pressures, including aquaculture practices and variable oxygenation levels <span class="citation" data-cites="yevenes2021adaptive yevenes2022adaptive">(<a href="#ref-yevenes2021adaptive" role="doc-biblioref">Yévenes et al. 2021</a>, <a href="#ref-yevenes2022adaptive" role="doc-biblioref">2022</a>)</span>. Experimental evidence from reciprocal transplants shows population-specific transcriptional responses and reduced growth performance upon translocation, highlighting functional divergence between seedbeds despite high larval connectivity <span class="citation" data-cites="yevenes2025decoding">(<a href="#ref-yevenes2025decoding" role="doc-biblioref">Yévenes, Gajardo, and Gallardo-Escárate 2025</a>)</span>.</p>
-<p>In addition to gene expression differences, recent work has uncovered epigenetic signatures that may contribute to adaptive divergence. Long non-coding RNAs (lncRNAs) were found to be differentially expressed between Cochamó and Yaldad populations, with associated changes in immune and metabolic gene networks <span class="citation" data-cites="yevenes2023epigenetic">(<a href="#ref-yevenes2023epigenetic" role="doc-biblioref">Yévenes, Gallardo-Escárate, and Gajardo 2023</a>)</span>. These findings underscore the potential for environmentally responsive regulatory elements—including DNA methylation—to mediate local adaptation.</p>
-<p>Yet, the role of DNA methylation in shaping population-specific responses in M. chilensis remains unexplored. DNA methylation, a heritable and reversible epigenetic modification, can influence gene expression and phenotypic traits without altering the underlying DNA sequence. In bivalves, DNA methylation is known to affect developmental and immune processes and may be responsive to environmental stressors such as hypoxia, toxins, and acidification—conditions that vary across the Chilean inner sea and have been shown to modulate gene expression and microbiota composition in M. chilensis <span class="citation" data-cites="montufar2024hypoxia castillo2017ocean montufar2025microbiota">(<a href="#ref-montufar2024hypoxia" role="doc-biblioref">Montúfar-Romero et al. 2024</a>, <a href="#ref-montufar2025microbiota" role="doc-biblioref">2025</a>; <a href="#ref-castillo2017ocean" role="doc-biblioref">Castillo et al. 2017</a>)</span>.</p>
-<p>In this study, we investigate genome-wide DNA methylation patterns in Mytilus chilensis from two contrasting seedbeds—Cochamó and Yaldad—with the aim of identifying differentially methylated regions (DMRs) that may underlie local adaptation. By integrating this epigenetic information with known patterns of gene expression and environmental context, we seek to illuminate the molecular basis of ecological divergence and contribute new insights into how environmental and anthropogenic forces shape genomic and epigenomic variation in a key aquaculture species.</p>
-<section id="methods" class="level2">
-<h2 class="anchored" data-anchor-id="methods">Methods</h2>
-<p>To investigate DNA methylation differences between populations of Mytilus chilensis from Cochamó and Yaldad, whole-genome bisulfite sequencing (WGBS) was performed and analyzed using a reproducible, high-throughput bioinformatics workflow. DNA was extracted from gill tissue of adult individuals and subjected to bisulfite treatment and library preparation. Libraries were sequenced on an Illumina NovaSeq 6000 platform, generating 150 bp paired-end reads, with each sample yielding approximately 120–160 million read pairs, providing &gt;30× average coverage across the 1.93 Gb M. chilensis genome.</p>
-<section id="read-processing-and-alignment" class="level3">
-<h3 class="anchored" data-anchor-id="read-processing-and-alignment">Read Processing and Alignment</h3>
-<p>Raw sequencing reads were processed using the nf-core/methylseq pipeline (version 2.5), implemented through Nextflow (version 23.04.1). Reads were aligned to the M. chilensis reference genome (MchilensisGenomeV1.fa), a chromosome-level assembly comprising 14 scaffolds (Gallardo-Escárate et al.&nbsp;2023), using Bismark (version 0.24.1) with the Bowtie2 aligner (version 2.5.1). Quality trimming was applied to reverse reads by hard-clipping the final 10 bases (–clip_r2 10) to mitigate low-quality base calls at the 3′ end. Methylation calls were extracted using the Bismark methylation extractor and aggregated by cytosine context. Pipeline execution was configured via a custom .config file to specify HPC resources and run with –resume, –with-trace, –with-report, and –with-timeline flags for reproducibility and tracking. Output files were stored in a structured directory and included per-base CpG methylation calls, quality control metrics, and coverage files.</p>
+<section id="introduction" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1</span> Introduction</h2>
+<div id="cell-fig-timeline" class="cell">
+<div class="cell-output-display">
+<div id="fig-timeline" class="quarto-float quarto-figure quarto-figure-center anchored" alt="An event plot of the years of the last 8 eruptions on La Palma.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="index_files/figure-html/fig-timeline-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1: Timeline of recent earthquakes on La Palma"><img src="index_files/figure-html/fig-timeline-1.png" class="img-fluid figure-img" alt="An event plot of the years of the last 8 eruptions on La Palma." width="576"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Timeline of recent earthquakes on La Palma
+</figcaption>
+</figure>
+</div>
+</div>
+<a class="quarto-notebook-link" id="nblink-1" href="index-preview.html#cell-fig-timeline">Source: Article Notebook</a></div>
+<p>Based on data up to and including 1971, eruptions on La Palma happen every 79.8 years on average.</p>
+<p>Studies of the magma systems feeding the volcano, such as <span class="citation" data-cites="marrero2019">Marrero et al. (<a href="#ref-marrero2019" role="doc-biblioref">2019</a>)</span>, have proposed that there are two main magma reservoirs feeding the Cumbre Vieja volcano; one in the mantle (30-40km depth) which charges and in turn feeds a shallower crustal reservoir (10-20km depth).</p>
+<p>Eight eruptions have been recorded since the late 1400s (<a href="#fig-timeline" class="quarto-xref">Figure&nbsp;1</a>).</p>
+<p>Data and methods are discussed in <a href="#sec-data-methods" class="quarto-xref">Section&nbsp;2</a>.</p>
+<p>Let <span class="math inline">\(x\)</span> denote the number of eruptions in a year. Then, <span class="math inline">\(x\)</span> can be modeled by a Poisson distribution</p>
+<p><span id="eq-poisson"><span class="math display">\[
+p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
+\tag{1}\]</span></span></p>
+<p>where <span class="math inline">\(\lambda\)</span> is the rate of eruptions per year. Using <a href="#eq-poisson" class="quarto-xref">Equation&nbsp;1</a>, the probability of an eruption in the next <span class="math inline">\(t\)</span> years can be calculated.</p>
+<div id="tbl-history" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-history-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Recent historic eruptions on La Palma
+</figcaption>
+<div aria-describedby="tbl-history-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Year</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Current</td>
+<td>2021</td>
+</tr>
+<tr class="even">
+<td>Teneguía</td>
+<td>1971</td>
+</tr>
+<tr class="odd">
+<td>Nambroque</td>
+<td>1949</td>
+</tr>
+<tr class="even">
+<td>El Charco</td>
+<td>1712</td>
+</tr>
+<tr class="odd">
+<td>Volcán San Antonio</td>
+<td>1677</td>
+</tr>
+<tr class="even">
+<td>Volcán San Martin</td>
+<td>1646</td>
+</tr>
+<tr class="odd">
+<td>Tajuya near El Paso</td>
+<td>1585</td>
+</tr>
+<tr class="even">
+<td>Montaña Quemada</td>
+<td>1492</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p><a href="#tbl-history" class="quarto-xref">Table&nbsp;1</a> summarises the eruptions recorded since the colonization of the islands by Europeans in the late 1400s.</p>
+<div id="fig-map" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/la-palma-map.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;2: Map of La Palma"><img src="images/la-palma-map.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-map-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Map of La Palma
+</figcaption>
+</figure>
+</div>
+<p>La Palma is one of the west most islands in the Volcanic Archipelago of the Canary Islands (<a href="#fig-map" class="quarto-xref">Figure&nbsp;2</a>).</p>
+<div class="quarto-embed-nb-cell">
+<div id="cell-fig-spatial-plot" class="cell">
+<div class="cell-output cell-output-display">
+<div id="fig-spatial-plot" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A scatterplot of earthquake locations plotting latitude against longitude.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-spatial-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="index_files/figure-html/notebooks-explore-earthquakes-fig-spatial-plot-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure&nbsp;3: Locations of earthquakes on La Palma since 2017"><img src="index_files/figure-html/notebooks-explore-earthquakes-fig-spatial-plot-output-1.png" class="img-fluid figure-img" alt="A scatterplot of earthquake locations plotting latitude against longitude."></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-spatial-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Locations of earthquakes on La Palma since 2017
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p><a href="#fig-spatial-plot" class="quarto-xref">Figure&nbsp;3</a> shows the location of recent Earthquakes on La Palma.</p>
 </section>
-<section id="methylation-data-processing-and-filtering" class="level3">
-<h3 class="anchored" data-anchor-id="methylation-data-processing-and-filtering">Methylation Data Processing and Filtering</h3>
-<p>Downstream analysis was performed in R (version 4.3.1) using the methylKit package (version 1.10.0). Due to compatibility issues with newer versions of supporting libraries, data.table was pinned to version 1.14.10. Methylation coverage files were imported using methRead() with the pipeline = “bismarkCoverage” parameter and CpG context specified. Six samples—three each from Cochamó (LCo_BSr1–3) and Yaldad (LYa_BSr1–3)—were analyzed. Samples were assigned to treatment groups with Cochamó designated as the control (treatment = 0) and Yaldad as the treatment group (treatment = 1).</p>
-<p>To ensure data quality, CpG sites were filtered to retain only those with a minimum read coverage of 10 in all samples, excluding those in the top 2% of coverage values to reduce PCR bias. Sites were then unified across samples using unite() with min.per.group = 3 and destrand = FALSE to retain strand-specific methylation information.</p>
+<section id="sec-data-methods" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="sec-data-methods"><span class="header-section-number">2</span> Data &amp; Methods</h2>
 </section>
-<section id="exploratory-and-differential-methylation-analyses" class="level3">
-<h3 class="anchored" data-anchor-id="exploratory-and-differential-methylation-analyses">Exploratory and Differential Methylation Analyses</h3>
-<p>Global methylation patterns were assessed using hierarchical clustering (Ward’s method on correlation distance) and principal component analysis (PCA) to evaluate sample similarity. Population-level differences in DNA methylation were then tested using methylKit’s logistic regression model, incorporating a multinomial overdispersion correction (overdispersion = “MN”) to account for biological variability. Statistical testing was performed using the Chi-squared test (test = “Chisq”), and q-values were adjusted for multiple testing using the SLIM method (adjust = “SLIM”).</p>
-<p>Differentially methylated loci (DMLs) were defined as CpG sites with an absolute methylation difference ≥25% and FDR-adjusted q-value ≤ 0.05. Separate sets of DMLs were extracted to identify hypomethylated (lower in Yaldad) and hypermethylated (higher in Yaldad) loci. Results were saved as tab-delimited text files for downstream annotation and visualization.</p>
+<section id="conclusion" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">3</span> Conclusion</h2>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-marrero2019" class="csl-entry" role="listitem">
+Marrero, José, Alicia García, Manuel Berrocoso, Ángeles Llinares, Antonio Rodríguez-Losada, and R. Ortiz. 2019. <span>“Strategies for the Development of Volcanic Hazard Maps in Monogenetic Volcanic Fields: The Example of <span>La</span> <span>Palma</span> (<span>Canary</span> <span>Islands</span>).”</span> <em>Journal of Applied Volcanology</em> 8 (July). <a href="https://doi.org/10.1186/s13617-019-0085-5">https://doi.org/10.1186/s13617-019-0085-5</a>.
+</div>
+</div>
+</section>
 
-</section>
-</section>
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-castillo2017ocean" class="csl-entry" role="listitem">
-Castillo, N, L M Saavedra, C A Vargas, C Gallardo-Escárate, and C Détrée. 2017. <span>“Ocean Acidification and Pathogen Exposure Modulate the Immune Response of the Edible Mussel *Mytilus Chilensis*.”</span> <em>Fish &amp; Shellfish Immunology</em> 70: 149–55. <a href="https://doi.org/10.1016/j.fsi.2017.08.047">https://doi.org/10.1016/j.fsi.2017.08.047</a>.
-</div>
-<div id="ref-montufar2025microbiota" class="csl-entry" role="listitem">
-Montúfar-Romero, M, D Valenzuela-Miranda, V Valenzuela-Muñoz, M F Morales-Rivera, and C Gallardo-Escárate. 2025. <span>“Microbiota Dysbiosis in *Mytilus Chilensis* Is Induced by Hypoxia, Leading to Molecular and Functional Consequences.”</span> <em>Microorganisms</em> 13 (4): 825. <a href="https://doi.org/10.3390/microorganisms13040825">https://doi.org/10.3390/microorganisms13040825</a>.
-</div>
-<div id="ref-montufar2024hypoxia" class="csl-entry" role="listitem">
-Montúfar-Romero, M, V Valenzuela-Muñoz, D Valenzuela-Miranda, and C Gallardo-Escárate. 2024. <span>“Hypoxia in the Blue Mussel *Mytilus Chilensis* Induces a Transcriptome Shift Associated with Endoplasmic Reticulum Stress, Metabolism, and Immune Response.”</span> <em>Genes</em> 15 (6): 658. <a href="https://doi.org/10.3390/genes15060658">https://doi.org/10.3390/genes15060658</a>.
-</div>
-<div id="ref-yevenes2025decoding" class="csl-entry" role="listitem">
-Yévenes, M, G Gajardo, and C Gallardo-Escárate. 2025. <span>“Decoding Local Adaptation in the Exploited Native Marine Mussel *Mytilus Chilensis*: Genomic Evidence from a Reciprocal Transplant Experiment.”</span> <em>International Journal of Molecular Sciences</em> 26 (3): 931. <a href="https://doi.org/10.3390/ijms26030931">https://doi.org/10.3390/ijms26030931</a>.
-</div>
-<div id="ref-yevenes2023epigenetic" class="csl-entry" role="listitem">
-Yévenes, M, C Gallardo-Escárate, and G Gajardo. 2023. <span>“Epigenetic Variation Mediated by lncRNAs Accounts for Adaptive Genomic Differentiation of the Endemic Blue Mussel *Mytilus Chilensis*.”</span> <em>Heliyon</em> 10 (1): e23695. <a href="https://doi.org/10.1016/j.heliyon.2023.e23695">https://doi.org/10.1016/j.heliyon.2023.e23695</a>.
-</div>
-<div id="ref-yevenes2021adaptive" class="csl-entry" role="listitem">
-Yévenes, M, G Núñez-Acuña, C Gallardo-Escárate, and G Gajardo. 2021. <span>“Adaptive Differences in Gene Expression in Farm-Impacted Seedbeds of the Native Blue Mussel *Mytilus Chilensis*.”</span> <em>Frontiers in Genetics</em> 12: 666539. <a href="https://doi.org/10.3389/fgene.2021.666539">https://doi.org/10.3389/fgene.2021.666539</a>.
-</div>
-<div id="ref-yevenes2022adaptive" class="csl-entry" role="listitem">
-———. 2022. <span>“Adaptive Mitochondrial Genome Functioning in Ecologically Different Farm-Impacted Natural Seedbeds of the Endemic Blue Mussel *Mytilus Chilensis*.”</span> <em>Comparative Biochemistry and Physiology Part D: Genomics and Proteomics</em> 42: 100955. <a href="https://doi.org/10.1016/j.cbd.2021.100955">https://doi.org/10.1016/j.cbd.2021.100955</a>.
-</div>
-</div></section></div></main>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{purves2025,
+  author = {Purves, Steve and Cockett, Rowan},
+  title = {La {Palma} {Earthquakes}},
+  date = {2025-08-12},
+  langid = {en},
+  abstract = {In September 2021, a significant jump in seismic activity
+    on the island of La Palma (Canary Islands, Spain) signaled the start
+    of a volcanic crisis that still continues at the time of writing.
+    Earthquake data is continually collected and published by the
+    Instituto Geográphico Nacional (IGN). ...}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-purves2025" class="csl-entry quarto-appendix-citeas" role="listitem">
+Purves, Steve, and Rowan Cockett. 2025. <span>“La Palma
+Earthquakes.”</span> Earth and Space Science. August 12, 2025.
+</div></div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -628,6 +755,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
