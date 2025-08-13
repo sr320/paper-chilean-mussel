@@ -1,0 +1,1407 @@
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.23)  12 AUG 2025 22:49
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**index.tex
+(./index.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-04-20> (./agujournal2019.cls
+Document Class: agujournal2019 01/14/2019
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 107.
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen140
+\Gin@req@width=\dimen141
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 227.
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2022/06/12 v2.14 Predefined colors according to SVG 1.1 (UK)
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/xcolor/x11nam.def
+File: x11nam.def 2022/06/12 v2.14 Predefined colors according to Unix/X11 (UK)
+)) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2023/01/19 line numbers on paragraphs v5.1
+Invalid UTF-8 byte or sequence at line 290 replaced by U+FFFD.
+\linenopenalty=\count181
+\output=\toks17
+\linenoprevgraf=\count182
+\linenumbersep=\dimen142
+\linenumberwidth=\dimen143
+\c@linenumber=\count183
+\c@pagewiselinenumber=\count184
+\c@LN@truepage=\count185
+\c@internallinenumber=\count186
+\c@internallinenumbers=\count187
+\quotelinenumbersep=\dimen144
+\bframerule=\dimen145
+\bframesep=\dimen146
+\bframebox=\box51
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count188
+)
+LaTeX Info: Redefining \\ on input line 3131.
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2023/04/04 v3.5 ragged2e Package
+\CenteringLeftskip=\skip48
+\RaggedLeftLeftskip=\skip49
+\RaggedRightLeftskip=\skip50
+\CenteringRightskip=\skip51
+\RaggedLeftRightskip=\skip52
+\RaggedRightRightskip=\skip53
+\CenteringParfillskip=\skip54
+\RaggedLeftParfillskip=\skip55
+\RaggedRightParfillskip=\skip56
+\JustifyingParfillskip=\skip57
+\CenteringParindent=\skip58
+\RaggedLeftParindent=\skip59
+\RaggedRightParindent=\skip60
+\JustifyingParindent=\skip61
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count189
+\rotFPtop=\skip62
+\rotFPbot=\skip63
+\rot@float@box=\box52
+\rot@mess@toks=\toks18
+)
+\draftskip=\count190
+\c@section=\count191
+\c@subsection=\count192
+\c@subsubsection=\count193
+\c@paragraph=\count194
+\c@subparagraph=\count195
+\c@figure=\count196
+\c@table=\count197
+\abovecaptionskip=\skip64
+\belowcaptionskip=\skip65
+\c@appendnum=\count198
+\bibindent=\dimen147
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/apacite/apacite.sty
+Package: apacite 2013/07/21 v6.03 APA citation
+\c@BibCnt=\count199
+\bibleftmargin=\skip66
+\bibindent=\skip67
+\bibparsep=\skip68
+\bibitemsep=\skip69
+\biblabelsep=\skip70
+)) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip71
+For additional information on amsmath, use the `?' option.
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen148
+)) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen149
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count266
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count267
+\leftroot@=\count268
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count269
+\DOTSCASE@=\count270
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen150
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count271
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count272
+\dotsspace@=\muskip17
+\c@parentequation=\count273
+\dspbrk@lvl=\count274
+\tag@help=\toks20
+\row@=\count275
+\column@=\count276
+\maxfields@=\count277
+\andhelp@=\toks21
+\eqnshift@=\dimen151
+\alignsep@=\dimen152
+\tagshift@=\dimen153
+\tagwidth@=\dimen154
+\totwidth@=\dimen155
+\lineht@=\dimen156
+\@envbody=\toks22
+\multlinegap=\skip72
+\multlinetaggap=\skip73
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+\linenoamsmath@ams@eqpen=\count278
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-04-20 L3 programming layer (loader) 
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2023-04-19 L3 backend support: XeTeX
+\g__graphics_track_int=\count279
+\l__pdf_internal_box=\box55
+\g__pdf_backend_object_int=\count280
+\g__pdf_backend_annotation_int=\count281
+\g__pdf_backend_link_int=\count282
+))
+Package: unicode-math 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
+Package: unicode-math-xetex 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-02-02 L3 Experimental document command parser
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+\l__fontspec_script_int=\count283
+\l__fontspec_language_int=\count284
+\l__fontspec_strnum_int=\count285
+\l__fontspec_tmp_int=\count286
+\l__fontspec_tmpa_int=\count287
+\l__fontspec_tmpb_int=\count288
+\l__fontspec_tmpc_int=\count289
+\l__fontspec_em_int=\count290
+\l__fontspec_emdef_int=\count291
+\l__fontspec_strong_int=\count292
+\l__fontspec_strongdef_int=\count293
+\l__fontspec_tmpa_dim=\dimen157
+\l__fontspec_tmpb_dim=\dimen158
+\l__fontspec_tmpc_dim=\dimen159
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+))
+\g__um_fam_int=\count294
+\g__um_fonts_used_int=\count295
+\l__um_primecount_int=\count296
+\g__um_primekern_muskip=\muskip18
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex))) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2023/03/13 v3.1a Micro-typographical refinements (RS)
+\MT@toks=\toks24
+\MT@tempbox=\box56
+\MT@count=\count297
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1059.
+LaTeX Info: Redefining \leftprotrusion on input line 1060.
+\MT@prot@toks=\toks25
+LaTeX Info: Redefining \rightprotrusion on input line 1078.
+LaTeX Info: Redefining \textls on input line 1368.
+\MT@outer@kern=\dimen160
+LaTeX Info: Redefining \textmicrotypecontext on input line 1988.
+\MT@listname@count=\count298
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype-xetex.def
+File: microtype-xetex.def 2023/03/13 v3.1a Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 238.
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2023/03/13 v3.1a microtype main configuration file (RS)
+)) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip74
+\LTright=\skip75
+\LTpre=\skip76
+\LTpost=\skip77
+\LTchunksize=\count299
+\LTcapwidth=\dimen161
+\LT@head=\box57
+\LT@firsthead=\box58
+\LT@foot=\box59
+\LT@lastfoot=\box60
+\LT@gbox=\box61
+\LT@cols=\count300
+\LT@rows=\count301
+\c@LT@tables=\count302
+\c@LT@chunks=\count303
+\LT@p@ftn=\toks26
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen162
+\lightrulewidth=\dimen163
+\cmidrulewidth=\dimen164
+\belowrulesep=\dimen165
+\belowbottomsep=\dimen166
+\aboverulesep=\dimen167
+\abovetopsep=\dimen168
+\cmidrulesep=\dimen169
+\cmidrulekern=\dimen170
+\defaultaddspace=\dimen171
+\@cmidla=\count304
+\@cmidlb=\count305
+\@aboverulesep=\dimen172
+\@belowrulesep=\dimen173
+\@thisruleclass=\count306
+\@lastruleclass=\count307
+\@thisrulewidth=\dimen174
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen175
+\ar@mcellbox=\box62
+\extrarowheight=\dimen176
+\NC@list=\toks27
+\extratabsurround=\skip78
+\backup@length=\skip79
+\ar@cellbox=\box63
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count308
+\calc@Bcount=\count309
+\calc@Adimen=\dimen177
+\calc@Bdimen=\dimen178
+\calc@Askip=\skip80
+\calc@Bskip=\skip81
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count310
+\calc@Cskip=\skip82
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box64
+\fn@width=\dimen179
+)
+\pandoc@box=\box65
+\cslhangindent=\skip83
+\csllabelwidth=\skip84
+(./trackchanges.sty
+Package: trackchanges 2009/04/22 v0.7.0 TrackChanges file 
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/generic/soul/soul.sty
+Package: soul 2023-02-18 v3.0 Permit use of UTF-8 characters in soul (HO)
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/generic/soul/soul-ori.sty
+Package: soul-ori 2023-02-18 v3.0 letterspacing/underlining (mf)
+\SOUL@word=\toks28
+\SOUL@lasttoken=\toks29
+\SOUL@syllable=\toks30
+\SOUL@cmds=\toks31
+\SOUL@buffer=\toks32
+\SOUL@token=\toks33
+\SOUL@syllgoal=\dimen180
+\SOUL@syllwidth=\dimen181
+\SOUL@charkern=\dimen182
+\SOUL@hyphkern=\dimen183
+\SOUL@dimen=\dimen184
+\SOUL@dimeni=\dimen185
+\SOUL@minus=\count311
+\SOUL@comma=\count312
+\SOUL@apo=\count313
+\SOUL@grave=\count314
+\SOUL@spaceskip=\skip85
+\SOUL@ttwidth=\dimen186
+\SOUL@uldp=\dimen187
+\SOUL@ulht=\dimen188
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/morefloats/morefloats.sty
+Package: morefloats 2015/07/22 v1.0h Raise limit of unprocessed floats (HMM)
+Package morefloats Info: Maximum number of possible floats asked for: 36
+(morefloats)             (i.e. 18 more floats).
+(morefloats)             LaTeX might run out of memory before this
+(morefloats)             (in which case it will notify you).
+)
+\c@userid=\count315
+\c@changenumber=\count316
+\c@storefootnote=\count317
+\c@numeditors=\count318
+\c@maxeditors=\count319
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/03/12 v3.6j Customizing captions (AR)
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
+\caption@tempdima=\dimen189
+\captionmargin=\dimen190
+\caption@leftmargin=\dimen191
+\caption@rightmargin=\dimen192
+\caption@width=\dimen193
+\caption@indent=\dimen194
+\caption@parindent=\dimen195
+\caption@hangindent=\dimen196
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->{\small \ifx \@captype \xfigure \vskip \abovecaptionskip \fi {\ifturnofflinenums \else \ifnumlines \internallinenumbers \fi \fi \sbox \@tempboxa {\bf #1.\quad \rm #2}\ifdim \wd \@tempboxa >.9\hsize \bf #1.\quad \rm \relax #2\par \else {\centering \bf #1.\rm \quad #2 \vskip 1sp} \fi } \ifx \@captype \xfigure \else \vskip \belowcaptionskip \fi } on input line 1176.
+)
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count320
+\c@continuedfloat=\count321
+Package caption Info: longtable package is loaded.
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: rotating package is loaded.
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count322
+\float@exts=\toks34
+\float@box=\box66
+\@float@everytoks=\toks35
+\@floatcapt=\box67
+)
+\@float@every@codelisting=\toks36
+\c@codelisting=\count323
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/02/19 v1.6 Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 239.
+\c@subfigure=\count324
+Package caption Info: New subtype `subtable' on input line 239.
+\c@subtable=\count325
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2023-04-22 v7.00x Hypertext links for LaTeX
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count326
+)
+\@linkdim=\dimen197
+\Hy@linkcounter=\count327
+\Hy@pagecounter=\count328
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2023-04-22 v7.00x Hyperref: PDFDocEncoding definition (HO)
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count329
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2023-04-22 v7.00x Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4065.
+Package hyperref Info: Hyper figures OFF on input line 4182.
+Package hyperref Info: Link nesting OFF on input line 4187.
+Package hyperref Info: Hyper index ON on input line 4190.
+Package hyperref Info: Plain pages OFF on input line 4197.
+Package hyperref Info: Backreferencing OFF on input line 4202.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4449.
+\c@Hy@tempcnt=\count330
+LaTeX Info: Redefining \url on input line 4787.
+\XeTeXLinkMargin=\dimen198
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count331
+\Field@Width=\dimen199
+\Fld@charsize=\dimen256
+Package hyperref Info: Hyper figures OFF on input line 6066.
+Package hyperref Info: Link nesting OFF on input line 6071.
+Package hyperref Info: Hyper index ON on input line 6074.
+Package hyperref Info: backreferencing OFF on input line 6081.
+Package hyperref Info: Link coloring OFF on input line 6086.
+Package hyperref Info: Link coloring with OCG OFF on input line 6091.
+Package hyperref Info: PDF/A mode OFF on input line 6096.
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count332
+\c@Item=\count333
+\c@Hfootnote=\count334
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2023-04-22 v7.00x Hyperref driver for XeTeX
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+)
+\pdfm@box=\box68
+\c@Hy@AnnotLevel=\count335
+\HyField@AnnotCount=\count336
+\Fld@listcount=\count337
+\c@bookmark@seq@number=\count338
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)
+\Hy@SectionHShift=\skip86
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
+File: bkm-dvipdfm.def 2020-11-06 v1.29 bookmark driver for dvipdfm (HO)
+\BKM@id=\count339
+))
+Package hyperref Info: Option `colorlinks' set `true' on input line 188.
+No file index.aux.
+\openout1 = `index.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 194.
+LaTeX Font Info:    ... okay on input line 194.
+\c@maskedRefs=\count340
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/apacite/english.apc
+File: english.apc 2013/07/21 v6.03 apacite language file
+LaTeX Info: Redefining \BPBI on input line 129.
+LaTeX Info: Redefining \BHBI on input line 130.
+)
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 194.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 194.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 194.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 194.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 194.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 194.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 194.
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999964596882403]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999964596882403]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 194.
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmodern-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScriptScript}},BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->s*[0.9999964596882403]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6-8.5>s*[0.9999964596882403]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6>s*[0.9999964596882403]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999964596882403]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 194.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 194.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 194.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 194.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 194.
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096459334209.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096459334209.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096459334209.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096459334209.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096459334209.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(2)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmodern-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScriptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=1.0001,FontAdjustment={\fontdimen
+(fontspec)             8\font =6.77pt\relax \fontdimen 9\font =3.94pt\relax
+(fontspec)             \fontdimen 10\font =4.44pt\relax \fontdimen 11\font
+(fontspec)             =6.86pt\relax \fontdimen 12\font =3.45pt\relax
+(fontspec)             \fontdimen 13\font =3.63pt\relax \fontdimen 14\font
+(fontspec)             =3.63pt\relax \fontdimen 15\font =2.89pt\relax
+(fontspec)             \fontdimen 16\font =2.47pt\relax \fontdimen 17\font
+(fontspec)             =2.47pt\relax \fontdimen 18\font =2.5pt\relax
+(fontspec)             \fontdimen 19\font =2.0pt\relax \fontdimen 22\font
+(fontspec)             =2.5pt\relax \fontdimen 20\font =0pt\relax \fontdimen
+(fontspec)             21\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->s*[1.000096459334209]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6-8.5>s*[1.000096459334209]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6>s*[1.000096459334209]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =6.77pt\relax \fontdimen 9\font
+(fontspec)             =3.94pt\relax \fontdimen 10\font =4.44pt\relax
+(fontspec)             \fontdimen 11\font =6.86pt\relax \fontdimen 12\font
+(fontspec)             =3.45pt\relax \fontdimen 13\font =3.63pt\relax
+(fontspec)             \fontdimen 14\font =3.63pt\relax \fontdimen 15\font
+(fontspec)             =2.89pt\relax \fontdimen 16\font =2.47pt\relax
+(fontspec)             \fontdimen 17\font =2.47pt\relax \fontdimen 18\font
+(fontspec)             =2.5pt\relax \fontdimen 19\font =2.0pt\relax \fontdimen
+(fontspec)             22\font =2.5pt\relax \fontdimen 20\font =0pt\relax
+(fontspec)             \fontdimen 21\font =0pt\relax 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.000096459334209]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =6.77pt\relax \fontdimen 9\font
+(fontspec)             =3.94pt\relax \fontdimen 10\font =4.44pt\relax
+(fontspec)             \fontdimen 11\font =6.86pt\relax \fontdimen 12\font
+(fontspec)             =3.45pt\relax \fontdimen 13\font =3.63pt\relax
+(fontspec)             \fontdimen 14\font =3.63pt\relax \fontdimen 15\font
+(fontspec)             =2.89pt\relax \fontdimen 16\font =2.47pt\relax
+(fontspec)             \fontdimen 17\font =2.47pt\relax \fontdimen 18\font
+(fontspec)             =2.5pt\relax \fontdimen 19\font =2.0pt\relax \fontdimen
+(fontspec)             22\font =2.5pt\relax \fontdimen 20\font =0pt\relax
+(fontspec)             \fontdimen 21\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 194.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 194.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 194.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 194.
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998964600422715.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998964600422715.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998964600422715.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998964600422715.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998964600422715.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(3)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmodern-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScriptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=0.9999,FontAdjustment={\fontdimen
+(fontspec)             8\font =0.4pt\relax \fontdimen 9\font =2.0pt\relax
+(fontspec)             \fontdimen 10\font =1.67pt\relax \fontdimen 11\font
+(fontspec)             =1.11pt\relax \fontdimen 12\font =6.0pt\relax
+(fontspec)             \fontdimen 13\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->s*[0.9998964600422715]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6-8.5>s*[0.9998964600422715]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6>s*[0.9998964600422715]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =0.4pt\relax \fontdimen 9\font
+(fontspec)             =2.0pt\relax \fontdimen 10\font =1.67pt\relax
+(fontspec)             \fontdimen 11\font =1.11pt\relax \fontdimen 12\font
+(fontspec)             =6.0pt\relax \fontdimen 13\font =0pt\relax 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9998964600422715]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =0.4pt\relax \fontdimen 9\font
+(fontspec)             =2.0pt\relax \fontdimen 10\font =1.67pt\relax
+(fontspec)             \fontdimen 11\font =1.11pt\relax \fontdimen 12\font
+(fontspec)             =6.0pt\relax \fontdimen 13\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 194.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 194.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 194.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 194.
+LaTeX Info: Redefining \microtypecontext on input line 194.
+Package microtype Info: Applying patch `item' on input line 194.
+Package microtype Info: Applying patch `toc' on input line 194.
+Package microtype Info: Applying patch `eqnum' on input line 194.
+Package microtype Info: Applying patch `footnote' on input line 194.
+Package microtype Info: Applying patch `verbatim' on input line 194.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using protrusion set `basicmath'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
+File: mt-LatinModernRoman.cfg 2021/02/21 v1.1 microtype config. file: Latin Modern Roman (RS)
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+Package hyperref Warning: Height of page (\paperheight) is invalid (0.0pt),
+(hyperref)                using 11in.
+
+Package hyperref Info: Link coloring ON on input line 194.
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 198.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 198.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 198.
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00092pt on input line 198.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00064pt on input line 198.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00046pt on input line 198.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 198.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 198.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 198.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 198.
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 198.
+(/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/Users/sr320/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 199.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 199.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 8.00073pt on input line 199.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.00055pt on input line 199.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.99915pt on input line 199.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 199.
+
+Package hyperref Warning: Ignoring empty anchor on input line 202.
+
+
+Package hyperref Warning: Ignoring empty anchor on input line 203.
+
+
+Package hyperref Warning: Ignoring empty anchor on input line 204.
+
+[1]
+Underfull \hbox (badness 10000) in paragraph at lines 207--216
+\TU/lmr/m/n/10 We investigate genome-wide DNA methylation patterns in Mytilus chilensis from 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--216
+\TU/lmr/m/n/10 two contrasting seedbeds—Cochamó and Yaldad—with the aim of identifying dif- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--216
+\TU/lmr/m/n/10 ferentially methylated regions (DMRs) that may underlie local adaptation. By 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--216
+\TU/lmr/m/n/10 integrating this epigenetic information with known patterns of gene expression and 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--216
+\TU/lmr/m/n/10 environmental context, we seek to illuminate the molecular basis of ecological diver- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--216
+\TU/lmr/m/n/10 gence and contribute new insights into how environmental and anthropogenic forces 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--222
+[]\TU/lmr/m/n/10 This study explores how DNA methylation may help Chilean blue mussels adapt to 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--238
+[]\TU/lmr/m/n/10 Understanding how marine species respond to environmental heterogeneity is critical 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--238
+\TU/lmr/m/n/10 for conserving locally adapted populations and sustaining aquaculture practices in 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--238
+\TU/lmr/m/n/10 the face of global change. The Chilean blue mussel, Mytilus chilensis, a key endemic 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--238
+\TU/lmr/m/n/10 species in southern Chile, supports one of the world’s largest mussel aquaculture 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--238
+\TU/lmr/m/n/10 industries. However, the biological foundation of population-level adaptation in this 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--238
+\TU/lmr/m/n/10 species remains underexplored. Emerging evidence suggests that both genetic and 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--238
+\TU/lmr/m/n/10 epigenetic mechanisms—particularly DNA methylation—may contribute to pheno- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--252
+[]\TU/lmr/m/n/10 Previous studies have revealed extensive transcriptomic and mitochondrial differ- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--252
+\TU/lmr/m/n/10 ences between M. chilensis populations from ecologically distinct seedbeds, such as 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--252
+\TU/lmr/m/n/10 Cochamó (41°S) and Yaldad (43°S), in the inner sea of Chiloé Island. These dif- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--252
+\TU/lmr/m/n/10 ferences include differential expression of genes involved in immunity, metabolism, 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--252
+\TU/lmr/m/n/10 and cellular stress responses, as well as tissue-specific shifts in mitochondrial gene 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--252
+\TU/lmr/m/n/10 expression linked to local environmental pressures, including aquaculture practices 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--252
+\TU/lmr/m/n/10 and variable oxygenation levels (Yévenes et al., 2021, 2022). Experimental evidence 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--252
+\TU/lmr/m/n/10 from reciprocal transplants shows population-specific transcriptional responses and 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--252
+\TU/lmr/m/n/10 reduced growth performance upon translocation, highlighting functional divergence 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--261
+[]\TU/lmr/m/n/10 In addition to gene expression differences, recent work has uncovered epigenetic 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--261
+\TU/lmr/m/n/10 signatures that may contribute to adaptive divergence. Long non-coding RNAs 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--261
+\TU/lmr/m/n/10 (lncRNAs) were found to be differentially expressed between Cochamó and Yal- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--261
+\TU/lmr/m/n/10 dad populations, with associated changes in immune and metabolic gene networks 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--261
+\TU/lmr/m/n/10 (Yévenes et al., 2023). These findings underscore the potential for environmentally 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--261
+\TU/lmr/m/n/10 responsive regulatory elements—including DNA methylation—to mediate local adap- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--272
+[]\TU/lmr/m/n/10 Yet, the role of DNA methylation in shaping population-specific responses in M. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--272
+\TU/lmr/m/n/10 chilensis remains unexplored. DNA methylation, a heritable and reversible epige- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--272
+\TU/lmr/m/n/10 netic modification, can influence gene expression and phenotypic traits without 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--272
+\TU/lmr/m/n/10 altering the underlying DNA sequence. In bivalves, DNA methylation is known to 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--272
+\TU/lmr/m/n/10 affect developmental and immune processes and may be responsive to environmental 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--272
+\TU/lmr/m/n/10 stressors such as hypoxia, toxins, and acidification—conditions that vary across the 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--272
+\TU/lmr/m/n/10 Chilean inner sea and have been shown to modulate gene expression and microbiota 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--272
+\TU/lmr/m/n/10 composition in M. chilensis (Castillo et al., 2017; Montúfar-Romero et al., 2024, 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--282
+[]\TU/lmr/m/n/10 In this study, we investigate genome-wide DNA methylation patterns in Mytilus 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--282
+\TU/lmr/m/n/10 chilensis from two contrasting seedbeds—Cochamó and Yaldad—with the aim of 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--282
+\TU/lmr/m/n/10 identifying differentially methylated regions (DMRs) that may underlie local adap- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--282
+\TU/lmr/m/n/10 tation. By integrating this epigenetic information with known patterns of gene 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--282
+\TU/lmr/m/n/10 expression and environmental context, we seek to illuminate the molecular basis 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--282
+\TU/lmr/m/n/10 of ecological divergence and contribute new insights into how environmental and 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--282
+\TU/lmr/m/n/10 anthropogenic forces shape genomic and epigenomic variation in a key aquaculture 
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 285--294
+[]\TU/lmr/m/n/10 To investigate DNA methylation differences between populations of Mytilus chilensis 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--294
+\TU/lmr/m/n/10 from Cochamó and Yaldad, whole-genome bisulfite sequencing (WGBS) was per- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--294
+\TU/lmr/m/n/10 formed and analyzed using a reproducible, high-throughput bioinformatics workflow. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--294
+\TU/lmr/m/n/10 DNA was extracted from gill tissue of adult individuals and subjected to bisulfite 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--294
+\TU/lmr/m/n/10 treatment and library preparation. Libraries were sequenced on an Illumina NovaSeq 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--294
+\TU/lmr/m/n/10 6000 platform, generating 150 bp paired-end reads, with each sample yielding ap- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--294
+\TU/lmr/m/n/10 proximately 120–160 million read pairs, providing >30× average coverage across the 
+ []
+
+Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--313
+[]\TU/lmr/m/n/10 Raw sequencing reads were processed using the nf-core/methylseq pipeline (ver- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--313
+\TU/lmr/m/n/10 sion 2.5), implemented through Nextflow (version 23.04.1). Reads were aligned to 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--313
+\TU/lmr/m/n/10 the M. chilensis reference genome (MchilensisGenomeV1.fa), a chromosome-level 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--313
+\TU/lmr/m/n/10 assembly comprising 14 scaffolds (Gallardo-Escárate et al. 2023), using Bismark (ver- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--313
+\TU/lmr/m/n/10 sion 0.24.1) with the Bowtie2 aligner (version 2.5.1). Quality trimming was applied 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--313
+\TU/lmr/m/n/10 to reverse reads by hard-clipping the final 10 bases (–clip_r2 10) to mitigate low- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--313
+\TU/lmr/m/n/10 quality base calls at the 3′ end. Methylation calls were extracted using the Bismark 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--313
+\TU/lmr/m/n/10 methylation extractor and aggregated by cytosine context. Pipeline execution was 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--313
+\TU/lmr/m/n/10 configured via a custom .config file to specify HPC resources and run with –resume, 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--313
+\TU/lmr/m/n/10 –with-trace, –with-report, and –with-timeline flags for reproducibility and track- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--313
+\TU/lmr/m/n/10 ing. Output files were stored in a structured directory and included per-base CpG 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--326
+[]\TU/lmr/m/n/10 Downstream analysis was performed in R (version 4.3.1) using the methylKit pack- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--326
+\TU/lmr/m/n/10 age (version 1.10.0). Due to compatibility issues with newer versions of supporting 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--326
+\TU/lmr/m/n/10 libraries, data.table was pinned to version 1.14.10. Methylation coverage files were 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--326
+\TU/lmr/m/n/10 imported using methRead() with the pipeline = “bismarkCoverage” parameter and 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--326
+\TU/lmr/m/n/10 CpG context specified. Six samples—three each from Cochamó (LCo_BSr1–3) and 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--326
+\TU/lmr/m/n/10 Yaldad (LYa_BSr1–3)—were analyzed. Samples were assigned to treatment groups 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--326
+\TU/lmr/m/n/10 with Cochamó designated as the control (treatment = 0) and Yaldad as the treat- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 327--332
+[]\TU/lmr/m/n/10 To ensure data quality, CpG sites were filtered to retain only those with a minimum 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 327--332
+\TU/lmr/m/n/10 read coverage of 10 in all samples, excluding those in the top 2% of coverage val- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 327--332
+\TU/lmr/m/n/10 ues to reduce PCR bias. Sites were then unified across samples using unite() with 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 327--332
+\TU/lmr/m/n/10 min.per.group = 3 and destrand = FALSE to retain strand-specific methylation 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--345
+[]\TU/lmr/m/n/10 Global methylation patterns were assessed using hierarchical clustering (Ward’s 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--345
+\TU/lmr/m/n/10 method on correlation distance) and principal component analysis (PCA) to evalu- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--345
+\TU/lmr/m/n/10 ate sample similarity. Population-level differences in DNA methylation were then 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--345
+\TU/lmr/m/n/10 tested using methylKit’s logistic regression model, incorporating a multinomial 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--345
+\TU/lmr/m/n/10 overdispersion correction (overdispersion = “MN”) to account for biological variabil- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--345
+\TU/lmr/m/n/10 ity. Statistical testing was performed using the Chi-squared test (test = “Chisq”), 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--345
+\TU/lmr/m/n/10 and q-values were adjusted for multiple testing using the SLIM method (adjust = 
+ []
+
+Missing character: There is no ≥ (U+2265) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ≤ (U+2264) in font [lmroman10-regular]:mapping=tex-text;!
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--352
+[]\TU/lmr/m/n/10 Differentially methylated loci (DMLs) were defined as CpG sites with an absolute 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--352
+\TU/lmr/m/n/10 methylation difference ≥25% and FDR-adjusted q-value ≤ 0.05. Separate sets of 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--352
+\TU/lmr/m/n/10 DMLs were extracted to identify hypomethylated (lower in Yaldad) and hyperme- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--352
+\TU/lmr/m/n/10 thylated (higher in Yaldad) loci. Results were saved as tab-delimited text files for 
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 355--361
+[]\TU/lmr/m/n/10 Bisulfite sequencing across six libraries yielded approximately 99.8 million reads 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--361
+\TU/lmr/m/n/10 per sample. Alignment to the reference genome was successful for 60.5–61.4% of 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--361
+\TU/lmr/m/n/10 reads, with 22–24% unaligned and 15–16% aligning ambiguously. After removal of 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--361
+\TU/lmr/m/n/10 duplicate reads (2.2–3.5 million per sample), 57.0–58.8 million uniquely aligned reads 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--371
+[]\TU/lmr/m/n/10 Genome-wide cytosine methylation was assessed in CpG, CHG, and CHH contexts. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--371
+\TU/lmr/m/n/10 Across samples, ~2.1–2.2 billion cytosines were examined. CpG methylation was 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--371
+\TU/lmr/m/n/10 the most prominent, with an average of ~36 million methylated CpGs and ~205 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--371
+\TU/lmr/m/n/10 million unmethylated CpGs per sample, corresponding to a methylation rate of ap- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--371
+\TU/lmr/m/n/10 proximately 15%. In contrast, CHG and CHH methylation was much lower, with 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--371
+\TU/lmr/m/n/10 methylation levels below 1% in both contexts. These patterns are consistent with 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--371
+\TU/lmr/m/n/10 expectations for invertebrate methylomes, where methylation is primarily restricted 
+ []
+
+File: index_files/figure-pdf/unnamed-chunk-1-1.pdf Graphic file (type pdf)
+<use index_files/figure-pdf/unnamed-chunk-1-1.pdf>
+
+Overfull \hbox (23.99902pt too wide) in paragraph at lines 372--373
+[][]  
+ []
+
+
+LaTeX Warning: File `index_files/mediabag/DML_analysis_chromos.png' not found on input line 382.
+
+! Unable to load picture or PDF file 'index_files/mediabag/DML_analysis_chromos.png'.
+<to be read again> 
+                   }
+l.382 ...files/mediabag/DML_analysis_chromos.png}}
+                                                   
+Here is how much of TeX's memory you used:
+ 21956 strings out of 478639
+ 407076 string characters out of 5846521
+ 1863704 words of memory out of 5000000
+ 41748 multiletter control sequences out of 15000+600000
+ 518114 words of font info for 83 fonts, out of 8000000 for 9000
+ 20 hyphenation exceptions out of 8191
+ 98i,8n,121p,1002b,354s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on index.pdf (3 pages).
