@@ -1,0 +1,18 @@
+{
+  "notebooks/explore-earthquakes.qmd": {
+    "explore-earthquakes.embed.ipynb": "1a0f8f48",
+    "explore-earthquakes.out.ipynb": "83c8aac5",
+    "explore-earthquakes-preview.html": "2366e730",
+    "explore-earthquakes.subarticle.xml": "dfa60e66"
+  },
+  "index.qmd": {
+    "index.embed.ipynb": "7a6d48c8",
+    "index.out.ipynb": "2a615bf6",
+    "index-preview.html": "3f163d8b",
+    "index.html": "333c155d",
+    "index.docx": "a9b3cd1b",
+    "index.subarticle.xml": "722437e3",
+    "index.xml": "dadee275",
+    "index.tex": "22d4d003"
+  }
+}
