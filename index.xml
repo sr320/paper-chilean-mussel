@@ -448,7 +448,7 @@ shape genomic and epigenomic variation in a key aquaculture species.</p>
   </body>
   <back>
 </back>
-  <sub-article article-type="notebook" id="nb-6-nb-article">
+  <sub-article article-type="notebook" id="nb-8-nb-article">
     <front-stub>
       <title-group>
         <article-title>DNA methylation in Mytilus chilensis</article-title>
@@ -708,223 +708,229 @@ ggplot(dml_counts, aes(x = chr, y = DMLs, fill = status)) +
           </sec>
           <sec id="location-nb-article">
             <title>Location</title>
-            <ref-list>
-              <ref id="ref-yevenes2021adaptive-nb-article">
-                <element-citation publication-type="article-journal">
-                  <person-group person-group-type="author">
-                    <name>
-                      <surname>Yévenes</surname>
-                      <given-names>M</given-names>
-                    </name>
-                    <name>
-                      <surname>Núñez-Acuña</surname>
-                      <given-names>G</given-names>
-                    </name>
-                    <name>
-                      <surname>Gallardo-Escárate</surname>
-                      <given-names>C</given-names>
-                    </name>
-                    <name>
-                      <surname>Gajardo</surname>
-                      <given-names>G</given-names>
-                    </name>
-                  </person-group>
-                  <article-title>Adaptive differences in gene expression in farm-impacted seedbeds of the native blue mussel *mytilus chilensis*</article-title>
-                  <source>Frontiers in Genetics</source>
-                  <year iso-8601-date="2021">2021</year>
-                  <volume>12</volume>
-                  <pub-id pub-id-type="doi">10.3389/fgene.2021.666539</pub-id>
-                  <fpage>666539</fpage>
-                  <lpage/>
-                </element-citation>
-              </ref>
-              <ref id="ref-yevenes2022adaptive-nb-article">
-                <element-citation publication-type="article-journal">
-                  <person-group person-group-type="author">
-                    <name>
-                      <surname>Yévenes</surname>
-                      <given-names>M</given-names>
-                    </name>
-                    <name>
-                      <surname>Núñez-Acuña</surname>
-                      <given-names>G</given-names>
-                    </name>
-                    <name>
-                      <surname>Gallardo-Escárate</surname>
-                      <given-names>C</given-names>
-                    </name>
-                    <name>
-                      <surname>Gajardo</surname>
-                      <given-names>G</given-names>
-                    </name>
-                  </person-group>
-                  <article-title>Adaptive mitochondrial genome functioning in ecologically different farm-impacted natural seedbeds of the endemic blue mussel *mytilus chilensis*</article-title>
-                  <source>Comparative Biochemistry and Physiology Part D: Genomics and Proteomics</source>
-                  <year iso-8601-date="2022">2022</year>
-                  <volume>42</volume>
-                  <pub-id pub-id-type="doi">10.1016/j.cbd.2021.100955</pub-id>
-                  <fpage>100955</fpage>
-                  <lpage/>
-                </element-citation>
-              </ref>
-              <ref id="ref-yevenes2025decoding-nb-article">
-                <element-citation publication-type="article-journal">
-                  <person-group person-group-type="author">
-                    <name>
-                      <surname>Yévenes</surname>
-                      <given-names>M</given-names>
-                    </name>
-                    <name>
-                      <surname>Gajardo</surname>
-                      <given-names>G</given-names>
-                    </name>
-                    <name>
-                      <surname>Gallardo-Escárate</surname>
-                      <given-names>C</given-names>
-                    </name>
-                  </person-group>
-                  <article-title>Decoding local adaptation in the exploited native marine mussel *mytilus chilensis*: Genomic evidence from a reciprocal transplant experiment</article-title>
-                  <source>International Journal of Molecular Sciences</source>
-                  <year iso-8601-date="2025">2025</year>
-                  <volume>26</volume>
-                  <issue>3</issue>
-                  <pub-id pub-id-type="doi">10.3390/ijms26030931</pub-id>
-                  <fpage>931</fpage>
-                  <lpage/>
-                </element-citation>
-              </ref>
-              <ref id="ref-yevenes2023epigenetic-nb-article">
-                <element-citation publication-type="article-journal">
-                  <person-group person-group-type="author">
-                    <name>
-                      <surname>Yévenes</surname>
-                      <given-names>M</given-names>
-                    </name>
-                    <name>
-                      <surname>Gallardo-Escárate</surname>
-                      <given-names>C</given-names>
-                    </name>
-                    <name>
-                      <surname>Gajardo</surname>
-                      <given-names>G</given-names>
-                    </name>
-                  </person-group>
-                  <article-title>Epigenetic variation mediated by lncRNAs accounts for adaptive genomic differentiation of the endemic blue mussel *mytilus chilensis*</article-title>
-                  <source>Heliyon</source>
-                  <year iso-8601-date="2023">2023</year>
-                  <volume>10</volume>
-                  <issue>1</issue>
-                  <pub-id pub-id-type="doi">10.1016/j.heliyon.2023.e23695</pub-id>
-                  <fpage>e23695</fpage>
-                  <lpage/>
-                </element-citation>
-              </ref>
-              <ref id="ref-montufar2024hypoxia-nb-article">
-                <element-citation publication-type="article-journal">
-                  <person-group person-group-type="author">
-                    <name>
-                      <surname>Montúfar-Romero</surname>
-                      <given-names>M</given-names>
-                    </name>
-                    <name>
-                      <surname>Valenzuela-Muñoz</surname>
-                      <given-names>V</given-names>
-                    </name>
-                    <name>
-                      <surname>Valenzuela-Miranda</surname>
-                      <given-names>D</given-names>
-                    </name>
-                    <name>
-                      <surname>Gallardo-Escárate</surname>
-                      <given-names>C</given-names>
-                    </name>
-                  </person-group>
-                  <article-title>Hypoxia in the blue mussel *mytilus chilensis* induces a transcriptome shift associated with endoplasmic reticulum stress, metabolism, and immune response</article-title>
-                  <source>Genes</source>
-                  <year iso-8601-date="2024">2024</year>
-                  <volume>15</volume>
-                  <issue>6</issue>
-                  <pub-id pub-id-type="doi">10.3390/genes15060658</pub-id>
-                  <fpage>658</fpage>
-                  <lpage/>
-                </element-citation>
-              </ref>
-              <ref id="ref-castillo2017ocean-nb-article">
-                <element-citation publication-type="article-journal">
-                  <person-group person-group-type="author">
-                    <name>
-                      <surname>Castillo</surname>
-                      <given-names>N</given-names>
-                    </name>
-                    <name>
-                      <surname>Saavedra</surname>
-                      <given-names>L M</given-names>
-                    </name>
-                    <name>
-                      <surname>Vargas</surname>
-                      <given-names>C A</given-names>
-                    </name>
-                    <name>
-                      <surname>Gallardo-Escárate</surname>
-                      <given-names>C</given-names>
-                    </name>
-                    <name>
-                      <surname>Détrée</surname>
-                      <given-names>C</given-names>
-                    </name>
-                  </person-group>
-                  <article-title>Ocean acidification and pathogen exposure modulate the immune response of the edible mussel *mytilus chilensis*</article-title>
-                  <source>Fish &amp; Shellfish Immunology</source>
-                  <year iso-8601-date="2017">2017</year>
-                  <volume>70</volume>
-                  <pub-id pub-id-type="doi">10.1016/j.fsi.2017.08.047</pub-id>
-                  <fpage>149</fpage>
-                  <lpage>155</lpage>
-                </element-citation>
-              </ref>
-              <ref id="ref-montufar2025microbiota-nb-article">
-                <element-citation publication-type="article-journal">
-                  <person-group person-group-type="author">
-                    <name>
-                      <surname>Montúfar-Romero</surname>
-                      <given-names>M</given-names>
-                    </name>
-                    <name>
-                      <surname>Valenzuela-Miranda</surname>
-                      <given-names>D</given-names>
-                    </name>
-                    <name>
-                      <surname>Valenzuela-Muñoz</surname>
-                      <given-names>V</given-names>
-                    </name>
-                    <name>
-                      <surname>Morales-Rivera</surname>
-                      <given-names>M F</given-names>
-                    </name>
-                    <name>
-                      <surname>Gallardo-Escárate</surname>
-                      <given-names>C</given-names>
-                    </name>
-                  </person-group>
-                  <article-title>Microbiota dysbiosis in *mytilus chilensis* is induced by hypoxia, leading to molecular and functional consequences</article-title>
-                  <source>Microorganisms</source>
-                  <year iso-8601-date="2025">2025</year>
-                  <volume>13</volume>
-                  <issue>4</issue>
-                  <pub-id pub-id-type="doi">10.3390/microorganisms13040825</pub-id>
-                  <fpage>825</fpage>
-                  <lpage/>
-                </element-citation>
-              </ref>
-            </ref-list>
+            <sec specific-use="notebook-content">
+              <preformat>src="https://oystergen.es/jbrowse/"
+width="100%"
+height="600"</preformat>
+            </sec>
           </sec>
         </sec>
       </sec>
     </body>
     <back>
-</back>
+      <ref-list>
+        <title/>
+        <ref id="ref-yevenes2021adaptive-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Yévenes</surname>
+                <given-names>M</given-names>
+              </name>
+              <name>
+                <surname>Núñez-Acuña</surname>
+                <given-names>G</given-names>
+              </name>
+              <name>
+                <surname>Gallardo-Escárate</surname>
+                <given-names>C</given-names>
+              </name>
+              <name>
+                <surname>Gajardo</surname>
+                <given-names>G</given-names>
+              </name>
+            </person-group>
+            <article-title>Adaptive differences in gene expression in farm-impacted seedbeds of the native blue mussel *mytilus chilensis*</article-title>
+            <source>Frontiers in Genetics</source>
+            <year iso-8601-date="2021">2021</year>
+            <volume>12</volume>
+            <pub-id pub-id-type="doi">10.3389/fgene.2021.666539</pub-id>
+            <fpage>666539</fpage>
+            <lpage/>
+          </element-citation>
+        </ref>
+        <ref id="ref-yevenes2022adaptive-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Yévenes</surname>
+                <given-names>M</given-names>
+              </name>
+              <name>
+                <surname>Núñez-Acuña</surname>
+                <given-names>G</given-names>
+              </name>
+              <name>
+                <surname>Gallardo-Escárate</surname>
+                <given-names>C</given-names>
+              </name>
+              <name>
+                <surname>Gajardo</surname>
+                <given-names>G</given-names>
+              </name>
+            </person-group>
+            <article-title>Adaptive mitochondrial genome functioning in ecologically different farm-impacted natural seedbeds of the endemic blue mussel *mytilus chilensis*</article-title>
+            <source>Comparative Biochemistry and Physiology Part D: Genomics and Proteomics</source>
+            <year iso-8601-date="2022">2022</year>
+            <volume>42</volume>
+            <pub-id pub-id-type="doi">10.1016/j.cbd.2021.100955</pub-id>
+            <fpage>100955</fpage>
+            <lpage/>
+          </element-citation>
+        </ref>
+        <ref id="ref-yevenes2025decoding-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Yévenes</surname>
+                <given-names>M</given-names>
+              </name>
+              <name>
+                <surname>Gajardo</surname>
+                <given-names>G</given-names>
+              </name>
+              <name>
+                <surname>Gallardo-Escárate</surname>
+                <given-names>C</given-names>
+              </name>
+            </person-group>
+            <article-title>Decoding local adaptation in the exploited native marine mussel *mytilus chilensis*: Genomic evidence from a reciprocal transplant experiment</article-title>
+            <source>International Journal of Molecular Sciences</source>
+            <year iso-8601-date="2025">2025</year>
+            <volume>26</volume>
+            <issue>3</issue>
+            <pub-id pub-id-type="doi">10.3390/ijms26030931</pub-id>
+            <fpage>931</fpage>
+            <lpage/>
+          </element-citation>
+        </ref>
+        <ref id="ref-yevenes2023epigenetic-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Yévenes</surname>
+                <given-names>M</given-names>
+              </name>
+              <name>
+                <surname>Gallardo-Escárate</surname>
+                <given-names>C</given-names>
+              </name>
+              <name>
+                <surname>Gajardo</surname>
+                <given-names>G</given-names>
+              </name>
+            </person-group>
+            <article-title>Epigenetic variation mediated by lncRNAs accounts for adaptive genomic differentiation of the endemic blue mussel *mytilus chilensis*</article-title>
+            <source>Heliyon</source>
+            <year iso-8601-date="2023">2023</year>
+            <volume>10</volume>
+            <issue>1</issue>
+            <pub-id pub-id-type="doi">10.1016/j.heliyon.2023.e23695</pub-id>
+            <fpage>e23695</fpage>
+            <lpage/>
+          </element-citation>
+        </ref>
+        <ref id="ref-montufar2024hypoxia-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Montúfar-Romero</surname>
+                <given-names>M</given-names>
+              </name>
+              <name>
+                <surname>Valenzuela-Muñoz</surname>
+                <given-names>V</given-names>
+              </name>
+              <name>
+                <surname>Valenzuela-Miranda</surname>
+                <given-names>D</given-names>
+              </name>
+              <name>
+                <surname>Gallardo-Escárate</surname>
+                <given-names>C</given-names>
+              </name>
+            </person-group>
+            <article-title>Hypoxia in the blue mussel *mytilus chilensis* induces a transcriptome shift associated with endoplasmic reticulum stress, metabolism, and immune response</article-title>
+            <source>Genes</source>
+            <year iso-8601-date="2024">2024</year>
+            <volume>15</volume>
+            <issue>6</issue>
+            <pub-id pub-id-type="doi">10.3390/genes15060658</pub-id>
+            <fpage>658</fpage>
+            <lpage/>
+          </element-citation>
+        </ref>
+        <ref id="ref-castillo2017ocean-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Castillo</surname>
+                <given-names>N</given-names>
+              </name>
+              <name>
+                <surname>Saavedra</surname>
+                <given-names>L M</given-names>
+              </name>
+              <name>
+                <surname>Vargas</surname>
+                <given-names>C A</given-names>
+              </name>
+              <name>
+                <surname>Gallardo-Escárate</surname>
+                <given-names>C</given-names>
+              </name>
+              <name>
+                <surname>Détrée</surname>
+                <given-names>C</given-names>
+              </name>
+            </person-group>
+            <article-title>Ocean acidification and pathogen exposure modulate the immune response of the edible mussel *mytilus chilensis*</article-title>
+            <source>Fish &amp; Shellfish Immunology</source>
+            <year iso-8601-date="2017">2017</year>
+            <volume>70</volume>
+            <pub-id pub-id-type="doi">10.1016/j.fsi.2017.08.047</pub-id>
+            <fpage>149</fpage>
+            <lpage>155</lpage>
+          </element-citation>
+        </ref>
+        <ref id="ref-montufar2025microbiota-nb-article">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Montúfar-Romero</surname>
+                <given-names>M</given-names>
+              </name>
+              <name>
+                <surname>Valenzuela-Miranda</surname>
+                <given-names>D</given-names>
+              </name>
+              <name>
+                <surname>Valenzuela-Muñoz</surname>
+                <given-names>V</given-names>
+              </name>
+              <name>
+                <surname>Morales-Rivera</surname>
+                <given-names>M F</given-names>
+              </name>
+              <name>
+                <surname>Gallardo-Escárate</surname>
+                <given-names>C</given-names>
+              </name>
+            </person-group>
+            <article-title>Microbiota dysbiosis in *mytilus chilensis* is induced by hypoxia, leading to molecular and functional consequences</article-title>
+            <source>Microorganisms</source>
+            <year iso-8601-date="2025">2025</year>
+            <volume>13</volume>
+            <issue>4</issue>
+            <pub-id pub-id-type="doi">10.3390/microorganisms13040825</pub-id>
+            <fpage>825</fpage>
+            <lpage/>
+          </element-citation>
+        </ref>
+      </ref-list>
+    </back>
   </sub-article>
-  <sub-article article-type="notebook" id="nb-2-nb-1">
+  <sub-article article-type="notebook" id="nb-4-nb-1">
     <front-stub>
       <title-group>
         <article-title>Jbrowse</article-title>
@@ -968,7 +974,7 @@ ggplot(dml_counts, aes(x = chr, y = DMLs, fill = status)) +
     <back>
 </back>
   </sub-article>
-  <sub-article article-type="notebook" id="nb-4-nb-2">
+  <sub-article article-type="notebook" id="nb-6-nb-2">
     <front-stub>
       <title-group>
         <article-title>Explore Earthquakes</article-title>
