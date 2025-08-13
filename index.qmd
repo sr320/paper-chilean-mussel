@@ -102,13 +102,6 @@ ggplot(dml_counts, aes(x = chr, y = DMLs, fill = status)) +
 
 ### Location
 
-::: {.iframe width="100%" height="600" src="https://oystergen.es/jbrowse/?session=local-bvP7wnGwV61HklHonf6gW"}
-:::
 
+<iframe src="https://oystergen.es/jbrowse/" width="100%" height="600"></iframe>
 
-
-```{iframe}
-src="https://oystergen.es/jbrowse/"
-width="100%"
-height="600"
-```
