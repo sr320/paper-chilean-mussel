@@ -102,6 +102,6 @@ ggplot(dml_counts, aes(x = chr, y = DMLs, fill = status)) +
 
 ### Location
 
+![dis](https://gannet.fish.washington.edu/v1_web/owlshell/bu-github/project-chilean-mussel/output/15-DML-location/DML_analysis_chromosome_feature_heatmap.png)
 
-<iframe src="https://oystergen.es/jbrowse/" width="100%" height="600"></iframe>
 
