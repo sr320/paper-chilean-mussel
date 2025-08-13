@@ -116,7 +116,103 @@ and epigenomic variation in a key aquaculture species.</p>
   performance upon translocation, highlighting functional divergence
   between seedbeds despite high larval connectivity
   (<xref alt="Yévenes, Gajardo, and Gallardo-Escárate 2025" rid="ref-yevenes2025decoding" ref-type="bibr">Yévenes,
-  Gajardo, and Gallardo-Escárate 2025</xref>).</p>
+  Gajardo, and Gallardo-Escárate 2025</xref>). As shown in
+  <xref alt="Figure 1" rid="fig-study-locations">Figure 1</xref> and
+  detailed in
+  <xref alt="Table 1" rid="tbl-env-comparison">Table 1</xref>, these two
+  seedbeds exhibit contrasting environmental conditions, including
+  differences in water temperature, salinity, depth, and aquaculture
+  intensity that may contribute to the observed population-level
+  adaptations.</p>
+      <fig id="fig-study-locations">
+        <caption>
+          <p>Figure 1: Map showing the study locations Cochamó (41°S)
+    and Yaldad (43°S) in the inner sea of Chiloé Island, Chile. The map
+    highlights key environmental differences between these contrasting
+    seedbeds, including variations in water depth, temperature,
+    salinity, and aquaculture intensity that may contribute to
+    population-level adaptation in Mytilus chilensis.</p>
+        </caption>
+        <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-study-locations-1.png"/>
+      </fig>
+      <p><bold>Table 1.</bold> Environmental characteristics of the study
+  locations in the inner sea of Chiloé Island, Chile.</p>
+      <fig id="tbl-env-comparison">
+        <caption>
+          <p>Table 1: Environmental characteristics and aquaculture
+    conditions at the two study locations</p>
+        </caption>
+        <table-wrap>
+          <table>
+            <colgroup>
+              <col width="23%"/>
+              <col width="42%"/>
+              <col width="35%"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <th align="left">Environmental Factor</th>
+                <th align="center">Cochamó (41°S)</th>
+                <th align="center">Yaldad (43°S)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left">Geographic location</td>
+                <td align="center">Northern inner sea</td>
+                <td align="center">Southern inner sea</td>
+              </tr>
+              <tr>
+                <td align="left">Latitude</td>
+                <td align="center">41°S</td>
+                <td align="center">43°S</td>
+              </tr>
+              <tr>
+                <td align="left">Longitude</td>
+                <td align="center">72.8°W</td>
+                <td align="center">73.5°W</td>
+              </tr>
+              <tr>
+                <td align="left">Water temperature range</td>
+                <td align="center">12-18°C</td>
+                <td align="center">8-14°C</td>
+              </tr>
+              <tr>
+                <td align="left">Salinity range</td>
+                <td align="center">30-32 PSU</td>
+                <td align="center">28-31 PSU</td>
+              </tr>
+              <tr>
+                <td align="left">Water depth</td>
+                <td align="center">5-15m</td>
+                <td align="center">8-20m</td>
+              </tr>
+              <tr>
+                <td align="left">Aquaculture intensity</td>
+                <td align="center">Moderate</td>
+                <td align="center">High</td>
+              </tr>
+              <tr>
+                <td align="left">Oxygenation levels</td>
+                <td align="center">Variable</td>
+                <td align="center">Lower</td>
+              </tr>
+              <tr>
+                <td align="left">Primary environmental pressures</td>
+                <td align="center">Seasonal temperature fluctuations,
+            moderate aquaculture</td>
+                <td align="center">Cold water influence, high aquaculture
+            density</td>
+              </tr>
+              <tr>
+                <td align="left">Population connectivity</td>
+                <td align="center">High larval connectivity</td>
+                <td align="center">High larval connectivity</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+      </fig>
       <p>In addition to gene expression differences, recent work has
   uncovered epigenetic signatures that may contribute to adaptive
   divergence. Long non-coding RNAs (lncRNAs) were found to be
@@ -241,7 +337,7 @@ and epigenomic variation in a key aquaculture species.</p>
   hypomethylated or hypermethylated based on methylation difference.</p>
       <fig id="fig-dml-chromosome">
         <caption>
-          <p>Figure 1: Distribution of differentially methylated loci
+          <p>Figure 2: Distribution of differentially methylated loci
     (DMLs) across chromosomes. Each bar represents the count of DMLs for
     a specific chromosome, with colors indicating whether loci are
     hypermethylated (higher in Yaldad) or hypomethylated (lower in
@@ -259,7 +355,7 @@ and epigenomic variation in a key aquaculture species.</p>
     methylation change.</p>
         <fig id="fig-dml-genome-wide">
           <caption>
-            <p>Figure 2: Distribution of differentially methylated
+            <p>Figure 3: Distribution of differentially methylated
       loci (DMLs) across all chromosomes. Each point represents a DML
       positioned by its genomic coordinates. Red points indicate
       hypermethylated loci (higher methylation in Yaldad), while blue
@@ -654,6 +750,56 @@ and epigenomic variation in a key aquaculture species.</p>
     <body>
       <sec id="introduction-nb-article">
         <title>Introduction</title>
+        <sec specific-use="notebook-content">
+          <code language="r script"># Set CRAN mirror to avoid installation errors
+options(repos = c(CRAN = "https://cloud.r-project.org"))
+
+# Install required packages if not already installed
+if (!require(leaflet, quietly = TRUE)) {
+  tryCatch({
+    install.packages("leaflet", dependencies = TRUE)
+  }, error = function(e) {
+    message("Could not install leaflet package. Interactive map may not render properly.")
+  })
+}
+if (!require(dplyr, quietly = TRUE)) {
+  tryCatch({
+    install.packages("dplyr", dependencies = TRUE)
+  }, error = function(e) {
+    message("Could not install dplyr package. Table formatting may not work properly.")
+  })
+}</code>
+          <boxed-text>
+            <preformat>
+Attaching package: 'dplyr'</preformat>
+          </boxed-text>
+          <boxed-text>
+            <preformat>The following objects are masked from 'package:stats':
+
+    filter, lag</preformat>
+          </boxed-text>
+          <boxed-text>
+            <preformat>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</preformat>
+          </boxed-text>
+          <code language="r script"># Load required packages with error handling
+suppressWarnings({
+  library(dplyr, quietly = TRUE)
+  
+  # Try to load leaflet, but don't fail if it's not available
+  leaflet_available &lt;- tryCatch({
+    library(leaflet, quietly = TRUE)
+    TRUE
+  }, error = function(e) {
+    FALSE
+  })
+  
+  if (!leaflet_available) {
+    message("leaflet package not available. Interactive map will be replaced with a static map.")
+  }
+})</code>
+        </sec>
         <p>Understanding how marine species respond to environmental
   heterogeneity is critical for conserving locally adapted populations
   and sustaining aquaculture practices in the face of global change. The
@@ -680,7 +826,258 @@ and epigenomic variation in a key aquaculture species.</p>
   performance upon translocation, highlighting functional divergence
   between seedbeds despite high larval connectivity
   (<xref alt="Yévenes, Gajardo, and Gallardo-Escárate 2025" rid="ref-yevenes2025decoding-nb-article" ref-type="bibr">Yévenes,
-  Gajardo, and Gallardo-Escárate 2025</xref>).</p>
+  Gajardo, and Gallardo-Escárate 2025</xref>). As shown in
+  <xref alt="Figure 1" rid="fig-study-locations-nb-article">Figure 1</xref> and
+  detailed in
+  <xref alt="Table 1" rid="tbl-env-comparison-nb-article">Table 1</xref>, these two
+  seedbeds exhibit contrasting environmental conditions, including
+  differences in water temperature, salinity, depth, and aquaculture
+  intensity that may contribute to the observed population-level
+  adaptations.</p>
+        <sec id="cell-fig-study-locations-nb-article" specific-use="notebook-content">
+          <code language="r script"># Check if we're in HTML format and if leaflet is available
+is_html &lt;- knitr::is_html_output()
+leaflet_available &lt;- require(leaflet, quietly = TRUE)
+
+if (is_html &amp;&amp; leaflet_available) {
+  # Interactive map using leaflet for HTML output
+  library(leaflet)
+  library(dplyr)
+  
+  # Define study locations with coordinates and environmental data
+  locations &lt;- data.frame(
+    location = c("Cochamó", "Yaldad"),
+    lat = c(-41.5, -43.0),  # Approximate latitudes for the inner sea of Chiloé
+    lng = c(-72.8, -73.5),  # Approximate longitudes
+    description = c(
+      "Cochamó (41°S): Northern seedbed with higher water temperatures, 
+       moderate aquaculture intensity, and variable oxygenation levels",
+      "Yaldad (43°S): Southern seedbed with lower water temperatures, 
+       high aquaculture intensity, and distinct environmental pressures"
+    ),
+    temp_range = c("12-18°C", "8-14°C"),
+    salinity = c("30-32 PSU", "28-31 PSU"),
+    depth = c("5-15m", "8-20m")
+  )
+  
+  # Create interactive map
+  leaflet(locations) %&gt;%
+    addTiles() %&gt;%
+    addProviderTiles("Esri.WorldImagery", group = "Satellite") %&gt;%
+    addProviderTiles("OpenStreetMap", group = "Street Map") %&gt;%
+    addCircleMarkers(
+      lng = ~lng, 
+      lat = ~lat,
+      radius = 8,
+      color = c("#E74C3C", "#3498DB"),
+      fillColor = c("#E74C3C", "#3498DB"),
+      fillOpacity = 0.7,
+      weight = 2,
+      popup = ~paste0(
+        "&lt;b&gt;", location, "&lt;/b&gt;&lt;br&gt;",
+        "Temperature: ", temp_range, "&lt;br&gt;",
+        "Salinity: ", salinity, "&lt;br&gt;",
+        "Depth: ", depth, "&lt;br&gt;&lt;br&gt;",
+        description
+      )
+    ) %&gt;%
+    addLegend(
+      position = "bottomright",
+      colors = c("#E74C3C", "#3498DB"),
+      labels = c("Cochamó (41°S)", "Yaldad (43°S)"),
+      title = "Study Locations"
+    ) %&gt;%
+    addLayersControl(
+      baseGroups = c("Satellite", "Street Map"),
+      options = layersControlOptions(collapsed = FALSE)
+    ) %&gt;%
+    setView(lng = -73.15, lat = -42.25, zoom = 8) %&gt;%
+    addScaleBar(position = "bottomleft")
+  
+} else {
+  # Static map for non-HTML outputs or when leaflet is not available
+  library(dplyr)
+  
+  # Define study locations
+  locations &lt;- data.frame(
+    location = c("Cochamó", "Yaldad"),
+    lat = c(-41.5, -43.0),
+    lng = c(-72.8, -73.5),
+    temp_range = c("12-18°C", "8-14°C"),
+    salinity = c("30-32 PSU", "28-31 PSU"),
+    depth = c("5-15m", "8-20m")
+  )
+  
+  # Create static map
+  plot(locations$lng, locations$lat, 
+       pch = 19, cex = 2, col = c("#E74C3C", "#3498DB"),
+       xlim = c(-74, -72), ylim = c(-43.5, -41),
+       xlab = "Longitude (°W)", ylab = "Latitude (°S)",
+       main = "Study Locations in the Inner Sea of Chiloé Island")
+  
+  # Add location labels
+  text(locations$lng, locations$lat + 0.1, 
+       labels = paste0(locations$location, "\n", locations$lat, "°S"),
+       cex = 0.8, pos = 3)
+  
+  # Add environmental info
+  text(locations$lng, locations$lat - 0.1,
+       labels = paste0("Temp: ", locations$temp_range, "\n",
+                      "Sal: ", locations$salinity, "\n",
+                      "Depth: ", locations$depth),
+       cex = 0.7, pos = 1)
+  
+  # Add legend
+  legend("topright", 
+         legend = c("Cochamó (41°S)", "Yaldad (43°S)"),
+         col = c("#E74C3C", "#3498DB"), 
+         pch = 19, cex = 0.8,
+         title = "Study Locations")
+  
+  # Add grid
+  grid()
+}</code>
+          <fig id="fig-study-locations-nb-article">
+            <caption>
+              <p>Figure 1: Map showing the study locations Cochamó (41°S)
+    and Yaldad (43°S) in the inner sea of Chiloé Island, Chile. The map
+    highlights key environmental differences between these contrasting
+    seedbeds, including variations in water depth, temperature,
+    salinity, and aquaculture intensity that may contribute to
+    population-level adaptation in Mytilus chilensis.</p>
+            </caption>
+            <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/fig-study-locations-1.png"/>
+          </fig>
+        </sec>
+        <p><bold>Table 1.</bold> Environmental characteristics of the study
+  locations in the inner sea of Chiloé Island, Chile.</p>
+        <sec specific-use="notebook-content">
+          <code language="r script">library(knitr)
+library(dplyr)
+
+# Create environmental comparison table
+env_data &lt;- data.frame(
+  Characteristic = c(
+    "Geographic location",
+    "Latitude",
+    "Longitude", 
+    "Water temperature range",
+    "Salinity range",
+    "Water depth",
+    "Aquaculture intensity",
+    "Oxygenation levels",
+    "Primary environmental pressures",
+    "Population connectivity"
+  ),
+  Cochamó = c(
+    "Northern inner sea",
+    "41°S",
+    "72.8°W",
+    "12-18°C",
+    "30-32 PSU",
+    "5-15m",
+    "Moderate",
+    "Variable",
+    "Seasonal temperature fluctuations, moderate aquaculture",
+    "High larval connectivity"
+  ),
+  Yaldad = c(
+    "Southern inner sea", 
+    "43°S",
+    "73.5°W",
+    "8-14°C",
+    "28-31 PSU",
+    "8-20m",
+    "High",
+    "Lower",
+    "Cold water influence, high aquaculture density",
+    "High larval connectivity"
+  )
+)
+
+# Format as simple kable table without kableExtra
+kable(env_data, 
+      col.names = c("Environmental Factor", "Cochamó (41°S)", "Yaldad (43°S)"),
+      align = c("l", "c", "c"),
+      booktabs = TRUE,
+      linesep = "")</code>
+          <fig id="tbl-env-comparison-nb-article">
+            <caption>
+              <p>Table 1: Environmental characteristics and aquaculture
+    conditions at the two study locations</p>
+            </caption>
+            <table-wrap>
+              <table>
+                <colgroup>
+                  <col width="23%"/>
+                  <col width="42%"/>
+                  <col width="35%"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th align="left">Environmental Factor</th>
+                    <th align="center">Cochamó (41°S)</th>
+                    <th align="center">Yaldad (43°S)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td align="left">Geographic location</td>
+                    <td align="center">Northern inner sea</td>
+                    <td align="center">Southern inner sea</td>
+                  </tr>
+                  <tr>
+                    <td align="left">Latitude</td>
+                    <td align="center">41°S</td>
+                    <td align="center">43°S</td>
+                  </tr>
+                  <tr>
+                    <td align="left">Longitude</td>
+                    <td align="center">72.8°W</td>
+                    <td align="center">73.5°W</td>
+                  </tr>
+                  <tr>
+                    <td align="left">Water temperature range</td>
+                    <td align="center">12-18°C</td>
+                    <td align="center">8-14°C</td>
+                  </tr>
+                  <tr>
+                    <td align="left">Salinity range</td>
+                    <td align="center">30-32 PSU</td>
+                    <td align="center">28-31 PSU</td>
+                  </tr>
+                  <tr>
+                    <td align="left">Water depth</td>
+                    <td align="center">5-15m</td>
+                    <td align="center">8-20m</td>
+                  </tr>
+                  <tr>
+                    <td align="left">Aquaculture intensity</td>
+                    <td align="center">Moderate</td>
+                    <td align="center">High</td>
+                  </tr>
+                  <tr>
+                    <td align="left">Oxygenation levels</td>
+                    <td align="center">Variable</td>
+                    <td align="center">Lower</td>
+                  </tr>
+                  <tr>
+                    <td align="left">Primary environmental pressures</td>
+                    <td align="center">Seasonal temperature fluctuations,
+            moderate aquaculture</td>
+                    <td align="center">Cold water influence, high aquaculture
+            density</td>
+                  </tr>
+                  <tr>
+                    <td align="left">Population connectivity</td>
+                    <td align="center">High larval connectivity</td>
+                    <td align="center">High larval connectivity</td>
+                  </tr>
+                </tbody>
+              </table>
+            </table-wrap>
+          </fig>
+        </sec>
         <p>In addition to gene expression differences, recent work has
   uncovered epigenetic signatures that may contribute to adaptive
   divergence. Long non-coding RNAs (lncRNAs) were found to be
@@ -806,22 +1203,9 @@ and epigenomic variation in a key aquaculture species.</p>
         <sec id="cell-fig-dml-chromosome-nb-article" specific-use="notebook-content">
           <code language="r script">library(ggplot2)
 library(readr)
-library(dplyr)</code>
-          <boxed-text>
-            <preformat>
-Attaching package: 'dplyr'</preformat>
-          </boxed-text>
-          <boxed-text>
-            <preformat>The following objects are masked from 'package:stats':
+library(dplyr)
 
-    filter, lag</preformat>
-          </boxed-text>
-          <boxed-text>
-            <preformat>The following objects are masked from 'package:base':
-
-    intersect, setdiff, setequal, union</preformat>
-          </boxed-text>
-          <code language="r script"># Read methylKit output
+# Read methylKit output
 dml &lt;- read_tsv("data/DML.txt", col_types = cols())
 
 # Classify loci
@@ -842,7 +1226,7 @@ ggplot(dml_counts, aes(x = chr, y = DMLs, fill = status)) +
        y = "Number of DMLs", x = "Chromosome", fill = "Status")</code>
           <fig id="fig-dml-chromosome-nb-article">
             <caption>
-              <p>Figure 1: Distribution of differentially methylated loci
+              <p>Figure 2: Distribution of differentially methylated loci
     (DMLs) across chromosomes. Each bar represents the count of DMLs for
     a specific chromosome, with colors indicating whether loci are
     hypermethylated (higher in Yaldad) or hypomethylated (lower in
@@ -901,7 +1285,7 @@ ggplot(dml, aes(x = position, y = chr, color = status)) +
   scale_x_continuous(labels = function(x) paste0(x/1e6, " Mb"))</code>
             <fig id="fig-dml-genome-wide-nb-article">
               <caption>
-                <p>Figure 2: Distribution of differentially methylated
+                <p>Figure 3: Distribution of differentially methylated
       loci (DMLs) across all chromosomes. Each point represents a DML
       positioned by its genomic coordinates. Red points indicate
       hypermethylated loci (higher methylation in Yaldad), while blue
