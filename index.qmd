@@ -27,7 +27,6 @@ keywords: [DNA methylation, Mytilus chilensis, epigenetics, adaptation, aquacult
 
 abstract: |
   We investigate genome-wide DNA methylation patterns in Mytilus chilensis from two contrasting seedbeds—Cochamó and Yaldad—with the aim of identifying differentially methylated regions (DMRs) that may underlie local adaptation. By integrating this epigenetic information with known patterns of gene expression and environmental context, we seek to illuminate the molecular basis of ecological divergence and contribute new insights into how environmental and anthropogenic forces shape genomic and epigenomic variation in a key aquaculture species.
-
 plain-language-summary: |
   This study explores how DNA methylation may help Chilean blue mussels adapt to different environments, providing insights for aquaculture and conservation.
 
@@ -64,7 +63,6 @@ Downstream analysis was performed in R (version 4.3.1) using the methylKit packa
 To ensure data quality, CpG sites were filtered to retain only those with a minimum read coverage of 10 in all samples, excluding those in the top 2% of coverage values to reduce PCR bias. Sites were then unified across samples using unite() with min.per.group = 3 and destrand = FALSE to retain strand-specific methylation information.
 
 ### Exploratory and Differential Methylation Analyses
-
 Global methylation patterns were assessed using hierarchical clustering (Ward’s method on correlation distance) and principal component analysis (PCA) to evaluate sample similarity. Population-level differences in DNA methylation were then tested using methylKit’s logistic regression model, incorporating a multinomial overdispersion correction (overdispersion = "MN") to account for biological variability. Statistical testing was performed using the Chi-squared test (test = "Chisq"), and q-values were adjusted for multiple testing using the SLIM method (adjust = "SLIM").
 
 Differentially methylated loci (DMLs) were defined as CpG sites with an absolute methylation difference ≥25% and FDR-adjusted q-value ≤ 0.05. Separate sets of DMLs were extracted to identify hypomethylated (lower in Yaldad) and hypermethylated (higher in Yaldad) loci. Results were saved as tab-delimited text files for downstream annotation and visualization.
