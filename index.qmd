@@ -80,6 +80,9 @@ Genome-wide cytosine methylation was assessed in CpG, CHG, and CHH contexts. Acr
 In total, `r nrow(readr::read_tsv("data/DML.txt", col_types = readr::cols())) - 1` differentially methylated loci (DMLs) were identified (see Methods and Supplementary Data). These DMLs were distributed across all chromosomes and classified as either hypomethylated or hypermethylated based on methylation difference.
 
 ```{r}
+#| label: fig-dml-chromosome
+#| fig-cap: "Distribution of differentially methylated loci (DMLs) across chromosomes. Each bar represents the count of DMLs for a specific chromosome, with colors indicating whether loci are hypermethylated (higher in Yaldad) or hypomethylated (lower in Yaldad)."
+
 library(ggplot2)
 library(readr)
 library(dplyr)
@@ -110,6 +113,7 @@ ggplot(dml_counts, aes(x = chr, y = DMLs, fill = status)) +
 To visualize the spatial distribution of differentially methylated loci across the genome, we created a comprehensive plot showing all chromosomes and the precise locations of DMLs within each chromosome. This visualization reveals the genomic landscape of epigenetic variation and identifies potential hotspots of methylation change.
 
 ```{r}
+#| label: fig-dml-genome-wide
 #| fig-cap: "Distribution of differentially methylated loci (DMLs) across all chromosomes. Each point represents a DML positioned by its genomic coordinates. Red points indicate hypermethylated loci (higher methylation in Yaldad), while blue points show hypomethylated loci (lower methylation in Yaldad). Chromosomes are arranged vertically with genomic position (in base pairs) on the x-axis."
 
 library(ggplot2)
