@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/clipboard/clipboard.min.js"></script>
@@ -55,7 +75,13 @@ ul.task-list li input[type="checkbox"] {
 <meta name="citation_year" content="2025">
 <meta name="citation_online_date" content="2025-08-12">
 <meta name="citation_language" content="en">
-<meta name="citation_reference" content="citation_title=Strategies for the development of volcanic hazard maps in monogenetic volcanic fields: The example of La Palma (Canary Islands);,citation_author=José Marrero;,citation_author=Alicia García;,citation_author=Manuel Berrocoso;,citation_author=Ángeles Llinares;,citation_author=Antonio Rodríguez-Losada;,citation_author=R. Ortiz;,citation_publication_date=2019-07;,citation_cover_date=2019-07;,citation_year=2019;,citation_doi=10.1186/s13617-019-0085-5;,citation_volume=8;,citation_journal_title=Journal of Applied Volcanology;">
+<meta name="citation_reference" content="citation_title=Adaptive differences in gene expression in farm-impacted seedbeds of the native blue mussel *mytilus chilensis*;,citation_author=M Yévenes;,citation_author=G Núñez-Acuña;,citation_author=C Gallardo-Escárate;,citation_author=G Gajardo;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_doi=10.3389/fgene.2021.666539;,citation_volume=12;,citation_journal_title=Frontiers in Genetics;">
+<meta name="citation_reference" content="citation_title=Adaptive mitochondrial genome functioning in ecologically different farm-impacted natural seedbeds of the endemic blue mussel *mytilus chilensis*;,citation_author=M Yévenes;,citation_author=G Núñez-Acuña;,citation_author=C Gallardo-Escárate;,citation_author=G Gajardo;,citation_publication_date=2022;,citation_cover_date=2022;,citation_year=2022;,citation_doi=10.1016/j.cbd.2021.100955;,citation_volume=42;,citation_journal_title=Comparative Biochemistry and Physiology Part D: Genomics and Proteomics;">
+<meta name="citation_reference" content="citation_title=Decoding local adaptation in the exploited native marine mussel *mytilus chilensis*: Genomic evidence from a reciprocal transplant experiment;,citation_author=M Yévenes;,citation_author=G Gajardo;,citation_author=C Gallardo-Escárate;,citation_publication_date=2025;,citation_cover_date=2025;,citation_year=2025;,citation_issue=3;,citation_doi=10.3390/ijms26030931;,citation_volume=26;,citation_journal_title=International Journal of Molecular Sciences;">
+<meta name="citation_reference" content="citation_title=Epigenetic variation mediated by lncRNAs accounts for adaptive genomic differentiation of the endemic blue mussel *mytilus chilensis*;,citation_author=M Yévenes;,citation_author=C Gallardo-Escárate;,citation_author=G Gajardo;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;,citation_issue=1;,citation_doi=10.1016/j.heliyon.2023.e23695;,citation_volume=10;,citation_journal_title=Heliyon;">
+<meta name="citation_reference" content="citation_title=Hypoxia in the blue mussel *mytilus chilensis* induces a transcriptome shift associated with endoplasmic reticulum stress, metabolism, and immune response;,citation_author=M Montúfar-Romero;,citation_author=V Valenzuela-Muñoz;,citation_author=D Valenzuela-Miranda;,citation_author=C Gallardo-Escárate;,citation_publication_date=2024;,citation_cover_date=2024;,citation_year=2024;,citation_issue=6;,citation_doi=10.3390/genes15060658;,citation_volume=15;,citation_journal_title=Genes;">
+<meta name="citation_reference" content="citation_title=Ocean acidification and pathogen exposure modulate the immune response of the edible mussel *mytilus chilensis*;,citation_author=N Castillo;,citation_author=L M Saavedra;,citation_author=C A Vargas;,citation_author=C Gallardo-Escárate;,citation_author=C Détrée;,citation_publication_date=2017;,citation_cover_date=2017;,citation_year=2017;,citation_doi=10.1016/j.fsi.2017.08.047;,citation_volume=70;,citation_journal_title=Fish &amp;amp;amp; Shellfish Immunology;">
+<meta name="citation_reference" content="citation_title=Microbiota dysbiosis in *mytilus chilensis* is induced by hypoxia, leading to molecular and functional consequences;,citation_author=M Montúfar-Romero;,citation_author=D Valenzuela-Miranda;,citation_author=V Valenzuela-Muñoz;,citation_author=M F Morales-Rivera;,citation_author=C Gallardo-Escárate;,citation_publication_date=2025;,citation_cover_date=2025;,citation_year=2025;,citation_issue=4;,citation_doi=10.3390/microorganisms13040825;,citation_volume=13;,citation_journal_title=Microorganisms;">
 </head>
 
 <body>
@@ -163,9 +189,9 @@ ul.task-list li input[type="checkbox"] {
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
 <p>Understanding how marine species respond to environmental heterogeneity is critical for conserving locally adapted populations and sustaining aquaculture practices in the face of global change. The Chilean blue mussel, Mytilus chilensis, a key endemic species in southern Chile, supports one of the world’s largest mussel aquaculture industries. However, the biological foundation of population-level adaptation in this species remains underexplored. Emerging evidence suggests that both genetic and epigenetic mechanisms—particularly DNA methylation—may contribute to phenotypic plasticity and local adaptation in marine invertebrates.</p>
-<p>Previous studies have revealed extensive transcriptomic and mitochondrial differences between M. chilensis populations from ecologically distinct seedbeds, such as Cochamó (41°S) and Yaldad (43°S), in the inner sea of Chiloé Island. These differences include differential expression of genes involved in immunity, metabolism, and cellular stress responses, as well as tissue-specific shifts in mitochondrial gene expression linked to local environmental pressures, including aquaculture practices and variable oxygenation levels <span class="citation" data-cites="yevenes2021adaptive yevenes2022adaptive">(<a href="#ref-yevenes2021adaptive" role="doc-biblioref"><strong>yevenes2021adaptive?</strong></a>; <a href="#ref-yevenes2022adaptive" role="doc-biblioref"><strong>yevenes2022adaptive?</strong></a>)</span>. Experimental evidence from reciprocal transplants shows population-specific transcriptional responses and reduced growth performance upon translocation, highlighting functional divergence between seedbeds despite high larval connectivity <span class="citation" data-cites="yevenes2025decoding">(<a href="#ref-yevenes2025decoding" role="doc-biblioref"><strong>yevenes2025decoding?</strong></a>)</span>.</p>
-<p>In addition to gene expression differences, recent work has uncovered epigenetic signatures that may contribute to adaptive divergence. Long non-coding RNAs (lncRNAs) were found to be differentially expressed between Cochamó and Yaldad populations, with associated changes in immune and metabolic gene networks <span class="citation" data-cites="yevenes2023epigenetic">(<a href="#ref-yevenes2023epigenetic" role="doc-biblioref"><strong>yevenes2023epigenetic?</strong></a>)</span>. These findings underscore the potential for environmentally responsive regulatory elements—including DNA methylation—to mediate local adaptation.</p>
-<p>Yet, the role of DNA methylation in shaping population-specific responses in M. chilensis remains unexplored. DNA methylation, a heritable and reversible epigenetic modification, can influence gene expression and phenotypic traits without altering the underlying DNA sequence. In bivalves, DNA methylation is known to affect developmental and immune processes and may be responsive to environmental stressors such as hypoxia, toxins, and acidification—conditions that vary across the Chilean inner sea and have been shown to modulate gene expression and microbiota composition in M. chilensis <span class="citation" data-cites="montufar2024hypoxia castillo2017ocean montufar2025microbiota">(<a href="#ref-montufar2024hypoxia" role="doc-biblioref"><strong>montufar2024hypoxia?</strong></a>; <a href="#ref-castillo2017ocean" role="doc-biblioref"><strong>castillo2017ocean?</strong></a>; <a href="#ref-montufar2025microbiota" role="doc-biblioref"><strong>montufar2025microbiota?</strong></a>)</span>.</p>
+<p>Previous studies have revealed extensive transcriptomic and mitochondrial differences between M. chilensis populations from ecologically distinct seedbeds, such as Cochamó (41°S) and Yaldad (43°S), in the inner sea of Chiloé Island. These differences include differential expression of genes involved in immunity, metabolism, and cellular stress responses, as well as tissue-specific shifts in mitochondrial gene expression linked to local environmental pressures, including aquaculture practices and variable oxygenation levels <span class="citation" data-cites="yevenes2021adaptive yevenes2022adaptive">(<a href="#ref-yevenes2021adaptive" role="doc-biblioref">Yévenes et al. 2021</a>, <a href="#ref-yevenes2022adaptive" role="doc-biblioref">2022</a>)</span>. Experimental evidence from reciprocal transplants shows population-specific transcriptional responses and reduced growth performance upon translocation, highlighting functional divergence between seedbeds despite high larval connectivity <span class="citation" data-cites="yevenes2025decoding">(<a href="#ref-yevenes2025decoding" role="doc-biblioref">Yévenes, Gajardo, and Gallardo-Escárate 2025</a>)</span>.</p>
+<p>In addition to gene expression differences, recent work has uncovered epigenetic signatures that may contribute to adaptive divergence. Long non-coding RNAs (lncRNAs) were found to be differentially expressed between Cochamó and Yaldad populations, with associated changes in immune and metabolic gene networks <span class="citation" data-cites="yevenes2023epigenetic">(<a href="#ref-yevenes2023epigenetic" role="doc-biblioref">Yévenes, Gallardo-Escárate, and Gajardo 2023</a>)</span>. These findings underscore the potential for environmentally responsive regulatory elements—including DNA methylation—to mediate local adaptation.</p>
+<p>Yet, the role of DNA methylation in shaping population-specific responses in M. chilensis remains unexplored. DNA methylation, a heritable and reversible epigenetic modification, can influence gene expression and phenotypic traits without altering the underlying DNA sequence. In bivalves, DNA methylation is known to affect developmental and immune processes and may be responsive to environmental stressors such as hypoxia, toxins, and acidification—conditions that vary across the Chilean inner sea and have been shown to modulate gene expression and microbiota composition in M. chilensis <span class="citation" data-cites="montufar2024hypoxia castillo2017ocean montufar2025microbiota">(<a href="#ref-montufar2024hypoxia" role="doc-biblioref">Montúfar-Romero et al. 2024</a>, <a href="#ref-montufar2025microbiota" role="doc-biblioref">2025</a>; <a href="#ref-castillo2017ocean" role="doc-biblioref">Castillo et al. 2017</a>)</span>.</p>
 <p>In this study, we investigate genome-wide DNA methylation patterns in Mytilus chilensis from two contrasting seedbeds—Cochamó and Yaldad—with the aim of identifying differentially methylated regions (DMRs) that may underlie local adaptation. By integrating this epigenetic information with known patterns of gene expression and environmental context, we seek to illuminate the molecular basis of ecological divergence and contribute new insights into how environmental and anthropogenic forces shape genomic and epigenomic variation in a key aquaculture species.</p>
 <section id="methods" class="level2">
 <h2 class="anchored" data-anchor-id="methods">Methods</h2>
@@ -183,11 +209,34 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="exploratory-and-differential-methylation-analyses">Exploratory and Differential Methylation Analyses</h3>
 <p>Global methylation patterns were assessed using hierarchical clustering (Ward’s method on correlation distance) and principal component analysis (PCA) to evaluate sample similarity. Population-level differences in DNA methylation were then tested using methylKit’s logistic regression model, incorporating a multinomial overdispersion correction (overdispersion = “MN”) to account for biological variability. Statistical testing was performed using the Chi-squared test (test = “Chisq”), and q-values were adjusted for multiple testing using the SLIM method (adjust = “SLIM”).</p>
 <p>Differentially methylated loci (DMLs) were defined as CpG sites with an absolute methylation difference ≥25% and FDR-adjusted q-value ≤ 0.05. Separate sets of DMLs were extracted to identify hypomethylated (lower in Yaldad) and hypermethylated (higher in Yaldad) loci. Results were saved as tab-delimited text files for downstream annotation and visualization.</p>
+
 </section>
 </section>
 </section>
 
-</main>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-castillo2017ocean" class="csl-entry" role="listitem">
+Castillo, N, L M Saavedra, C A Vargas, C Gallardo-Escárate, and C Détrée. 2017. <span>“Ocean Acidification and Pathogen Exposure Modulate the Immune Response of the Edible Mussel *Mytilus Chilensis*.”</span> <em>Fish &amp; Shellfish Immunology</em> 70: 149–55. <a href="https://doi.org/10.1016/j.fsi.2017.08.047">https://doi.org/10.1016/j.fsi.2017.08.047</a>.
+</div>
+<div id="ref-montufar2025microbiota" class="csl-entry" role="listitem">
+Montúfar-Romero, M, D Valenzuela-Miranda, V Valenzuela-Muñoz, M F Morales-Rivera, and C Gallardo-Escárate. 2025. <span>“Microbiota Dysbiosis in *Mytilus Chilensis* Is Induced by Hypoxia, Leading to Molecular and Functional Consequences.”</span> <em>Microorganisms</em> 13 (4): 825. <a href="https://doi.org/10.3390/microorganisms13040825">https://doi.org/10.3390/microorganisms13040825</a>.
+</div>
+<div id="ref-montufar2024hypoxia" class="csl-entry" role="listitem">
+Montúfar-Romero, M, V Valenzuela-Muñoz, D Valenzuela-Miranda, and C Gallardo-Escárate. 2024. <span>“Hypoxia in the Blue Mussel *Mytilus Chilensis* Induces a Transcriptome Shift Associated with Endoplasmic Reticulum Stress, Metabolism, and Immune Response.”</span> <em>Genes</em> 15 (6): 658. <a href="https://doi.org/10.3390/genes15060658">https://doi.org/10.3390/genes15060658</a>.
+</div>
+<div id="ref-yevenes2025decoding" class="csl-entry" role="listitem">
+Yévenes, M, G Gajardo, and C Gallardo-Escárate. 2025. <span>“Decoding Local Adaptation in the Exploited Native Marine Mussel *Mytilus Chilensis*: Genomic Evidence from a Reciprocal Transplant Experiment.”</span> <em>International Journal of Molecular Sciences</em> 26 (3): 931. <a href="https://doi.org/10.3390/ijms26030931">https://doi.org/10.3390/ijms26030931</a>.
+</div>
+<div id="ref-yevenes2023epigenetic" class="csl-entry" role="listitem">
+Yévenes, M, C Gallardo-Escárate, and G Gajardo. 2023. <span>“Epigenetic Variation Mediated by lncRNAs Accounts for Adaptive Genomic Differentiation of the Endemic Blue Mussel *Mytilus Chilensis*.”</span> <em>Heliyon</em> 10 (1): e23695. <a href="https://doi.org/10.1016/j.heliyon.2023.e23695">https://doi.org/10.1016/j.heliyon.2023.e23695</a>.
+</div>
+<div id="ref-yevenes2021adaptive" class="csl-entry" role="listitem">
+Yévenes, M, G Núñez-Acuña, C Gallardo-Escárate, and G Gajardo. 2021. <span>“Adaptive Differences in Gene Expression in Farm-Impacted Seedbeds of the Native Blue Mussel *Mytilus Chilensis*.”</span> <em>Frontiers in Genetics</em> 12: 666539. <a href="https://doi.org/10.3389/fgene.2021.666539">https://doi.org/10.3389/fgene.2021.666539</a>.
+</div>
+<div id="ref-yevenes2022adaptive" class="csl-entry" role="listitem">
+———. 2022. <span>“Adaptive Mitochondrial Genome Functioning in Ecologically Different Farm-Impacted Natural Seedbeds of the Endemic Blue Mussel *Mytilus Chilensis*.”</span> <em>Comparative Biochemistry and Physiology Part D: Genomics and Proteomics</em> 42: 100955. <a href="https://doi.org/10.1016/j.cbd.2021.100955">https://doi.org/10.1016/j.cbd.2021.100955</a>.
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

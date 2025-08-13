@@ -91,6 +91,39 @@
 % Set default figure placement to htbp
 \def\fps@figure{htbp}
 \makeatother
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
 \usepackage{url} %this package should fix any errors with URLs in refs.
 \usepackage{lineno}
@@ -210,20 +243,19 @@ ecologically distinct seedbeds, such as Cochamó (41°S) and Yaldad
 differential expression of genes involved in immunity, metabolism, and
 cellular stress responses, as well as tissue-specific shifts in
 mitochondrial gene expression linked to local environmental pressures,
-including aquaculture practices and variable oxygenation levels
-(\textbf{yevenes2021adaptive?}; \textbf{yevenes2022adaptive?}).
-Experimental evidence from reciprocal transplants shows
-population-specific transcriptional responses and reduced growth
+including aquaculture practices and variable oxygenation levels (Yévenes
+et al., 2021, 2022). Experimental evidence from reciprocal transplants
+shows population-specific transcriptional responses and reduced growth
 performance upon translocation, highlighting functional divergence
-between seedbeds despite high larval connectivity
-(\textbf{yevenes2025decoding?}).
+between seedbeds despite high larval connectivity (Yévenes et al.,
+2025).
 
 In addition to gene expression differences, recent work has uncovered
 epigenetic signatures that may contribute to adaptive divergence. Long
 non-coding RNAs (lncRNAs) were found to be differentially expressed
 between Cochamó and Yaldad populations, with associated changes in
-immune and metabolic gene networks (\textbf{yevenes2023epigenetic?}).
-These findings underscore the potential for environmentally responsive
+immune and metabolic gene networks (Yévenes et al., 2023). These
+findings underscore the potential for environmentally responsive
 regulatory elements---including DNA methylation---to mediate local
 adaptation.
 
@@ -235,9 +267,8 @@ sequence. In bivalves, DNA methylation is known to affect developmental
 and immune processes and may be responsive to environmental stressors
 such as hypoxia, toxins, and acidification---conditions that vary across
 the Chilean inner sea and have been shown to modulate gene expression
-and microbiota composition in M. chilensis
-(\textbf{montufar2024hypoxia?}; \textbf{castillo2017ocean?};
-\textbf{montufar2025microbiota?}).
+and microbiota composition in M. chilensis (Castillo et al., 2017;
+Montúfar-Romero et al., 2024, 2025).
 
 In this study, we investigate genome-wide DNA methylation patterns in
 Mytilus chilensis from two contrasting seedbeds---Cochamó and
@@ -318,6 +349,60 @@ Separate sets of DMLs were extracted to identify hypomethylated (lower
 in Yaldad) and hypermethylated (higher in Yaldad) loci. Results were
 saved as tab-delimited text files for downstream annotation and
 visualization.
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-castillo2017ocean}
+Castillo, N., Saavedra, L. M., Vargas, C. A., Gallardo-Escárate, C., \&
+Détrée, C. (2017). Ocean acidification and pathogen exposure modulate
+the immune response of the edible mussel *mytilus chilensis*. \emph{Fish
+\& Shellfish Immunology}, \emph{70}, 149--155.
+\url{https://doi.org/10.1016/j.fsi.2017.08.047}
+
+\bibitem[\citeproctext]{ref-montufar2024hypoxia}
+Montúfar-Romero, M., Valenzuela-Muñoz, V., Valenzuela-Miranda, D., \&
+Gallardo-Escárate, C. (2024). Hypoxia in the blue mussel *mytilus
+chilensis* induces a transcriptome shift associated with endoplasmic
+reticulum stress, metabolism, and immune response. \emph{Genes},
+\emph{15}(6), 658. \url{https://doi.org/10.3390/genes15060658}
+
+\bibitem[\citeproctext]{ref-montufar2025microbiota}
+Montúfar-Romero, M., Valenzuela-Miranda, D., Valenzuela-Muñoz, V.,
+Morales-Rivera, M. F., \& Gallardo-Escárate, C. (2025). Microbiota
+dysbiosis in *mytilus chilensis* is induced by hypoxia, leading to
+molecular and functional consequences. \emph{Microorganisms},
+\emph{13}(4), 825. \url{https://doi.org/10.3390/microorganisms13040825}
+
+\bibitem[\citeproctext]{ref-yevenes2021adaptive}
+Yévenes, M., Núñez-Acuña, G., Gallardo-Escárate, C., \& Gajardo, G.
+(2021). Adaptive differences in gene expression in farm-impacted
+seedbeds of the native blue mussel *mytilus chilensis*. \emph{Frontiers
+in Genetics}, \emph{12}, 666539.
+\url{https://doi.org/10.3389/fgene.2021.666539}
+
+\bibitem[\citeproctext]{ref-yevenes2022adaptive}
+Yévenes, M., Núñez-Acuña, G., Gallardo-Escárate, C., \& Gajardo, G.
+(2022). Adaptive mitochondrial genome functioning in ecologically
+different farm-impacted natural seedbeds of the endemic blue mussel
+*mytilus chilensis*. \emph{Comparative Biochemistry and Physiology Part
+D: Genomics and Proteomics}, \emph{42}, 100955.
+\url{https://doi.org/10.1016/j.cbd.2021.100955}
+
+\bibitem[\citeproctext]{ref-yevenes2023epigenetic}
+Yévenes, M., Gallardo-Escárate, C., \& Gajardo, G. (2023). Epigenetic
+variation mediated by lncRNAs accounts for adaptive genomic
+differentiation of the endemic blue mussel *mytilus chilensis*.
+\emph{Heliyon}, \emph{10}(1), e23695.
+\url{https://doi.org/10.1016/j.heliyon.2023.e23695}
+
+\bibitem[\citeproctext]{ref-yevenes2025decoding}
+Yévenes, M., Gajardo, G., \& Gallardo-Escárate, C. (2025). Decoding
+local adaptation in the exploited native marine mussel *mytilus
+chilensis*: Genomic evidence from a reciprocal transplant experiment.
+\emph{International Journal of Molecular Sciences}, \emph{26}(3), 931.
+\url{https://doi.org/10.3390/ijms26030931}
+
+\end{CSLReferences}
 
 
 
