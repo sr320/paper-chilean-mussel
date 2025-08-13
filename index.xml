@@ -235,6 +235,10 @@ and epigenomic variation in a key aquaculture species.</p>
   1% in both contexts. These patterns are consistent with expectations
   for invertebrate methylomes, where methylation is primarily restricted
   to CpG sites.</p>
+      <p>In total, 1117 differentially methylated loci (DMLs) were
+  identified (see Methods and Supplementary Data). These DMLs were
+  distributed across all chromosomes and classified as either
+  hypomethylated or hypermethylated based on methylation difference.</p>
       <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-1-1.png"/>
       <sec id="location">
         <title>Location</title>
@@ -541,7 +545,7 @@ and epigenomic variation in a key aquaculture species.</p>
       </ref>
     </ref-list>
   </back>
-  <sub-article article-type="notebook" id="nb-8-nb-article">
+  <sub-article article-type="notebook" id="nb-6-nb-article">
     <front-stub>
       <title-group>
         <article-title>DNA methylation in Mytilus chilensis</article-title>
@@ -765,6 +769,10 @@ and epigenomic variation in a key aquaculture species.</p>
   1% in both contexts. These patterns are consistent with expectations
   for invertebrate methylomes, where methylation is primarily restricted
   to CpG sites.</p>
+        <p>In total, 1117 differentially methylated loci (DMLs) were
+  identified (see Methods and Supplementary Data). These DMLs were
+  distributed across all chromosomes and classified as either
+  hypomethylated or hypermethylated based on methylation difference.</p>
         <sec specific-use="notebook-content">
           <code language="r script">library(ggplot2)
 library(readr)
