@@ -91,39 +91,6 @@
 % Set default figure placement to htbp
 \def\fps@figure{htbp}
 \makeatother
-% definitions for citeproc citations
-\NewDocumentCommand\citeproctext{}{}
-\NewDocumentCommand\citeproc{mm}{%
-  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
-\makeatletter
- % allow citations to break across lines
- \let\@cite@ofmt\@firstofone
- % avoid brackets around text for \cite:
- \def\@biblabel#1{}
- \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
-\makeatother
-\newlength{\cslhangindent}
-\setlength{\cslhangindent}{1.5em}
-\newlength{\csllabelwidth}
-\setlength{\csllabelwidth}{3em}
-\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
- {\begin{list}{}{%
-  \setlength{\itemindent}{0pt}
-  \setlength{\leftmargin}{0pt}
-  \setlength{\parsep}{0pt}
-  % turn on hanging indent if param 1 is 1
-  \ifodd #1
-   \setlength{\leftmargin}{\cslhangindent}
-   \setlength{\itemindent}{-1\cslhangindent}
-  \fi
-  % set entry spacing
-  \setlength{\itemsep}{#2\baselineskip}}}
- {\end{list}}
-\usepackage{calc}
-\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
-\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
-\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
 \usepackage{url} %this package should fix any errors with URLs in refs.
 \usepackage{lineno}
@@ -177,9 +144,6 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
-  pdftitle={La Palma Earthquakes},
-  pdfauthor={Steve Purves; Rowan Cockett},
-  pdfkeywords={La Palma, Earthquakes},
   colorlinks=true,
   linkcolor={blue},
   filecolor={Maroon},
@@ -188,164 +152,180 @@
   pdfcreator={LaTeX via pandoc}}
 
 
-\journalname{Earth and Space Science}
 
 \draftfalse
 
 \begin{document}
-\title{La Palma Earthquakes}
 
-\authors{Steve Purves\affil{1}, Rowan Cockett\affil{1}}
-\affiliation{1}{Curvenote, }
-\correspondingauthor{Steve Purves}{steve@curvenote.com}
-
-
-\begin{abstract}
-In September 2021, a significant jump in seismic activity on the island
-of La Palma (Canary Islands, Spain) signaled the start of a volcanic
-crisis that still continues at the time of writing. Earthquake data is
-continually collected and published by the Instituto Geográphico
-Nacional (IGN). \ldots{}
-\end{abstract}
-
-\section*{Plain Language Summary}
-Earthquake data for the island of La Palma from the September 2021
-eruption is found \ldots{}
+\authors{}
 
 
 
+
+
+
+
+
+
+title: DNA methylation in Mytilus chileanis authors: - name: Cristian
+Gallardo affiliation: University of Concepcion roles: writing
+corresponding: true orcid: 0000-0000-0000-0000 email: cgallardo@udec.cl
+- name: Valentina Venezuala affiliation: University of Concepcion roles:
+writing corresponding: true orcid: 0000-0000-0000-0001 email:
+vvenezuala@udec.cl - name: Steven Roberts affiliation: University of
+Washington roles: writing corresponding: true orcid: 0000-0000-0000-0002
+email: sr320@uw.edu bibliography: references.bib subtitle: Epigenetic
+mechanisms of local adaptation date: 2025-08-12 version: ``1.0''
+keywords: {[}DNA methylation, Mytilus chilensis, epigenetics,
+adaptation, aquaculture{]}
+
+abstract: \textbar{} We investigate genome-wide DNA methylation patterns
+in Mytilus chilensis from two contrasting seedbeds---Cochamó and
+Yaldad---with the aim of identifying differentially methylated regions
+(DMRs) that may underlie local adaptation. By integrating this
+epigenetic information with known patterns of gene expression and
+environmental context, we seek to illuminate the molecular basis of
+ecological divergence and contribute new insights into how environmental
+and anthropogenic forces shape genomic and epigenomic variation in a key
+aquaculture species.
+
+plain-language-summary: \textbar{} This study explores how DNA
+methylation may help Chilean blue mussels adapt to different
+environments, providing insights for aquaculture and conservation.
+
+key-points: - Genome-wide DNA methylation was compared between two
+populations of Mytilus chilensis. - Differentially methylated regions
+(DMRs) may underlie local adaptation. - Results inform both basic
+science and aquaculture practices.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \section{Introduction}\label{introduction}
 
-\textsubscript{Source:
-\href{https://sr320.github.io/paper-chilean-mussel/index.qmd.html}{Article
-Notebook}}
+Understanding how marine species respond to environmental heterogeneity
+is critical for conserving locally adapted populations and sustaining
+aquaculture practices in the face of global change. The Chilean blue
+mussel, Mytilus chilensis, a key endemic species in southern Chile,
+supports one of the world's largest mussel aquaculture industries.
+However, the biological foundation of population-level adaptation in
+this species remains underexplored. Emerging evidence suggests that both
+genetic and epigenetic mechanisms---particularly DNA methylation---may
+contribute to phenotypic plasticity and local adaptation in marine
+invertebrates.
 
-\phantomsection\label{cell-fig-timeline}
-\begin{figure}[H]
+Previous studies have revealed extensive transcriptomic and
+mitochondrial differences between M. chilensis populations from
+ecologically distinct seedbeds, such as Cochamó (41°S) and Yaldad
+(43°S), in the inner sea of Chiloé Island. These differences include
+differential expression of genes involved in immunity, metabolism, and
+cellular stress responses, as well as tissue-specific shifts in
+mitochondrial gene expression linked to local environmental pressures,
+including aquaculture practices and variable oxygenation levels
+{[}@yevenes2021adaptive; @yevenes2022adaptive{]}. Experimental evidence
+from reciprocal transplants shows population-specific transcriptional
+responses and reduced growth performance upon translocation,
+highlighting functional divergence between seedbeds despite high larval
+connectivity {[}@yevenes2025decoding{]}.
 
-\centering{
+In addition to gene expression differences, recent work has uncovered
+epigenetic signatures that may contribute to adaptive divergence. Long
+non-coding RNAs (lncRNAs) were found to be differentially expressed
+between Cochamó and Yaldad populations, with associated changes in
+immune and metabolic gene networks {[}@yevenes2023epigenetic{]}. These
+findings underscore the potential for environmentally responsive
+regulatory elements---including DNA methylation---to mediate local
+adaptation.
 
-\pandocbounded{\includegraphics[keepaspectratio]{index_files/figure-pdf/fig-timeline-1.pdf}}
+Yet, the role of DNA methylation in shaping population-specific
+responses in M. chilensis remains unexplored. DNA methylation, a
+heritable and reversible epigenetic modification, can influence gene
+expression and phenotypic traits without altering the underlying DNA
+sequence. In bivalves, DNA methylation is known to affect developmental
+and immune processes and may be responsive to environmental stressors
+such as hypoxia, toxins, and acidification---conditions that vary across
+the Chilean inner sea and have been shown to modulate gene expression
+and microbiota composition in M. chilensis {[}@montufar2024hypoxia;
+@castillo2017ocean; @montufar2025microbiota{]}.
 
-}
+In this study, we investigate genome-wide DNA methylation patterns in
+Mytilus chilensis from two contrasting seedbeds---Cochamó and
+Yaldad---with the aim of identifying differentially methylated regions
+(DMRs) that may underlie local adaptation. By integrating this
+epigenetic information with known patterns of gene expression and
+environmental context, we seek to illuminate the molecular basis of
+ecological divergence and contribute new insights into how environmental
+and anthropogenic forces shape genomic and epigenomic variation in a key
+aquaculture species.
 
-\caption{\label{fig-timeline}Timeline of recent earthquakes on La Palma}
+\subsection{Methods}\label{methods}
 
-\end{figure}%
+To investigate DNA methylation differences between populations of
+Mytilus chilensis from Cochamó and Yaldad, whole-genome bisulfite
+sequencing (WGBS) was performed and analyzed using a reproducible,
+high-throughput bioinformatics workflow. DNA was extracted from gill
+tissue of adult individuals and subjected to bisulfite treatment and
+library preparation. Libraries were sequenced on an Illumina NovaSeq
+6000 platform, generating 150 bp paired-end reads, with each sample
+yielding approximately 120--160 million read pairs, providing
+\textgreater30× average coverage across the 1.93 Gb M. chilensis genome.
 
-\textsubscript{Source:
-\href{https://sr320.github.io/paper-chilean-mussel/index.qmd.html}{Article
-Notebook}}
+\subsubsection{Read Processing and
+Alignment}\label{read-processing-and-alignment}
 
-\textsubscript{Source:
-\href{https://sr320.github.io/paper-chilean-mussel/index.qmd.html}{Article
-Notebook}}
+Raw sequencing reads were processed using the nf-core/methylseq pipeline
+(version 2.5), implemented through Nextflow (version 23.04.1). Reads
+were aligned to the M. chilensis reference genome
+(MchilensisGenomeV1.fa), a chromosome-level assembly comprising 14
+scaffolds (Gallardo-Escárate et al.~2023), using Bismark (version
+0.24.1) with the Bowtie2 aligner (version 2.5.1). Quality trimming was
+applied to reverse reads by hard-clipping the final 10 bases (--clip\_r2
+10) to mitigate low-quality base calls at the 3′ end. Methylation calls
+were extracted using the Bismark methylation extractor and aggregated by
+cytosine context. Pipeline execution was configured via a custom .config
+file to specify HPC resources and run with --resume, --with-trace,
+--with-report, and --with-timeline flags for reproducibility and
+tracking. Output files were stored in a structured directory and
+included per-base CpG methylation calls, quality control metrics, and
+coverage files.
 
-Based on data up to and including 1971, eruptions on La Palma happen
-every 79.8 years on average.
+\subsubsection{Methylation Data Processing and
+Filtering}\label{methylation-data-processing-and-filtering}
 
-Studies of the magma systems feeding the volcano, such as Marrero et al.
-(2019), have proposed that there are two main magma reservoirs feeding
-the Cumbre Vieja volcano; one in the mantle (30-40km depth) which
-charges and in turn feeds a shallower crustal reservoir (10-20km depth).
+Downstream analysis was performed in R (version 4.3.1) using the
+methylKit package (version 1.10.0). Due to compatibility issues with
+newer versions of supporting libraries, data.table was pinned to version
+1.14.10. Methylation coverage files were imported using methRead() with
+the pipeline = ``bismarkCoverage'' parameter and CpG context specified.
+Six samples---three each from Cochamó (LCo\_BSr1--3) and Yaldad
+(LYa\_BSr1--3)---were analyzed. Samples were assigned to treatment
+groups with Cochamó designated as the control (treatment = 0) and Yaldad
+as the treatment group (treatment = 1).
 
-Eight eruptions have been recorded since the late 1400s
-(Figure~\ref{fig-timeline}).
+To ensure data quality, CpG sites were filtered to retain only those
+with a minimum read coverage of 10 in all samples, excluding those in
+the top 2\% of coverage values to reduce PCR bias. Sites were then
+unified across samples using unite() with min.per.group = 3 and destrand
+= FALSE to retain strand-specific methylation information.
 
-Data and methods are discussed in Section~\ref{sec-data-methods}.
+\subsubsection{Exploratory and Differential Methylation
+Analyses}\label{exploratory-and-differential-methylation-analyses}
 
-Let \(x\) denote the number of eruptions in a year. Then, \(x\) can be
-modeled by a Poisson distribution
+Global methylation patterns were assessed using hierarchical clustering
+(Ward's method on correlation distance) and principal component analysis
+(PCA) to evaluate sample similarity. Population-level differences in DNA
+methylation were then tested using methylKit's logistic regression
+model, incorporating a multinomial overdispersion correction
+(overdispersion = ``MN'') to account for biological variability.
+Statistical testing was performed using the Chi-squared test (test =
+``Chisq''), and q-values were adjusted for multiple testing using the
+SLIM method (adjust = ``SLIM'').
 
-\begin{equation}\phantomsection\label{eq-poisson}{
-p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
-}\end{equation}
-
-where \(\lambda\) is the rate of eruptions per year. Using
-Equation~\ref{eq-poisson}, the probability of an eruption in the next
-\(t\) years can be calculated.
-
-\begin{longtable}[]{@{}ll@{}}
-\caption{Recent historic eruptions on La
-Palma}\label{tbl-history}\tabularnewline
-\toprule\noalign{}
-Name & Year \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-Name & Year \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-Current & 2021 \\
-Teneguía & 1971 \\
-Nambroque & 1949 \\
-El Charco & 1712 \\
-Volcán San Antonio & 1677 \\
-Volcán San Martin & 1646 \\
-Tajuya near El Paso & 1585 \\
-Montaña Quemada & 1492 \\
-\end{longtable}
-
-Table~\ref{tbl-history} summarises the eruptions recorded since the
-colonization of the islands by Europeans in the late 1400s.
-
-\begin{figure}
-
-\centering{
-
-\pandocbounded{\includegraphics[keepaspectratio]{images/la-palma-map.png}}
-
-}
-
-\caption{\label{fig-map}Map of La Palma}
-
-\end{figure}%
-
-La Palma is one of the west most islands in the Volcanic Archipelago of
-the Canary Islands (Figure~\ref{fig-map}).
-
-\begin{figure}[H]
-
-\centering{
-
-\pandocbounded{\includegraphics[keepaspectratio]{index_files/figure-latex/notebooks-explore-earthquakes-fig-spatial-plot-output-1.png}}
-
-}
-
-\caption{\label{fig-spatial-plot}Locations of earthquakes on La Palma
-since 2017}
-
-\end{figure}%
-
-\textsubscript{Source:
-\href{https://sr320.github.io/paper-chilean-mussel/notebooks/explore-earthquakes-preview.html\#cell-fig-spatial-plot}{Explore
-Earthquakes}}
-
-Figure~\ref{fig-spatial-plot} shows the location of recent Earthquakes
-on La Palma.
-
-\section{Data \& Methods}\label{sec-data-methods}
-
-\section{Conclusion}\label{conclusion}
-
-\section*{References}\label{references}
-\addcontentsline{toc}{section}{References}
-
-\phantomsection\label{refs}
-\begin{CSLReferences}{1}{0}
-\vspace{1em}
-
-\bibitem[\citeproctext]{ref-marrero2019}
-Marrero, J., García, A., Berrocoso, M., Llinares, Á., Rodríguez-Losada,
-A., \& Ortiz, R. (2019). Strategies for the development of volcanic
-hazard maps in monogenetic volcanic fields: The example of {La} {Palma}
-({Canary} {Islands}). \emph{Journal of Applied Volcanology}, \emph{8}.
-\url{https://doi.org/10.1186/s13617-019-0085-5}
-
-\end{CSLReferences}
+Differentially methylated loci (DMLs) were defined as CpG sites with an
+absolute methylation difference ≥25\% and FDR-adjusted q-value ≤ 0.05.
+Separate sets of DMLs were extracted to identify hypomethylated (lower
+in Yaldad) and hypermethylated (higher in Yaldad) loci. Results were
+saved as tab-delimited text files for downstream annotation and
+visualization.
 
 
 
