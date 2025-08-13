@@ -1,5 +1,5 @@
 ---
-title: DNA methylation in Mytilus chileanis 
+title: DNA methylation in Mytilus chilensis 
 authors:
   - name: Cristian Gallardo
     affiliation: University of Concepcion

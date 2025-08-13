@@ -5,7 +5,7 @@ and Interchange DTD v1.2 20190208//EN" "JATS-archivearticle1.dtd">
   <front>
     <article-meta>
       <title-group>
-        <article-title>DNA methylation in Mytilus chileanis</article-title>
+        <article-title>DNA methylation in Mytilus chilensis</article-title>
         <subtitle>Epigenetic mechanisms of local adaptation</subtitle>
       </title-group>
       <contrib-group>
@@ -446,10 +446,10 @@ shape genomic and epigenomic variation in a key aquaculture species.</p>
       </ref>
     </ref-list>
   </back>
-  <sub-article article-type="notebook" id="nb-4-nb-article">
+  <sub-article article-type="notebook" id="nb-6-nb-article">
     <front-stub>
       <title-group>
-        <article-title>DNA methylation in Mytilus chileanis</article-title>
+        <article-title>DNA methylation in Mytilus chilensis</article-title>
         <subtitle>Epigenetic mechanisms of local adaptation</subtitle>
       </title-group>
       <contrib-group>
@@ -923,6 +923,50 @@ ggplot(dml_counts, aes(x = chr, y = DMLs, fill = status)) +
   <sub-article article-type="notebook" id="nb-2-nb-1">
     <front-stub>
       <title-group>
+        <article-title>Jbrowse</article-title>
+      </title-group>
+    </front-stub>
+    <body>
+      <preformat>&lt;div id="lgv1"&gt;&lt;/div&gt;
+&lt;!-- Pin the UMD build to a released version to avoid breakage --&gt;
+&lt;script src="https://unpkg.com/@jbrowse/react-linear-genome-view2@3.5.0/dist/react-linear-genome-view.umd.production.min.js" crossorigin&gt;&lt;/script&gt;
+&lt;script&gt;
+  const { React, createRoot, createViewState, JBrowseLinearGenomeView } = JBrowseReactLinearGenomeView
+  const state = new createViewState({
+    assembly: {
+      name: 'Assembly 1.0',
+      sequence: {
+        type: 'ReferenceSequenceTrack',
+        trackId: 'refseq',
+        adapter: {
+          type: 'IndexedFastaAdapter',
+          uri: 'https://your-server/path/genome.fa',
+          faiUri: 'https://your-server/path/genome.fa.fai'
+        }
+      }
+    },
+    tracks: [
+      {
+        type: 'QuantitativeTrack',
+        trackId: 'meth',
+        name: 'Methylation',
+        adapter: { type: 'BigWigAdapter', uri: 'https://your-server/path/track.bw' }
+      }
+    ],
+    defaultSession: {
+      name: 'Quarto session',
+      view: { id: 'linearGenomeView', type: 'LinearGenomeView', init: { assembly: 'Assembly 1.0', loc: 'Chromosome_1:1..200000', tracks: ['meth'] } }
+    }
+  })
+  createRoot(document.getElementById('lgv1')).render(React.createElement(JBrowseLinearGenomeView, { viewState: state }))
+&lt;/script&gt;</preformat>
+    </body>
+    <back>
+</back>
+  </sub-article>
+  <sub-article article-type="notebook" id="nb-4-nb-2">
+    <front-stub>
+      <title-group>
         <article-title>Explore Earthquakes</article-title>
       </title-group>
       <contrib-group>
@@ -968,7 +1012,7 @@ dttm (1): DateTime
         </boxed-text>
       </sec>
       <p>Create spatial plot:</p>
-      <sec id="cell-fig-spatial-plot-nb-1" specific-use="notebook-content">
+      <sec id="cell-fig-spatial-plot-nb-2" specific-use="notebook-content">
         <code language="r script">#|   against longitude."
 la_palma |&gt; 
   ggplot(aes(Longitude, Latitude)) +
@@ -977,7 +1021,7 @@ la_palma |&gt;
   scale_size(range = c(0.5, 2), guide = "none") +
   theme_bw()
 </code>
-        <fig id="fig-spatial-plot-nb-1">
+        <fig id="fig-spatial-plot-nb-2">
           <caption>
             <p>Locations of earthquakes on La Palma since
   2017</p>
