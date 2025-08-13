@@ -1,40 +1,7 @@
 ---
-title: "Jbrowse"
+title: "Site Info"
 editor: visual
 ---
 
-```{html}
-<div id="lgv1"></div>
-<!-- Pin the UMD build to a released version to avoid breakage -->
-<script src="https://unpkg.com/@jbrowse/react-linear-genome-view2@3.5.0/dist/react-linear-genome-view.umd.production.min.js" crossorigin></script>
-<script>
-  const { React, createRoot, createViewState, JBrowseLinearGenomeView } = JBrowseReactLinearGenomeView
-  const state = new createViewState({
-    assembly: {
-      name: 'Assembly 1.0',
-      sequence: {
-        type: 'ReferenceSequenceTrack',
-        trackId: 'refseq',
-        adapter: {
-          type: 'IndexedFastaAdapter',
-          uri: 'https://your-server/path/genome.fa',
-          faiUri: 'https://your-server/path/genome.fa.fai'
-        }
-      }
-    },
-    tracks: [
-      {
-        type: 'QuantitativeTrack',
-        trackId: 'meth',
-        name: 'Methylation',
-        adapter: { type: 'BigWigAdapter', uri: 'https://your-server/path/track.bw' }
-      }
-    ],
-    defaultSession: {
-      name: 'Quarto session',
-      view: { id: 'linearGenomeView', type: 'LinearGenomeView', init: { assembly: 'Assembly 1.0', loc: 'Chromosome_1:1..200000', tracks: ['meth'] } }
-    }
-  })
-  createRoot(document.getElementById('lgv1')).render(React.createElement(JBrowseLinearGenomeView, { viewState: state }))
-</script>
-```
+
+![](http://gannet.fish.washington.edu/seashell/snaps/Monosnap_genes-2291516-supplementary.pdf_2025-08-13_09-37-33.png)

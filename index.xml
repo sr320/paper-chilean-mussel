@@ -1,69 +1,107 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving
 and Interchange DTD v1.2 20190208//EN" "JATS-archivearticle1.dtd">
+
 <article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2" article-type="other">
-  <front>
-    <article-meta>
-      <title-group>
-        <article-title>DNA methylation in Mytilus chilensis</article-title>
-        <subtitle>Epigenetic mechanisms of local adaptation</subtitle>
-      </title-group>
-      <contrib-group>
-        <contrib contrib-type="author" corresp="yes">
-          <contrib-id contrib-id-type="orcid">0000-0000-0000-0000</contrib-id>
-          <name>
-            <surname>Gallardo</surname>
-            <given-names>Cristian</given-names>
-          </name>
-          <string-name>Cristian Gallardo</string-name>
-          <email>cgallardo@udec.cl</email>
-          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
-          <xref ref-type="aff" rid="aff-1">a</xref>
-          <xref ref-type="corresp" rid="cor-1">*</xref>
-        </contrib>
-        <contrib contrib-type="author" corresp="yes">
-          <contrib-id contrib-id-type="orcid">0000-0000-0000-0001</contrib-id>
-          <name>
-            <surname>Venezuala</surname>
-            <given-names>Valentina</given-names>
-          </name>
-          <string-name>Valentina Venezuala</string-name>
-          <email>vvenezuala@udec.cl</email>
-          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
-          <xref ref-type="aff" rid="aff-1">a</xref>
-          <xref ref-type="corresp" rid="cor-2">*</xref>
-        </contrib>
-        <contrib contrib-type="author" corresp="yes">
-          <contrib-id contrib-id-type="orcid">0000-0000-0000-0002</contrib-id>
-          <name>
-            <surname>Roberts</surname>
-            <given-names>Steven</given-names>
-          </name>
-          <string-name>Steven Roberts</string-name>
-          <email>sr320@uw.edu</email>
-          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
-          <xref ref-type="aff" rid="aff-2">b</xref>
-          <xref ref-type="corresp" rid="cor-3">*</xref>
-        </contrib>
-      </contrib-group>
-      <aff id="aff-1">
-        <institution-wrap>
-          <institution>University of Concepcion</institution>
-        </institution-wrap>
-      </aff>
-      <aff id="aff-2">
-        <institution-wrap>
-          <institution>University of Washington</institution>
-        </institution-wrap>
-      </aff>
-      <author-notes>
-        <corresp id="cor-1">cgallardo@udec.cl</corresp>
-        <corresp id="cor-2">vvenezuala@udec.cl</corresp>
-        <corresp id="cor-3">sr320@uw.edu</corresp>
-      </author-notes>
-      <history/>
-      <abstract>
-        <p>We investigate genome-wide DNA methylation patterns in Mytilus
+
+<front>
+
+
+<article-meta>
+
+
+<title-group>
+<article-title>DNA methylation in Mytilus chilensis</article-title>
+<subtitle>Epigenetic mechanisms of local adaptation</subtitle>
+</title-group>
+
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">0000-0000-0000-0000</contrib-id>
+<name>
+<surname>Gallardo</surname>
+<given-names>Cristian</given-names>
+</name>
+<string-name>Cristian Gallardo</string-name>
+
+<email>cgallardo@udec.cl</email>
+<role vocab="https://credit.niso.org" vocab-term="writing – original
+draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+<xref ref-type="aff" rid="aff-1">a</xref>
+<xref ref-type="corresp" rid="cor-1">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">0000-0000-0000-0001</contrib-id>
+<name>
+<surname>Venezuala</surname>
+<given-names>Valentina</given-names>
+</name>
+<string-name>Valentina Venezuala</string-name>
+
+<email>vvenezuala@udec.cl</email>
+<role vocab="https://credit.niso.org" vocab-term="writing – original
+draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+<xref ref-type="aff" rid="aff-1">a</xref>
+<xref ref-type="corresp" rid="cor-2">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">0000-0000-0000-0002</contrib-id>
+<name>
+<surname>Roberts</surname>
+<given-names>Steven</given-names>
+</name>
+<string-name>Steven Roberts</string-name>
+
+<email>sr320@uw.edu</email>
+<role vocab="https://credit.niso.org" vocab-term="writing – original
+draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+<xref ref-type="aff" rid="aff-2">b</xref>
+<xref ref-type="corresp" rid="cor-3">&#x002A;</xref>
+</contrib>
+</contrib-group>
+<aff id="aff-1">
+<institution-wrap>
+<institution>University of Concepcion</institution>
+</institution-wrap>
+
+
+
+
+
+
+
+</aff>
+<aff id="aff-2">
+<institution-wrap>
+<institution>University of Washington</institution>
+</institution-wrap>
+
+
+
+
+
+
+
+</aff>
+<author-notes>
+<corresp id="cor-1">cgallardo@udec.cl</corresp>
+<corresp id="cor-2">vvenezuala@udec.cl</corresp>
+<corresp id="cor-3">sr320@uw.edu</corresp>
+</author-notes>
+
+
+
+
+
+
+
+
+
+<history></history>
+
+
+<abstract>
+<p>We investigate genome-wide DNA methylation patterns in Mytilus
 chilensis from two contrasting seedbeds—Cochamó and Yaldad—using
 whole-genome bisulfite sequencing and high-throughput bioinformatics. We
 identify 1117 differentially methylated loci (DMLs) and genes, revealing
@@ -77,20 +115,26 @@ system-wide epigenetic response, with potential consequences for
 metabolic control and developmental programming, and provide new
 insights into how environmental and anthropogenic forces shape genomic
 and epigenomic variation in a key aquaculture species.</p>
-      </abstract>
-      <kwd-group kwd-group-type="author">
-        <kwd>DNA methylation</kwd>
-        <kwd>Mytilus chilensis</kwd>
-        <kwd>epigenetics</kwd>
-        <kwd>adaptation</kwd>
-        <kwd>aquaculture</kwd>
-      </kwd-group>
-    </article-meta>
-  </front>
-  <body>
-    <sec id="introduction">
-      <title>Introduction</title>
-      <p>Understanding how marine species respond to environmental
+</abstract>
+<kwd-group kwd-group-type="author">
+<kwd>DNA methylation</kwd>
+<kwd>Mytilus chilensis</kwd>
+<kwd>epigenetics</kwd>
+<kwd>adaptation</kwd>
+<kwd>aquaculture</kwd>
+</kwd-group>
+
+
+
+
+</article-meta>
+
+</front>
+
+<body>
+<sec id="introduction">
+  <title>Introduction</title>
+  <p>Understanding how marine species respond to environmental
   heterogeneity is critical for conserving locally adapted populations
   and sustaining aquaculture practices in the face of global change. The
   Chilean blue mussel, Mytilus chilensis, a key endemic species in
@@ -100,7 +144,7 @@ and epigenomic variation in a key aquaculture species.</p>
   suggests that both genetic and epigenetic mechanisms—particularly DNA
   methylation—may contribute to phenotypic plasticity and local
   adaptation in marine invertebrates.</p>
-      <p>Previous studies have revealed extensive transcriptomic and
+  <p>Previous studies have revealed extensive transcriptomic and
   mitochondrial differences between M. chilensis populations from
   ecologically distinct seedbeds, such as Cochamó (41°S) and Yaldad
   (43°S), in the inner sea of Chiloé Island. These differences include
@@ -117,7 +161,7 @@ and epigenomic variation in a key aquaculture species.</p>
   between seedbeds despite high larval connectivity
   (<xref alt="Yévenes, Gajardo, and Gallardo-Escárate 2025" rid="ref-yevenes2025decoding" ref-type="bibr">Yévenes,
   Gajardo, and Gallardo-Escárate 2025</xref>).</p>
-      <p>In addition to gene expression differences, recent work has
+  <p>In addition to gene expression differences, recent work has
   uncovered epigenetic signatures that may contribute to adaptive
   divergence. Long non-coding RNAs (lncRNAs) were found to be
   differentially expressed between Cochamó and Yaldad populations, with
@@ -126,7 +170,7 @@ and epigenomic variation in a key aquaculture species.</p>
   Gallardo-Escárate, and Gajardo 2023</xref>). These findings underscore
   the potential for environmentally responsive regulatory
   elements—including DNA methylation—to mediate local adaptation.</p>
-      <p>Yet, the role of DNA methylation in shaping population-specific
+  <p>Yet, the role of DNA methylation in shaping population-specific
   responses in M. chilensis remains unexplored. DNA methylation, a
   heritable and reversible epigenetic modification, can influence gene
   expression and phenotypic traits without altering the underlying DNA
@@ -141,7 +185,7 @@ and epigenomic variation in a key aquaculture species.</p>
   <xref alt="2025" rid="ref-montufar2025microbiota" ref-type="bibr">2025</xref>;
   <xref alt="Castillo et al. 2017" rid="ref-castillo2017ocean" ref-type="bibr">Castillo
   et al. 2017</xref>).</p>
-      <p>In this study, we investigate genome-wide DNA methylation patterns
+  <p>In this study, we investigate genome-wide DNA methylation patterns
   in Mytilus chilensis from two contrasting seedbeds—Cochamó and
   Yaldad—with the aim of identifying differentially methylated regions
   (DMRs) that may underlie local adaptation. By integrating this
@@ -150,10 +194,10 @@ and epigenomic variation in a key aquaculture species.</p>
   ecological divergence and contribute new insights into how
   environmental and anthropogenic forces shape genomic and epigenomic
   variation in a key aquaculture species.</p>
-    </sec>
-    <sec id="methods">
-      <title>Methods</title>
-      <p>To investigate DNA methylation differences between populations of
+</sec>
+<sec id="methods">
+  <title>Methods</title>
+  <p>To investigate DNA methylation differences between populations of
   Mytilus chilensis from Cochamó and Yaldad, whole-genome bisulfite
   sequencing (WGBS) was performed and analyzed using a reproducible,
   high-throughput bioinformatics workflow. DNA was extracted from gill
@@ -162,9 +206,9 @@ and epigenomic variation in a key aquaculture species.</p>
   6000 platform, generating 150 bp paired-end reads, with each sample
   yielding approximately 120–160 million read pairs, providing &gt;30×
   average coverage across the 1.93 Gb M. chilensis genome.</p>
-      <sec id="read-processing-and-alignment">
-        <title>Read Processing and Alignment</title>
-        <p>Raw sequencing reads were processed using the nf-core/methylseq
+  <sec id="read-processing-and-alignment">
+    <title>Read Processing and Alignment</title>
+    <p>Raw sequencing reads were processed using the nf-core/methylseq
     pipeline (version 2.5), implemented through Nextflow (version
     23.04.1). Reads were aligned to the M. chilensis reference genome
     (MchilensisGenomeV1.fa), a chromosome-level assembly comprising 14
@@ -179,10 +223,10 @@ and epigenomic variation in a key aquaculture species.</p>
     flags for reproducibility and tracking. Output files were stored in
     a structured directory and included per-base CpG methylation calls,
     quality control metrics, and coverage files.</p>
-      </sec>
-      <sec id="methylation-data-processing-and-filtering">
-        <title>Methylation Data Processing and Filtering</title>
-        <p>Downstream analysis was performed in R (version 4.3.1) using the
+  </sec>
+  <sec id="methylation-data-processing-and-filtering">
+    <title>Methylation Data Processing and Filtering</title>
+    <p>Downstream analysis was performed in R (version 4.3.1) using the
     methylKit package (version 1.10.0). Due to compatibility issues with
     newer versions of supporting libraries, data.table was pinned to
     version 1.14.10. Methylation coverage files were imported using
@@ -191,15 +235,15 @@ and epigenomic variation in a key aquaculture species.</p>
     and Yaldad (LYa_BSr1–3)—were analyzed. Samples were assigned to
     treatment groups with Cochamó designated as the control (treatment =
     0) and Yaldad as the treatment group (treatment = 1).</p>
-        <p>To ensure data quality, CpG sites were filtered to retain only
+    <p>To ensure data quality, CpG sites were filtered to retain only
     those with a minimum read coverage of 10 in all samples, excluding
     those in the top 2% of coverage values to reduce PCR bias. Sites
     were then unified across samples using unite() with min.per.group =
     3 and destrand = FALSE to retain strand-specific methylation
     information.</p>
-        <sec id="exploratory-and-differential-methylation-analyses">
-          <title>Exploratory and Differential Methylation Analyses</title>
-          <p>Global methylation patterns were assessed using hierarchical
+    <sec id="exploratory-and-differential-methylation-analyses">
+      <title>Exploratory and Differential Methylation Analyses</title>
+      <p>Global methylation patterns were assessed using hierarchical
       clustering (Ward’s method on correlation distance) and principal
       component analysis (PCA) to evaluate sample similarity.
       Population-level differences in DNA methylation were then tested
@@ -209,24 +253,24 @@ and epigenomic variation in a key aquaculture species.</p>
       performed using the Chi-squared test (test = “Chisq”), and
       q-values were adjusted for multiple testing using the SLIM method
       (adjust = “SLIM”).</p>
-          <p>Differentially methylated loci (DMLs) were defined as CpG sites
+      <p>Differentially methylated loci (DMLs) were defined as CpG sites
       with an absolute methylation difference ≥25% and FDR-adjusted
       q-value ≤ 0.05. Separate sets of DMLs were extracted to identify
       hypomethylated (lower in Yaldad) and hypermethylated (higher in
       Yaldad) loci. Results were saved as tab-delimited text files for
       downstream annotation and visualization.</p>
-        </sec>
-      </sec>
     </sec>
-    <sec id="results">
-      <title>Results</title>
-      <p>Bisulfite sequencing across six libraries yielded approximately
+  </sec>
+</sec>
+<sec id="results">
+  <title>Results</title>
+  <p>Bisulfite sequencing across six libraries yielded approximately
   99.8 million reads per sample. Alignment to the reference genome was
   successful for 60.5–61.4% of reads, with 22–24% unaligned and 15–16%
   aligning ambiguously. After removal of duplicate reads (2.2–3.5
   million per sample), 57.0–58.8 million uniquely aligned reads remained
   for methylation analysis.</p>
-      <p>Genome-wide cytosine methylation was assessed in CpG, CHG, and CHH
+  <p>Genome-wide cytosine methylation was assessed in CpG, CHG, and CHH
   contexts. Across samples, ~2.1–2.2 billion cytosines were examined.
   CpG methylation was the most prominent, with an average of ~36 million
   methylated CpGs and ~205 million unmethylated CpGs per sample,
@@ -235,23 +279,40 @@ and epigenomic variation in a key aquaculture species.</p>
   1% in both contexts. These patterns are consistent with expectations
   for invertebrate methylomes, where methylation is primarily restricted
   to CpG sites.</p>
-      <p>In total, 1117 differentially methylated loci (DMLs) were
+  <p>In total, 1117 differentially methylated loci (DMLs) were
   identified (see Methods and Supplementary Data). These DMLs were
   distributed across all chromosomes and classified as either
   hypomethylated or hypermethylated based on methylation difference.</p>
-      <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-1-1.png"/>
-      <sec id="location">
-        <title>Location</title>
-        <fig>
-          <caption>
-            <p>heatmap</p>
-          </caption>
-          <graphic mimetype="image" mime-subtype="png" xlink:href="images/dml-heatmap.png"/>
-        </fig>
-      </sec>
-      <sec id="genes-harboring-dmls-and-overall-methylation-pattern">
-        <title>Genes harboring DMLs and overall methylation pattern</title>
-        <p>We identified 159 genes containing differentially methylated loci
+  <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-1-1.png" />
+  <sec id="chromosome-wide-distribution-of-dmls">
+    <title>Chromosome-wide Distribution of DMLs</title>
+    <p>To visualize the spatial distribution of differentially
+    methylated loci across the genome, we created a comprehensive plot
+    showing all chromosomes and the precise locations of DMLs within
+    each chromosome. This visualization reveals the genomic landscape of
+    epigenetic variation and identifies potential hotspots of
+    methylation change.</p>
+    <fig>
+      <caption><p>Distribution of differentially methylated loci (DMLs)
+      across all chromosomes. Each point represents a DML positioned by
+      its genomic coordinates. Red points indicate hypermethylated loci
+      (higher methylation in Yaldad), while blue points show
+      hypomethylated loci (lower methylation in Yaldad). Chromosomes are
+      arranged vertically with genomic position (in base pairs) on the
+      x-axis.</p></caption>
+      <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-2-1.png" />
+    </fig>
+  </sec>
+  <sec id="location">
+    <title>Location</title>
+    <fig>
+      <caption><p>heatmap</p></caption>
+      <graphic mimetype="image" mime-subtype="png" xlink:href="images/dml-heatmap.png" />
+    </fig>
+  </sec>
+  <sec id="genes-harboring-dmls-and-overall-methylation-pattern">
+    <title>Genes harboring DMLs and overall methylation pattern</title>
+    <p>We identified 159 genes containing differentially methylated loci
     (DMLs). For each gene, methylation differences were calculated by
     aggregating the absolute methylation change at all DMLs mapped to
     that gene, using the output from methylKit’s logistic regression
@@ -259,11 +320,11 @@ and epigenomic variation in a key aquaculture species.</p>
     median: −8.96%, mean: −0.68%) were computed across these gene-level
     aggregated values, indicating a shift toward hypomethylation among
     DML-associated genes.</p>
-      </sec>
-      <sec id="gene-ontology-go-processes-functions-and-locations">
-        <title>Gene Ontology (GO): processes, functions, and
+  </sec>
+  <sec id="gene-ontology-go-processes-functions-and-locations">
+    <title>Gene Ontology (GO): processes, functions, and
     locations</title>
-        <p>Across Biological Process terms, DML genes were most frequently
+    <p>Across Biological Process terms, DML genes were most frequently
     annotated to metabolic process (71 genes; 44.7% of all DML genes)
     and to high-level developmental and cellular organization/biogenesis
     categories (each 57 genes; 35.8%). Additional frequent terms
@@ -276,14 +337,14 @@ and epigenomic variation in a key aquaculture species.</p>
     cell/intracellular compartments (cell: 104 genes, 65.4%;
     intracellular: 99 genes, 62.3%), with frequent localization to the
     cytoplasm (80 genes, 50.3%) and nucleus (53 genes, 33.3%)</p>
-        <p>These patterns indicate that DMLs are concentrated in genes
+    <p>These patterns indicate that DMLs are concentrated in genes
     mediating metabolism, developmental programs, and cellular
     organization, with many targets residing in cytoplasmic and nuclear
     contexts where gene regulation and signal processing occur.</p>
-      </sec>
-      <sec id="kegg-pathways">
-        <title>KEGG pathways</title>
-        <p>DML-associated genes mapped to 122 unique KEGG pathways, with
+  </sec>
+  <sec id="kegg-pathways">
+    <title>KEGG pathways</title>
+    <p>DML-associated genes mapped to 122 unique KEGG pathways, with
     most pathways represented by a single gene, reflecting broad
     functional dispersion rather than concentration in a small number of
     routes. Prominent pathway classes included amino acid, carbohydrate,
@@ -292,10 +353,10 @@ and epigenomic variation in a key aquaculture species.</p>
     aligns with the GO-based enrichment of metabolic processes and
     suggests potential epigenetic modulation of energy balance and
     biosynthesis.</p>
-      </sec>
-      <sec id="pfam-domains">
-        <title>Pfam domains</title>
-        <p>We detected 118 unique Pfam domains among DML-associated genes,
+  </sec>
+  <sec id="pfam-domains">
+    <title>Pfam domains</title>
+    <p>We detected 118 unique Pfam domains among DML-associated genes,
     generally with low redundancy (most domains present in one or two
     genes), underscoring protein family diversity. Recurrently observed
     domains included the RNA recognition motif (PF00076)—implicating
@@ -306,10 +367,10 @@ and epigenomic variation in a key aquaculture species.</p>
     xenobiotic and lipid metabolism. Several domains of unknown function
     (DUFs) were present, indicating potentially novel or poorly
     characterized targets of methylation.</p>
-      </sec>
-      <sec id="directionality-of-methylation-changes">
-        <title>Directionality of methylation changes</title>
-        <p>Given the negative median methylation difference, hypomethylation
+  </sec>
+  <sec id="directionality-of-methylation-changes">
+    <title>Directionality of methylation changes</title>
+    <p>Given the negative median methylation difference, hypomethylation
     was more common among DML genes. Functionally, hypomethylated
     targets were enriched for regulatory proteins, signaling molecules,
     and transporters, whereas hypermethylated targets included
@@ -317,10 +378,10 @@ and epigenomic variation in a key aquaculture species.</p>
     Collectively, these patterns are consistent with widespread
     epigenetic remodeling across regulatory and metabolic layers, rather
     than changes confined to a single pathway or compartment.</p>
-      </sec>
-      <sec id="summary">
-        <title>Summary</title>
-        <p>Together, these results show that genes harboring DMLs in Mytilus
+  </sec>
+  <sec id="summary">
+    <title>Summary</title>
+    <p>Together, these results show that genes harboring DMLs in Mytilus
     chilensis are functionally diverse. However, they converge on
     metabolism, development, and cellular organization, with many
     targets positioned in cytoplasmic and nuclear environments. The
@@ -330,282 +391,220 @@ and epigenomic variation in a key aquaculture species.</p>
     suggest a system-wide epigenetic response with potential
     consequences for metabolic control and developmental
     programming.</p>
-      </sec>
-    </sec>
-  </body>
-  <back>
-    <ref-list>
-      <title/>
-      <ref id="ref-yevenes2021adaptive">
-        <element-citation publication-type="article-journal">
-          <person-group person-group-type="author">
-            <name>
-              <surname>Yévenes</surname>
-              <given-names>M</given-names>
-            </name>
-            <name>
-              <surname>Núñez-Acuña</surname>
-              <given-names>G</given-names>
-            </name>
-            <name>
-              <surname>Gallardo-Escárate</surname>
-              <given-names>C</given-names>
-            </name>
-            <name>
-              <surname>Gajardo</surname>
-              <given-names>G</given-names>
-            </name>
-          </person-group>
-          <article-title>Adaptive differences in gene expression in farm-impacted seedbeds of the native blue mussel *mytilus chilensis*</article-title>
-          <source>Frontiers in Genetics</source>
-          <year iso-8601-date="2021">2021</year>
-          <volume>12</volume>
-          <pub-id pub-id-type="doi">10.3389/fgene.2021.666539</pub-id>
-          <fpage>666539</fpage>
-          <lpage/>
-        </element-citation>
-      </ref>
-      <ref id="ref-yevenes2022adaptive">
-        <element-citation publication-type="article-journal">
-          <person-group person-group-type="author">
-            <name>
-              <surname>Yévenes</surname>
-              <given-names>M</given-names>
-            </name>
-            <name>
-              <surname>Núñez-Acuña</surname>
-              <given-names>G</given-names>
-            </name>
-            <name>
-              <surname>Gallardo-Escárate</surname>
-              <given-names>C</given-names>
-            </name>
-            <name>
-              <surname>Gajardo</surname>
-              <given-names>G</given-names>
-            </name>
-          </person-group>
-          <article-title>Adaptive mitochondrial genome functioning in ecologically different farm-impacted natural seedbeds of the endemic blue mussel *mytilus chilensis*</article-title>
-          <source>Comparative Biochemistry and Physiology Part D: Genomics and Proteomics</source>
-          <year iso-8601-date="2022">2022</year>
-          <volume>42</volume>
-          <pub-id pub-id-type="doi">10.1016/j.cbd.2021.100955</pub-id>
-          <fpage>100955</fpage>
-          <lpage/>
-        </element-citation>
-      </ref>
-      <ref id="ref-yevenes2025decoding">
-        <element-citation publication-type="article-journal">
-          <person-group person-group-type="author">
-            <name>
-              <surname>Yévenes</surname>
-              <given-names>M</given-names>
-            </name>
-            <name>
-              <surname>Gajardo</surname>
-              <given-names>G</given-names>
-            </name>
-            <name>
-              <surname>Gallardo-Escárate</surname>
-              <given-names>C</given-names>
-            </name>
-          </person-group>
-          <article-title>Decoding local adaptation in the exploited native marine mussel *mytilus chilensis*: Genomic evidence from a reciprocal transplant experiment</article-title>
-          <source>International Journal of Molecular Sciences</source>
-          <year iso-8601-date="2025">2025</year>
-          <volume>26</volume>
-          <issue>3</issue>
-          <pub-id pub-id-type="doi">10.3390/ijms26030931</pub-id>
-          <fpage>931</fpage>
-          <lpage/>
-        </element-citation>
-      </ref>
-      <ref id="ref-yevenes2023epigenetic">
-        <element-citation publication-type="article-journal">
-          <person-group person-group-type="author">
-            <name>
-              <surname>Yévenes</surname>
-              <given-names>M</given-names>
-            </name>
-            <name>
-              <surname>Gallardo-Escárate</surname>
-              <given-names>C</given-names>
-            </name>
-            <name>
-              <surname>Gajardo</surname>
-              <given-names>G</given-names>
-            </name>
-          </person-group>
-          <article-title>Epigenetic variation mediated by lncRNAs accounts for adaptive genomic differentiation of the endemic blue mussel *mytilus chilensis*</article-title>
-          <source>Heliyon</source>
-          <year iso-8601-date="2023">2023</year>
-          <volume>10</volume>
-          <issue>1</issue>
-          <pub-id pub-id-type="doi">10.1016/j.heliyon.2023.e23695</pub-id>
-          <fpage>e23695</fpage>
-          <lpage/>
-        </element-citation>
-      </ref>
-      <ref id="ref-montufar2024hypoxia">
-        <element-citation publication-type="article-journal">
-          <person-group person-group-type="author">
-            <name>
-              <surname>Montúfar-Romero</surname>
-              <given-names>M</given-names>
-            </name>
-            <name>
-              <surname>Valenzuela-Muñoz</surname>
-              <given-names>V</given-names>
-            </name>
-            <name>
-              <surname>Valenzuela-Miranda</surname>
-              <given-names>D</given-names>
-            </name>
-            <name>
-              <surname>Gallardo-Escárate</surname>
-              <given-names>C</given-names>
-            </name>
-          </person-group>
-          <article-title>Hypoxia in the blue mussel *mytilus chilensis* induces a transcriptome shift associated with endoplasmic reticulum stress, metabolism, and immune response</article-title>
-          <source>Genes</source>
-          <year iso-8601-date="2024">2024</year>
-          <volume>15</volume>
-          <issue>6</issue>
-          <pub-id pub-id-type="doi">10.3390/genes15060658</pub-id>
-          <fpage>658</fpage>
-          <lpage/>
-        </element-citation>
-      </ref>
-      <ref id="ref-castillo2017ocean">
-        <element-citation publication-type="article-journal">
-          <person-group person-group-type="author">
-            <name>
-              <surname>Castillo</surname>
-              <given-names>N</given-names>
-            </name>
-            <name>
-              <surname>Saavedra</surname>
-              <given-names>L M</given-names>
-            </name>
-            <name>
-              <surname>Vargas</surname>
-              <given-names>C A</given-names>
-            </name>
-            <name>
-              <surname>Gallardo-Escárate</surname>
-              <given-names>C</given-names>
-            </name>
-            <name>
-              <surname>Détrée</surname>
-              <given-names>C</given-names>
-            </name>
-          </person-group>
-          <article-title>Ocean acidification and pathogen exposure modulate the immune response of the edible mussel *mytilus chilensis*</article-title>
-          <source>Fish &amp; Shellfish Immunology</source>
-          <year iso-8601-date="2017">2017</year>
-          <volume>70</volume>
-          <pub-id pub-id-type="doi">10.1016/j.fsi.2017.08.047</pub-id>
-          <fpage>149</fpage>
-          <lpage>155</lpage>
-        </element-citation>
-      </ref>
-      <ref id="ref-montufar2025microbiota">
-        <element-citation publication-type="article-journal">
-          <person-group person-group-type="author">
-            <name>
-              <surname>Montúfar-Romero</surname>
-              <given-names>M</given-names>
-            </name>
-            <name>
-              <surname>Valenzuela-Miranda</surname>
-              <given-names>D</given-names>
-            </name>
-            <name>
-              <surname>Valenzuela-Muñoz</surname>
-              <given-names>V</given-names>
-            </name>
-            <name>
-              <surname>Morales-Rivera</surname>
-              <given-names>M F</given-names>
-            </name>
-            <name>
-              <surname>Gallardo-Escárate</surname>
-              <given-names>C</given-names>
-            </name>
-          </person-group>
-          <article-title>Microbiota dysbiosis in *mytilus chilensis* is induced by hypoxia, leading to molecular and functional consequences</article-title>
-          <source>Microorganisms</source>
-          <year iso-8601-date="2025">2025</year>
-          <volume>13</volume>
-          <issue>4</issue>
-          <pub-id pub-id-type="doi">10.3390/microorganisms13040825</pub-id>
-          <fpage>825</fpage>
-          <lpage/>
-        </element-citation>
-      </ref>
-    </ref-list>
-  </back>
-  <sub-article article-type="notebook" id="nb-6-nb-article">
-    <front-stub>
-      <title-group>
-        <article-title>DNA methylation in Mytilus chilensis</article-title>
-        <subtitle>Epigenetic mechanisms of local adaptation</subtitle>
-      </title-group>
-      <contrib-group>
-        <contrib contrib-type="author" corresp="yes">
-          <contrib-id contrib-id-type="orcid">0000-0000-0000-0000</contrib-id>
-          <name>
-            <surname>Gallardo</surname>
-            <given-names>Cristian</given-names>
-          </name>
-          <string-name>Cristian Gallardo</string-name>
-          <email>cgallardo@udec.cl</email>
-          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
-          <xref ref-type="aff" rid="aff-1-nb-article">a</xref>
-          <xref ref-type="corresp" rid="cor-1-nb-article">*</xref>
-        </contrib>
-        <contrib contrib-type="author" corresp="yes">
-          <contrib-id contrib-id-type="orcid">0000-0000-0000-0001</contrib-id>
-          <name>
-            <surname>Venezuala</surname>
-            <given-names>Valentina</given-names>
-          </name>
-          <string-name>Valentina Venezuala</string-name>
-          <email>vvenezuala@udec.cl</email>
-          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
-          <xref ref-type="aff" rid="aff-1-nb-article">a</xref>
-          <xref ref-type="corresp" rid="cor-2-nb-article">*</xref>
-        </contrib>
-        <contrib contrib-type="author" corresp="yes">
-          <contrib-id contrib-id-type="orcid">0000-0000-0000-0002</contrib-id>
-          <name>
-            <surname>Roberts</surname>
-            <given-names>Steven</given-names>
-          </name>
-          <string-name>Steven Roberts</string-name>
-          <email>sr320@uw.edu</email>
-          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
-          <xref ref-type="aff" rid="aff-2-nb-article">b</xref>
-          <xref ref-type="corresp" rid="cor-3-nb-article">*</xref>
-        </contrib>
-      </contrib-group>
-      <aff id="aff-1-nb-article">
-        <institution-wrap>
-          <institution>University of Concepcion</institution>
-        </institution-wrap>
-      </aff>
-      <aff id="aff-2-nb-article">
-        <institution-wrap>
-          <institution>University of Washington</institution>
-        </institution-wrap>
-      </aff>
-      <author-notes>
-        <corresp id="cor-1-nb-article">cgallardo@udec.cl</corresp>
-        <corresp id="cor-2-nb-article">vvenezuala@udec.cl</corresp>
-        <corresp id="cor-3-nb-article">sr320@uw.edu</corresp>
-      </author-notes>
-      <abstract>
-        <p>We investigate genome-wide DNA methylation patterns in Mytilus
+  </sec>
+</sec>
+</body>
+
+<back>
+<ref-list>
+  <title></title>
+  <ref id="ref-yevenes2021adaptive">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Yévenes</surname><given-names>M</given-names></name>
+        <name><surname>Núñez-Acuña</surname><given-names>G</given-names></name>
+        <name><surname>Gallardo-Escárate</surname><given-names>C</given-names></name>
+        <name><surname>Gajardo</surname><given-names>G</given-names></name>
+      </person-group>
+      <article-title>Adaptive differences in gene expression in farm-impacted seedbeds of the native blue mussel *mytilus chilensis*</article-title>
+      <source>Frontiers in Genetics</source>
+      <year iso-8601-date="2021">2021</year>
+      <volume>12</volume>
+      <pub-id pub-id-type="doi">10.3389/fgene.2021.666539</pub-id>
+      <fpage>666539</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-yevenes2022adaptive">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Yévenes</surname><given-names>M</given-names></name>
+        <name><surname>Núñez-Acuña</surname><given-names>G</given-names></name>
+        <name><surname>Gallardo-Escárate</surname><given-names>C</given-names></name>
+        <name><surname>Gajardo</surname><given-names>G</given-names></name>
+      </person-group>
+      <article-title>Adaptive mitochondrial genome functioning in ecologically different farm-impacted natural seedbeds of the endemic blue mussel *mytilus chilensis*</article-title>
+      <source>Comparative Biochemistry and Physiology Part D: Genomics and Proteomics</source>
+      <year iso-8601-date="2022">2022</year>
+      <volume>42</volume>
+      <pub-id pub-id-type="doi">10.1016/j.cbd.2021.100955</pub-id>
+      <fpage>100955</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-yevenes2025decoding">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Yévenes</surname><given-names>M</given-names></name>
+        <name><surname>Gajardo</surname><given-names>G</given-names></name>
+        <name><surname>Gallardo-Escárate</surname><given-names>C</given-names></name>
+      </person-group>
+      <article-title>Decoding local adaptation in the exploited native marine mussel *mytilus chilensis*: Genomic evidence from a reciprocal transplant experiment</article-title>
+      <source>International Journal of Molecular Sciences</source>
+      <year iso-8601-date="2025">2025</year>
+      <volume>26</volume>
+      <issue>3</issue>
+      <pub-id pub-id-type="doi">10.3390/ijms26030931</pub-id>
+      <fpage>931</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-yevenes2023epigenetic">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Yévenes</surname><given-names>M</given-names></name>
+        <name><surname>Gallardo-Escárate</surname><given-names>C</given-names></name>
+        <name><surname>Gajardo</surname><given-names>G</given-names></name>
+      </person-group>
+      <article-title>Epigenetic variation mediated by lncRNAs accounts for adaptive genomic differentiation of the endemic blue mussel *mytilus chilensis*</article-title>
+      <source>Heliyon</source>
+      <year iso-8601-date="2023">2023</year>
+      <volume>10</volume>
+      <issue>1</issue>
+      <pub-id pub-id-type="doi">10.1016/j.heliyon.2023.e23695</pub-id>
+      <fpage>e23695</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-montufar2024hypoxia">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Montúfar-Romero</surname><given-names>M</given-names></name>
+        <name><surname>Valenzuela-Muñoz</surname><given-names>V</given-names></name>
+        <name><surname>Valenzuela-Miranda</surname><given-names>D</given-names></name>
+        <name><surname>Gallardo-Escárate</surname><given-names>C</given-names></name>
+      </person-group>
+      <article-title>Hypoxia in the blue mussel *mytilus chilensis* induces a transcriptome shift associated with endoplasmic reticulum stress, metabolism, and immune response</article-title>
+      <source>Genes</source>
+      <year iso-8601-date="2024">2024</year>
+      <volume>15</volume>
+      <issue>6</issue>
+      <pub-id pub-id-type="doi">10.3390/genes15060658</pub-id>
+      <fpage>658</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-castillo2017ocean">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Castillo</surname><given-names>N</given-names></name>
+        <name><surname>Saavedra</surname><given-names>L M</given-names></name>
+        <name><surname>Vargas</surname><given-names>C A</given-names></name>
+        <name><surname>Gallardo-Escárate</surname><given-names>C</given-names></name>
+        <name><surname>Détrée</surname><given-names>C</given-names></name>
+      </person-group>
+      <article-title>Ocean acidification and pathogen exposure modulate the immune response of the edible mussel *mytilus chilensis*</article-title>
+      <source>Fish &amp; Shellfish Immunology</source>
+      <year iso-8601-date="2017">2017</year>
+      <volume>70</volume>
+      <pub-id pub-id-type="doi">10.1016/j.fsi.2017.08.047</pub-id>
+      <fpage>149</fpage>
+      <lpage>155</lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-montufar2025microbiota">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Montúfar-Romero</surname><given-names>M</given-names></name>
+        <name><surname>Valenzuela-Miranda</surname><given-names>D</given-names></name>
+        <name><surname>Valenzuela-Muñoz</surname><given-names>V</given-names></name>
+        <name><surname>Morales-Rivera</surname><given-names>M F</given-names></name>
+        <name><surname>Gallardo-Escárate</surname><given-names>C</given-names></name>
+      </person-group>
+      <article-title>Microbiota dysbiosis in *mytilus chilensis* is induced by hypoxia, leading to molecular and functional consequences</article-title>
+      <source>Microorganisms</source>
+      <year iso-8601-date="2025">2025</year>
+      <volume>13</volume>
+      <issue>4</issue>
+      <pub-id pub-id-type="doi">10.3390/microorganisms13040825</pub-id>
+      <fpage>825</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+</ref-list>
+</back>
+
+<sub-article article-type="notebook" id="nb-12-nb-article">
+<front-stub>
+<title-group>
+<article-title>DNA methylation in Mytilus chilensis</article-title>
+<subtitle>Epigenetic mechanisms of local adaptation</subtitle>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">0000-0000-0000-0000</contrib-id>
+<name>
+<surname>Gallardo</surname>
+<given-names>Cristian</given-names>
+</name>
+<string-name>Cristian Gallardo</string-name>
+
+<email>cgallardo@udec.cl</email>
+<role vocab="https://credit.niso.org" vocab-term="writing – original
+draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+<xref ref-type="aff" rid="aff-1-nb-article">a</xref>
+<xref ref-type="corresp" rid="cor-1-nb-article">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">0000-0000-0000-0001</contrib-id>
+<name>
+<surname>Venezuala</surname>
+<given-names>Valentina</given-names>
+</name>
+<string-name>Valentina Venezuala</string-name>
+
+<email>vvenezuala@udec.cl</email>
+<role vocab="https://credit.niso.org" vocab-term="writing – original
+draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+<xref ref-type="aff" rid="aff-1-nb-article">a</xref>
+<xref ref-type="corresp" rid="cor-2-nb-article">&#x002A;</xref>
+</contrib>
+<contrib contrib-type="author" corresp="yes">
+<contrib-id contrib-id-type="orcid">0000-0000-0000-0002</contrib-id>
+<name>
+<surname>Roberts</surname>
+<given-names>Steven</given-names>
+</name>
+<string-name>Steven Roberts</string-name>
+
+<email>sr320@uw.edu</email>
+<role vocab="https://credit.niso.org" vocab-term="writing – original
+draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+<xref ref-type="aff" rid="aff-2-nb-article">b</xref>
+<xref ref-type="corresp" rid="cor-3-nb-article">&#x002A;</xref>
+</contrib>
+</contrib-group>
+<aff id="aff-1-nb-article">
+<institution-wrap>
+<institution>University of Concepcion</institution>
+</institution-wrap>
+
+
+
+
+
+
+
+</aff>
+<aff id="aff-2-nb-article">
+<institution-wrap>
+<institution>University of Washington</institution>
+</institution-wrap>
+
+
+
+
+
+
+
+</aff>
+<author-notes>
+<corresp id="cor-1-nb-article">cgallardo@udec.cl</corresp>
+<corresp id="cor-2-nb-article">vvenezuala@udec.cl</corresp>
+<corresp id="cor-3-nb-article">sr320@uw.edu</corresp>
+</author-notes>
+<abstract>
+<p>We investigate genome-wide DNA methylation patterns in Mytilus
 chilensis from two contrasting seedbeds—Cochamó and Yaldad—using
 whole-genome bisulfite sequencing and high-throughput bioinformatics. We
 identify 1117 differentially methylated loci (DMLs) and genes, revealing
@@ -619,12 +618,13 @@ system-wide epigenetic response, with potential consequences for
 metabolic control and developmental programming, and provide new
 insights into how environmental and anthropogenic forces shape genomic
 and epigenomic variation in a key aquaculture species.</p>
-      </abstract>
-    </front-stub>
-    <body>
-      <sec id="introduction-nb-article">
-        <title>Introduction</title>
-        <p>Understanding how marine species respond to environmental
+</abstract>
+</front-stub>
+
+<body>
+<sec id="introduction-nb-article">
+  <title>Introduction</title>
+  <p>Understanding how marine species respond to environmental
   heterogeneity is critical for conserving locally adapted populations
   and sustaining aquaculture practices in the face of global change. The
   Chilean blue mussel, Mytilus chilensis, a key endemic species in
@@ -634,7 +634,7 @@ and epigenomic variation in a key aquaculture species.</p>
   suggests that both genetic and epigenetic mechanisms—particularly DNA
   methylation—may contribute to phenotypic plasticity and local
   adaptation in marine invertebrates.</p>
-        <p>Previous studies have revealed extensive transcriptomic and
+  <p>Previous studies have revealed extensive transcriptomic and
   mitochondrial differences between M. chilensis populations from
   ecologically distinct seedbeds, such as Cochamó (41°S) and Yaldad
   (43°S), in the inner sea of Chiloé Island. These differences include
@@ -651,7 +651,7 @@ and epigenomic variation in a key aquaculture species.</p>
   between seedbeds despite high larval connectivity
   (<xref alt="Yévenes, Gajardo, and Gallardo-Escárate 2025" rid="ref-yevenes2025decoding-nb-article" ref-type="bibr">Yévenes,
   Gajardo, and Gallardo-Escárate 2025</xref>).</p>
-        <p>In addition to gene expression differences, recent work has
+  <p>In addition to gene expression differences, recent work has
   uncovered epigenetic signatures that may contribute to adaptive
   divergence. Long non-coding RNAs (lncRNAs) were found to be
   differentially expressed between Cochamó and Yaldad populations, with
@@ -660,7 +660,7 @@ and epigenomic variation in a key aquaculture species.</p>
   Gallardo-Escárate, and Gajardo 2023</xref>). These findings underscore
   the potential for environmentally responsive regulatory
   elements—including DNA methylation—to mediate local adaptation.</p>
-        <p>Yet, the role of DNA methylation in shaping population-specific
+  <p>Yet, the role of DNA methylation in shaping population-specific
   responses in M. chilensis remains unexplored. DNA methylation, a
   heritable and reversible epigenetic modification, can influence gene
   expression and phenotypic traits without altering the underlying DNA
@@ -675,7 +675,7 @@ and epigenomic variation in a key aquaculture species.</p>
   <xref alt="2025" rid="ref-montufar2025microbiota-nb-article" ref-type="bibr">2025</xref>;
   <xref alt="Castillo et al. 2017" rid="ref-castillo2017ocean-nb-article" ref-type="bibr">Castillo
   et al. 2017</xref>).</p>
-        <p>In this study, we investigate genome-wide DNA methylation patterns
+  <p>In this study, we investigate genome-wide DNA methylation patterns
   in Mytilus chilensis from two contrasting seedbeds—Cochamó and
   Yaldad—with the aim of identifying differentially methylated regions
   (DMRs) that may underlie local adaptation. By integrating this
@@ -684,10 +684,10 @@ and epigenomic variation in a key aquaculture species.</p>
   ecological divergence and contribute new insights into how
   environmental and anthropogenic forces shape genomic and epigenomic
   variation in a key aquaculture species.</p>
-      </sec>
-      <sec id="methods-nb-article">
-        <title>Methods</title>
-        <p>To investigate DNA methylation differences between populations of
+</sec>
+<sec id="methods-nb-article">
+  <title>Methods</title>
+  <p>To investigate DNA methylation differences between populations of
   Mytilus chilensis from Cochamó and Yaldad, whole-genome bisulfite
   sequencing (WGBS) was performed and analyzed using a reproducible,
   high-throughput bioinformatics workflow. DNA was extracted from gill
@@ -696,9 +696,9 @@ and epigenomic variation in a key aquaculture species.</p>
   6000 platform, generating 150 bp paired-end reads, with each sample
   yielding approximately 120–160 million read pairs, providing &gt;30×
   average coverage across the 1.93 Gb M. chilensis genome.</p>
-        <sec id="read-processing-and-alignment-nb-article">
-          <title>Read Processing and Alignment</title>
-          <p>Raw sequencing reads were processed using the nf-core/methylseq
+  <sec id="read-processing-and-alignment-nb-article">
+    <title>Read Processing and Alignment</title>
+    <p>Raw sequencing reads were processed using the nf-core/methylseq
     pipeline (version 2.5), implemented through Nextflow (version
     23.04.1). Reads were aligned to the M. chilensis reference genome
     (MchilensisGenomeV1.fa), a chromosome-level assembly comprising 14
@@ -713,10 +713,10 @@ and epigenomic variation in a key aquaculture species.</p>
     flags for reproducibility and tracking. Output files were stored in
     a structured directory and included per-base CpG methylation calls,
     quality control metrics, and coverage files.</p>
-        </sec>
-        <sec id="methylation-data-processing-and-filtering-nb-article">
-          <title>Methylation Data Processing and Filtering</title>
-          <p>Downstream analysis was performed in R (version 4.3.1) using the
+  </sec>
+  <sec id="methylation-data-processing-and-filtering-nb-article">
+    <title>Methylation Data Processing and Filtering</title>
+    <p>Downstream analysis was performed in R (version 4.3.1) using the
     methylKit package (version 1.10.0). Due to compatibility issues with
     newer versions of supporting libraries, data.table was pinned to
     version 1.14.10. Methylation coverage files were imported using
@@ -725,15 +725,15 @@ and epigenomic variation in a key aquaculture species.</p>
     and Yaldad (LYa_BSr1–3)—were analyzed. Samples were assigned to
     treatment groups with Cochamó designated as the control (treatment =
     0) and Yaldad as the treatment group (treatment = 1).</p>
-          <p>To ensure data quality, CpG sites were filtered to retain only
+    <p>To ensure data quality, CpG sites were filtered to retain only
     those with a minimum read coverage of 10 in all samples, excluding
     those in the top 2% of coverage values to reduce PCR bias. Sites
     were then unified across samples using unite() with min.per.group =
     3 and destrand = FALSE to retain strand-specific methylation
     information.</p>
-          <sec id="exploratory-and-differential-methylation-analyses-nb-article">
-            <title>Exploratory and Differential Methylation Analyses</title>
-            <p>Global methylation patterns were assessed using hierarchical
+    <sec id="exploratory-and-differential-methylation-analyses-nb-article">
+      <title>Exploratory and Differential Methylation Analyses</title>
+      <p>Global methylation patterns were assessed using hierarchical
       clustering (Ward’s method on correlation distance) and principal
       component analysis (PCA) to evaluate sample similarity.
       Population-level differences in DNA methylation were then tested
@@ -743,24 +743,24 @@ and epigenomic variation in a key aquaculture species.</p>
       performed using the Chi-squared test (test = “Chisq”), and
       q-values were adjusted for multiple testing using the SLIM method
       (adjust = “SLIM”).</p>
-            <p>Differentially methylated loci (DMLs) were defined as CpG sites
+      <p>Differentially methylated loci (DMLs) were defined as CpG sites
       with an absolute methylation difference ≥25% and FDR-adjusted
       q-value ≤ 0.05. Separate sets of DMLs were extracted to identify
       hypomethylated (lower in Yaldad) and hypermethylated (higher in
       Yaldad) loci. Results were saved as tab-delimited text files for
       downstream annotation and visualization.</p>
-          </sec>
-        </sec>
-      </sec>
-      <sec id="results-nb-article">
-        <title>Results</title>
-        <p>Bisulfite sequencing across six libraries yielded approximately
+    </sec>
+  </sec>
+</sec>
+<sec id="results-nb-article">
+  <title>Results</title>
+  <p>Bisulfite sequencing across six libraries yielded approximately
   99.8 million reads per sample. Alignment to the reference genome was
   successful for 60.5–61.4% of reads, with 22–24% unaligned and 15–16%
   aligning ambiguously. After removal of duplicate reads (2.2–3.5
   million per sample), 57.0–58.8 million uniquely aligned reads remained
   for methylation analysis.</p>
-        <p>Genome-wide cytosine methylation was assessed in CpG, CHG, and CHH
+  <p>Genome-wide cytosine methylation was assessed in CpG, CHG, and CHH
   contexts. Across samples, ~2.1–2.2 billion cytosines were examined.
   CpG methylation was the most prominent, with an average of ~36 million
   methylated CpGs and ~205 million unmethylated CpGs per sample,
@@ -769,61 +769,119 @@ and epigenomic variation in a key aquaculture species.</p>
   1% in both contexts. These patterns are consistent with expectations
   for invertebrate methylomes, where methylation is primarily restricted
   to CpG sites.</p>
-        <p>In total, 1117 differentially methylated loci (DMLs) were
+  <p>In total, 1117 differentially methylated loci (DMLs) were
   identified (see Methods and Supplementary Data). These DMLs were
   distributed across all chromosomes and classified as either
   hypomethylated or hypermethylated based on methylation difference.</p>
-        <sec specific-use="notebook-content">
-          <code language="r script">library(ggplot2)
+  <sec specific-use="notebook-content">
+  <code language="r script">library(ggplot2)
 library(readr)
 library(dplyr)</code>
-          <boxed-text>
-            <preformat>
+  <boxed-text>
+    <preformat>
 Attaching package: 'dplyr'</preformat>
-          </boxed-text>
-          <boxed-text>
-            <preformat>The following objects are masked from 'package:stats':
+  </boxed-text>
+  <boxed-text>
+    <preformat>The following objects are masked from 'package:stats':
 
     filter, lag</preformat>
-          </boxed-text>
-          <boxed-text>
-            <preformat>The following objects are masked from 'package:base':
+  </boxed-text>
+  <boxed-text>
+    <preformat>The following objects are masked from 'package:base':
 
     intersect, setdiff, setequal, union</preformat>
-          </boxed-text>
-          <code language="r script"># Read methylKit output
-dml &lt;- read_tsv("data/DML.txt", col_types = cols())
+  </boxed-text>
+  <code language="r script"># Read methylKit output
+dml &lt;- read_tsv(&quot;data/DML.txt&quot;, col_types = cols())
 
 # Classify loci
 dml &lt;- dml %&gt;%
-  mutate(status = ifelse(meth.diff &gt; 0, "Hypermethylated", "Hypomethylated"))
+  mutate(status = ifelse(meth.diff &gt; 0, &quot;Hypermethylated&quot;, &quot;Hypomethylated&quot;))
 
 # Count per chromosome and status
 dml_counts &lt;- dml %&gt;%
   group_by(chr, status) %&gt;%
-  summarise(DMLs = n(), .groups = "drop")
+  summarise(DMLs = n(), .groups = &quot;drop&quot;)
 
 # Stacked bar chart
 ggplot(dml_counts, aes(x = chr, y = DMLs, fill = status)) +
-  geom_bar(stat = "identity") +
+  geom_bar(stat = &quot;identity&quot;) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  labs(title = "DMLs per Chromosome",
-       y = "Number of DMLs", x = "Chromosome", fill = "Status")</code>
-          <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-1-1.png"/>
-        </sec>
-        <sec id="location-nb-article">
-          <title>Location</title>
-          <fig>
-            <caption>
-              <p>heatmap</p>
-            </caption>
-            <graphic mimetype="image" mime-subtype="png" xlink:href="images/dml-heatmap.png"/>
-          </fig>
-        </sec>
-        <sec id="genes-harboring-dmls-and-overall-methylation-pattern-nb-article">
-          <title>Genes harboring DMLs and overall methylation pattern</title>
-          <p>We identified 159 genes containing differentially methylated loci
+  labs(title = &quot;DMLs per Chromosome&quot;,
+       y = &quot;Number of DMLs&quot;, x = &quot;Chromosome&quot;, fill = &quot;Status&quot;)</code>
+  <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-1-1.png" />
+  </sec>
+  <sec id="chromosome-wide-distribution-of-dmls-nb-article">
+    <title>Chromosome-wide Distribution of DMLs</title>
+    <p>To visualize the spatial distribution of differentially
+    methylated loci across the genome, we created a comprehensive plot
+    showing all chromosomes and the precise locations of DMLs within
+    each chromosome. This visualization reveals the genomic landscape of
+    epigenetic variation and identifies potential hotspots of
+    methylation change.</p>
+    <sec specific-use="notebook-content">
+    <code language="r script">library(ggplot2)
+library(readr)
+library(dplyr)
+library(forcats)
+
+# Read DML data
+dml &lt;- read_tsv(&quot;data/DML.txt&quot;, col_types = cols())
+
+# Clean chromosome names and convert to factor for proper ordering
+dml &lt;- dml %&gt;%
+  mutate(
+    chr = factor(chr, levels = paste0(&quot;Chromosome_&quot;, 1:14)),
+    status = ifelse(meth.diff &gt; 0, &quot;Hypermethylated&quot;, &quot;Hypomethylated&quot;),
+    # Calculate midpoint position for each DML
+    position = (start + end) / 2
+  )
+
+# Create chromosome plot
+ggplot(dml, aes(x = position, y = chr, color = status)) +
+  geom_point(alpha = 0.7, size = 1.5) +
+  scale_color_manual(values = c(&quot;Hypermethylated&quot; = &quot;#E74C3C&quot;, &quot;Hypomethylated&quot; = &quot;#3498DB&quot;)) +
+  scale_y_discrete(limits = rev(levels(dml$chr))) +
+  theme_minimal() +
+  theme(
+    panel.grid.major.y = element_line(color = &quot;gray90&quot;),
+    panel.grid.minor = element_blank(),
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 8),
+    axis.text.y = element_text(size = 10),
+    legend.position = &quot;bottom&quot;,
+    plot.title = element_text(hjust = 0.5, size = 14, face = &quot;bold&quot;)
+  ) +
+  labs(
+    title = &quot;Genome-wide Distribution of Differentially Methylated Loci&quot;,
+    x = &quot;Genomic Position (base pairs)&quot;,
+    y = &quot;Chromosome&quot;,
+    color = &quot;Methylation Status&quot;,
+    caption = &quot;Each point represents a DML. Red: hypermethylated in Yaldad, Blue: hypomethylated in Yaldad&quot;
+  ) +
+  scale_x_continuous(labels = function(x) paste0(x/1e6, &quot; Mb&quot;))</code>
+    <fig>
+      <caption><p>Distribution of differentially methylated loci (DMLs)
+      across all chromosomes. Each point represents a DML positioned by
+      its genomic coordinates. Red points indicate hypermethylated loci
+      (higher methylation in Yaldad), while blue points show
+      hypomethylated loci (lower methylation in Yaldad). Chromosomes are
+      arranged vertically with genomic position (in base pairs) on the
+      x-axis.</p></caption>
+      <graphic mimetype="image" mime-subtype="png" xlink:href="index_files/figure-jats/unnamed-chunk-2-1.png" />
+    </fig>
+    </sec>
+  </sec>
+  <sec id="location-nb-article">
+    <title>Location</title>
+    <fig>
+      <caption><p>heatmap</p></caption>
+      <graphic mimetype="image" mime-subtype="png" xlink:href="images/dml-heatmap.png" />
+    </fig>
+  </sec>
+  <sec id="genes-harboring-dmls-and-overall-methylation-pattern-nb-article">
+    <title>Genes harboring DMLs and overall methylation pattern</title>
+    <p>We identified 159 genes containing differentially methylated loci
     (DMLs). For each gene, methylation differences were calculated by
     aggregating the absolute methylation change at all DMLs mapped to
     that gene, using the output from methylKit’s logistic regression
@@ -831,11 +889,11 @@ ggplot(dml_counts, aes(x = chr, y = DMLs, fill = status)) +
     median: −8.96%, mean: −0.68%) were computed across these gene-level
     aggregated values, indicating a shift toward hypomethylation among
     DML-associated genes.</p>
-        </sec>
-        <sec id="gene-ontology-go-processes-functions-and-locations-nb-article">
-          <title>Gene Ontology (GO): processes, functions, and
+  </sec>
+  <sec id="gene-ontology-go-processes-functions-and-locations-nb-article">
+    <title>Gene Ontology (GO): processes, functions, and
     locations</title>
-          <p>Across Biological Process terms, DML genes were most frequently
+    <p>Across Biological Process terms, DML genes were most frequently
     annotated to metabolic process (71 genes; 44.7% of all DML genes)
     and to high-level developmental and cellular organization/biogenesis
     categories (each 57 genes; 35.8%). Additional frequent terms
@@ -848,14 +906,14 @@ ggplot(dml_counts, aes(x = chr, y = DMLs, fill = status)) +
     cell/intracellular compartments (cell: 104 genes, 65.4%;
     intracellular: 99 genes, 62.3%), with frequent localization to the
     cytoplasm (80 genes, 50.3%) and nucleus (53 genes, 33.3%)</p>
-          <p>These patterns indicate that DMLs are concentrated in genes
+    <p>These patterns indicate that DMLs are concentrated in genes
     mediating metabolism, developmental programs, and cellular
     organization, with many targets residing in cytoplasmic and nuclear
     contexts where gene regulation and signal processing occur.</p>
-        </sec>
-        <sec id="kegg-pathways-nb-article">
-          <title>KEGG pathways</title>
-          <p>DML-associated genes mapped to 122 unique KEGG pathways, with
+  </sec>
+  <sec id="kegg-pathways-nb-article">
+    <title>KEGG pathways</title>
+    <p>DML-associated genes mapped to 122 unique KEGG pathways, with
     most pathways represented by a single gene, reflecting broad
     functional dispersion rather than concentration in a small number of
     routes. Prominent pathway classes included amino acid, carbohydrate,
@@ -864,10 +922,10 @@ ggplot(dml_counts, aes(x = chr, y = DMLs, fill = status)) +
     aligns with the GO-based enrichment of metabolic processes and
     suggests potential epigenetic modulation of energy balance and
     biosynthesis.</p>
-        </sec>
-        <sec id="pfam-domains-nb-article">
-          <title>Pfam domains</title>
-          <p>We detected 118 unique Pfam domains among DML-associated genes,
+  </sec>
+  <sec id="pfam-domains-nb-article">
+    <title>Pfam domains</title>
+    <p>We detected 118 unique Pfam domains among DML-associated genes,
     generally with low redundancy (most domains present in one or two
     genes), underscoring protein family diversity. Recurrently observed
     domains included the RNA recognition motif (PF00076)—implicating
@@ -878,10 +936,10 @@ ggplot(dml_counts, aes(x = chr, y = DMLs, fill = status)) +
     xenobiotic and lipid metabolism. Several domains of unknown function
     (DUFs) were present, indicating potentially novel or poorly
     characterized targets of methylation.</p>
-        </sec>
-        <sec id="directionality-of-methylation-changes-nb-article">
-          <title>Directionality of methylation changes</title>
-          <p>Given the negative median methylation difference, hypomethylation
+  </sec>
+  <sec id="directionality-of-methylation-changes-nb-article">
+    <title>Directionality of methylation changes</title>
+    <p>Given the negative median methylation difference, hypomethylation
     was more common among DML genes. Functionally, hypomethylated
     targets were enriched for regulatory proteins, signaling molecules,
     and transporters, whereas hypermethylated targets included
@@ -889,10 +947,10 @@ ggplot(dml_counts, aes(x = chr, y = DMLs, fill = status)) +
     Collectively, these patterns are consistent with widespread
     epigenetic remodeling across regulatory and metabolic layers, rather
     than changes confined to a single pathway or compartment.</p>
-        </sec>
-        <sec id="summary-nb-article">
-          <title>Summary</title>
-          <p>Together, these results show that genes harboring DMLs in Mytilus
+  </sec>
+  <sec id="summary-nb-article">
+    <title>Summary</title>
+    <p>Together, these results show that genes harboring DMLs in Mytilus
     chilensis are functionally diverse. However, they converge on
     metabolism, development, and cellular organization, with many
     targets positioned in cytoplasmic and nuclear environments. The
@@ -902,287 +960,184 @@ ggplot(dml_counts, aes(x = chr, y = DMLs, fill = status)) +
     suggest a system-wide epigenetic response with potential
     consequences for metabolic control and developmental
     programming.</p>
-        </sec>
-      </sec>
-    </body>
-    <back>
-      <ref-list>
-        <title/>
-        <ref id="ref-yevenes2021adaptive-nb-article">
-          <element-citation publication-type="article-journal">
-            <person-group person-group-type="author">
-              <name>
-                <surname>Yévenes</surname>
-                <given-names>M</given-names>
-              </name>
-              <name>
-                <surname>Núñez-Acuña</surname>
-                <given-names>G</given-names>
-              </name>
-              <name>
-                <surname>Gallardo-Escárate</surname>
-                <given-names>C</given-names>
-              </name>
-              <name>
-                <surname>Gajardo</surname>
-                <given-names>G</given-names>
-              </name>
-            </person-group>
-            <article-title>Adaptive differences in gene expression in farm-impacted seedbeds of the native blue mussel *mytilus chilensis*</article-title>
-            <source>Frontiers in Genetics</source>
-            <year iso-8601-date="2021">2021</year>
-            <volume>12</volume>
-            <pub-id pub-id-type="doi">10.3389/fgene.2021.666539</pub-id>
-            <fpage>666539</fpage>
-            <lpage/>
-          </element-citation>
-        </ref>
-        <ref id="ref-yevenes2022adaptive-nb-article">
-          <element-citation publication-type="article-journal">
-            <person-group person-group-type="author">
-              <name>
-                <surname>Yévenes</surname>
-                <given-names>M</given-names>
-              </name>
-              <name>
-                <surname>Núñez-Acuña</surname>
-                <given-names>G</given-names>
-              </name>
-              <name>
-                <surname>Gallardo-Escárate</surname>
-                <given-names>C</given-names>
-              </name>
-              <name>
-                <surname>Gajardo</surname>
-                <given-names>G</given-names>
-              </name>
-            </person-group>
-            <article-title>Adaptive mitochondrial genome functioning in ecologically different farm-impacted natural seedbeds of the endemic blue mussel *mytilus chilensis*</article-title>
-            <source>Comparative Biochemistry and Physiology Part D: Genomics and Proteomics</source>
-            <year iso-8601-date="2022">2022</year>
-            <volume>42</volume>
-            <pub-id pub-id-type="doi">10.1016/j.cbd.2021.100955</pub-id>
-            <fpage>100955</fpage>
-            <lpage/>
-          </element-citation>
-        </ref>
-        <ref id="ref-yevenes2025decoding-nb-article">
-          <element-citation publication-type="article-journal">
-            <person-group person-group-type="author">
-              <name>
-                <surname>Yévenes</surname>
-                <given-names>M</given-names>
-              </name>
-              <name>
-                <surname>Gajardo</surname>
-                <given-names>G</given-names>
-              </name>
-              <name>
-                <surname>Gallardo-Escárate</surname>
-                <given-names>C</given-names>
-              </name>
-            </person-group>
-            <article-title>Decoding local adaptation in the exploited native marine mussel *mytilus chilensis*: Genomic evidence from a reciprocal transplant experiment</article-title>
-            <source>International Journal of Molecular Sciences</source>
-            <year iso-8601-date="2025">2025</year>
-            <volume>26</volume>
-            <issue>3</issue>
-            <pub-id pub-id-type="doi">10.3390/ijms26030931</pub-id>
-            <fpage>931</fpage>
-            <lpage/>
-          </element-citation>
-        </ref>
-        <ref id="ref-yevenes2023epigenetic-nb-article">
-          <element-citation publication-type="article-journal">
-            <person-group person-group-type="author">
-              <name>
-                <surname>Yévenes</surname>
-                <given-names>M</given-names>
-              </name>
-              <name>
-                <surname>Gallardo-Escárate</surname>
-                <given-names>C</given-names>
-              </name>
-              <name>
-                <surname>Gajardo</surname>
-                <given-names>G</given-names>
-              </name>
-            </person-group>
-            <article-title>Epigenetic variation mediated by lncRNAs accounts for adaptive genomic differentiation of the endemic blue mussel *mytilus chilensis*</article-title>
-            <source>Heliyon</source>
-            <year iso-8601-date="2023">2023</year>
-            <volume>10</volume>
-            <issue>1</issue>
-            <pub-id pub-id-type="doi">10.1016/j.heliyon.2023.e23695</pub-id>
-            <fpage>e23695</fpage>
-            <lpage/>
-          </element-citation>
-        </ref>
-        <ref id="ref-montufar2024hypoxia-nb-article">
-          <element-citation publication-type="article-journal">
-            <person-group person-group-type="author">
-              <name>
-                <surname>Montúfar-Romero</surname>
-                <given-names>M</given-names>
-              </name>
-              <name>
-                <surname>Valenzuela-Muñoz</surname>
-                <given-names>V</given-names>
-              </name>
-              <name>
-                <surname>Valenzuela-Miranda</surname>
-                <given-names>D</given-names>
-              </name>
-              <name>
-                <surname>Gallardo-Escárate</surname>
-                <given-names>C</given-names>
-              </name>
-            </person-group>
-            <article-title>Hypoxia in the blue mussel *mytilus chilensis* induces a transcriptome shift associated with endoplasmic reticulum stress, metabolism, and immune response</article-title>
-            <source>Genes</source>
-            <year iso-8601-date="2024">2024</year>
-            <volume>15</volume>
-            <issue>6</issue>
-            <pub-id pub-id-type="doi">10.3390/genes15060658</pub-id>
-            <fpage>658</fpage>
-            <lpage/>
-          </element-citation>
-        </ref>
-        <ref id="ref-castillo2017ocean-nb-article">
-          <element-citation publication-type="article-journal">
-            <person-group person-group-type="author">
-              <name>
-                <surname>Castillo</surname>
-                <given-names>N</given-names>
-              </name>
-              <name>
-                <surname>Saavedra</surname>
-                <given-names>L M</given-names>
-              </name>
-              <name>
-                <surname>Vargas</surname>
-                <given-names>C A</given-names>
-              </name>
-              <name>
-                <surname>Gallardo-Escárate</surname>
-                <given-names>C</given-names>
-              </name>
-              <name>
-                <surname>Détrée</surname>
-                <given-names>C</given-names>
-              </name>
-            </person-group>
-            <article-title>Ocean acidification and pathogen exposure modulate the immune response of the edible mussel *mytilus chilensis*</article-title>
-            <source>Fish &amp; Shellfish Immunology</source>
-            <year iso-8601-date="2017">2017</year>
-            <volume>70</volume>
-            <pub-id pub-id-type="doi">10.1016/j.fsi.2017.08.047</pub-id>
-            <fpage>149</fpage>
-            <lpage>155</lpage>
-          </element-citation>
-        </ref>
-        <ref id="ref-montufar2025microbiota-nb-article">
-          <element-citation publication-type="article-journal">
-            <person-group person-group-type="author">
-              <name>
-                <surname>Montúfar-Romero</surname>
-                <given-names>M</given-names>
-              </name>
-              <name>
-                <surname>Valenzuela-Miranda</surname>
-                <given-names>D</given-names>
-              </name>
-              <name>
-                <surname>Valenzuela-Muñoz</surname>
-                <given-names>V</given-names>
-              </name>
-              <name>
-                <surname>Morales-Rivera</surname>
-                <given-names>M F</given-names>
-              </name>
-              <name>
-                <surname>Gallardo-Escárate</surname>
-                <given-names>C</given-names>
-              </name>
-            </person-group>
-            <article-title>Microbiota dysbiosis in *mytilus chilensis* is induced by hypoxia, leading to molecular and functional consequences</article-title>
-            <source>Microorganisms</source>
-            <year iso-8601-date="2025">2025</year>
-            <volume>13</volume>
-            <issue>4</issue>
-            <pub-id pub-id-type="doi">10.3390/microorganisms13040825</pub-id>
-            <fpage>825</fpage>
-            <lpage/>
-          </element-citation>
-        </ref>
-      </ref-list>
-    </back>
-  </sub-article>
-  <sub-article article-type="notebook" id="nb-2-nb-1">
-    <front-stub>
-      <title-group>
-        <article-title>Jbrowse</article-title>
-      </title-group>
-    </front-stub>
-    <body>
-      <preformat>&lt;div id="lgv1"&gt;&lt;/div&gt;
-&lt;!-- Pin the UMD build to a released version to avoid breakage --&gt;
-&lt;script src="https://unpkg.com/@jbrowse/react-linear-genome-view2@3.5.0/dist/react-linear-genome-view.umd.production.min.js" crossorigin&gt;&lt;/script&gt;
-&lt;script&gt;
-  const { React, createRoot, createViewState, JBrowseLinearGenomeView } = JBrowseReactLinearGenomeView
-  const state = new createViewState({
-    assembly: {
-      name: 'Assembly 1.0',
-      sequence: {
-        type: 'ReferenceSequenceTrack',
-        trackId: 'refseq',
-        adapter: {
-          type: 'IndexedFastaAdapter',
-          uri: 'https://your-server/path/genome.fa',
-          faiUri: 'https://your-server/path/genome.fa.fai'
-        }
-      }
-    },
-    tracks: [
-      {
-        type: 'QuantitativeTrack',
-        trackId: 'meth',
-        name: 'Methylation',
-        adapter: { type: 'BigWigAdapter', uri: 'https://your-server/path/track.bw' }
-      }
-    ],
-    defaultSession: {
-      name: 'Quarto session',
-      view: { id: 'linearGenomeView', type: 'LinearGenomeView', init: { assembly: 'Assembly 1.0', loc: 'Chromosome_1:1..200000', tracks: ['meth'] } }
-    }
-  })
-  createRoot(document.getElementById('lgv1')).render(React.createElement(JBrowseLinearGenomeView, { viewState: state }))
-&lt;/script&gt;</preformat>
-    </body>
-    <back>
+  </sec>
+</sec>
+</body>
+
+
+
+<back>
+<ref-list>
+  <title></title>
+  <ref id="ref-yevenes2021adaptive-nb-article">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Yévenes</surname><given-names>M</given-names></name>
+        <name><surname>Núñez-Acuña</surname><given-names>G</given-names></name>
+        <name><surname>Gallardo-Escárate</surname><given-names>C</given-names></name>
+        <name><surname>Gajardo</surname><given-names>G</given-names></name>
+      </person-group>
+      <article-title>Adaptive differences in gene expression in farm-impacted seedbeds of the native blue mussel *mytilus chilensis*</article-title>
+      <source>Frontiers in Genetics</source>
+      <year iso-8601-date="2021">2021</year>
+      <volume>12</volume>
+      <pub-id pub-id-type="doi">10.3389/fgene.2021.666539</pub-id>
+      <fpage>666539</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-yevenes2022adaptive-nb-article">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Yévenes</surname><given-names>M</given-names></name>
+        <name><surname>Núñez-Acuña</surname><given-names>G</given-names></name>
+        <name><surname>Gallardo-Escárate</surname><given-names>C</given-names></name>
+        <name><surname>Gajardo</surname><given-names>G</given-names></name>
+      </person-group>
+      <article-title>Adaptive mitochondrial genome functioning in ecologically different farm-impacted natural seedbeds of the endemic blue mussel *mytilus chilensis*</article-title>
+      <source>Comparative Biochemistry and Physiology Part D: Genomics and Proteomics</source>
+      <year iso-8601-date="2022">2022</year>
+      <volume>42</volume>
+      <pub-id pub-id-type="doi">10.1016/j.cbd.2021.100955</pub-id>
+      <fpage>100955</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-yevenes2025decoding-nb-article">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Yévenes</surname><given-names>M</given-names></name>
+        <name><surname>Gajardo</surname><given-names>G</given-names></name>
+        <name><surname>Gallardo-Escárate</surname><given-names>C</given-names></name>
+      </person-group>
+      <article-title>Decoding local adaptation in the exploited native marine mussel *mytilus chilensis*: Genomic evidence from a reciprocal transplant experiment</article-title>
+      <source>International Journal of Molecular Sciences</source>
+      <year iso-8601-date="2025">2025</year>
+      <volume>26</volume>
+      <issue>3</issue>
+      <pub-id pub-id-type="doi">10.3390/ijms26030931</pub-id>
+      <fpage>931</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-yevenes2023epigenetic-nb-article">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Yévenes</surname><given-names>M</given-names></name>
+        <name><surname>Gallardo-Escárate</surname><given-names>C</given-names></name>
+        <name><surname>Gajardo</surname><given-names>G</given-names></name>
+      </person-group>
+      <article-title>Epigenetic variation mediated by lncRNAs accounts for adaptive genomic differentiation of the endemic blue mussel *mytilus chilensis*</article-title>
+      <source>Heliyon</source>
+      <year iso-8601-date="2023">2023</year>
+      <volume>10</volume>
+      <issue>1</issue>
+      <pub-id pub-id-type="doi">10.1016/j.heliyon.2023.e23695</pub-id>
+      <fpage>e23695</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-montufar2024hypoxia-nb-article">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Montúfar-Romero</surname><given-names>M</given-names></name>
+        <name><surname>Valenzuela-Muñoz</surname><given-names>V</given-names></name>
+        <name><surname>Valenzuela-Miranda</surname><given-names>D</given-names></name>
+        <name><surname>Gallardo-Escárate</surname><given-names>C</given-names></name>
+      </person-group>
+      <article-title>Hypoxia in the blue mussel *mytilus chilensis* induces a transcriptome shift associated with endoplasmic reticulum stress, metabolism, and immune response</article-title>
+      <source>Genes</source>
+      <year iso-8601-date="2024">2024</year>
+      <volume>15</volume>
+      <issue>6</issue>
+      <pub-id pub-id-type="doi">10.3390/genes15060658</pub-id>
+      <fpage>658</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-castillo2017ocean-nb-article">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Castillo</surname><given-names>N</given-names></name>
+        <name><surname>Saavedra</surname><given-names>L M</given-names></name>
+        <name><surname>Vargas</surname><given-names>C A</given-names></name>
+        <name><surname>Gallardo-Escárate</surname><given-names>C</given-names></name>
+        <name><surname>Détrée</surname><given-names>C</given-names></name>
+      </person-group>
+      <article-title>Ocean acidification and pathogen exposure modulate the immune response of the edible mussel *mytilus chilensis*</article-title>
+      <source>Fish &amp; Shellfish Immunology</source>
+      <year iso-8601-date="2017">2017</year>
+      <volume>70</volume>
+      <pub-id pub-id-type="doi">10.1016/j.fsi.2017.08.047</pub-id>
+      <fpage>149</fpage>
+      <lpage>155</lpage>
+    </element-citation>
+  </ref>
+  <ref id="ref-montufar2025microbiota-nb-article">
+    <element-citation publication-type="article-journal">
+      <person-group person-group-type="author">
+        <name><surname>Montúfar-Romero</surname><given-names>M</given-names></name>
+        <name><surname>Valenzuela-Miranda</surname><given-names>D</given-names></name>
+        <name><surname>Valenzuela-Muñoz</surname><given-names>V</given-names></name>
+        <name><surname>Morales-Rivera</surname><given-names>M F</given-names></name>
+        <name><surname>Gallardo-Escárate</surname><given-names>C</given-names></name>
+      </person-group>
+      <article-title>Microbiota dysbiosis in *mytilus chilensis* is induced by hypoxia, leading to molecular and functional consequences</article-title>
+      <source>Microorganisms</source>
+      <year iso-8601-date="2025">2025</year>
+      <volume>13</volume>
+      <issue>4</issue>
+      <pub-id pub-id-type="doi">10.3390/microorganisms13040825</pub-id>
+      <fpage>825</fpage>
+      <lpage></lpage>
+    </element-citation>
+  </ref>
+</ref-list>
 </back>
-  </sub-article>
-  <sub-article article-type="notebook" id="nb-4-nb-2">
-    <front-stub>
-      <title-group>
-        <article-title>Explore Earthquakes</article-title>
-      </title-group>
-      <contrib-group>
-        <contrib contrib-type="author">
-          <name>
-            <surname>Wickham</surname>
-            <given-names>Charlotte</given-names>
-          </name>
-          <string-name>Charlotte Wickham</string-name>
-        </contrib>
-      </contrib-group>
-    </front-stub>
-    <body>
-      <sec specific-use="notebook-content">
-        <code language="r script">library(tidyverse)
+
+
+</sub-article>
+<sub-article article-type="notebook" id="nb-4-nb-1">
+<front-stub>
+<title-group>
+<article-title>Site Info</article-title>
+</title-group>
+</front-stub>
+
+<body>
+<graphic mimetype="image" mime-subtype="png" xlink:href="http://gannet.fish.washington.edu/seashell/snaps/Monosnap_genes-2291516-supplementary.pdf_2025-08-13_09-37-33.png" />
+</body>
+
+
+
+<back>
+</back>
+
+
+</sub-article>
+<sub-article article-type="notebook" id="nb-8-nb-2">
+<front-stub>
+<title-group>
+<article-title>Explore Earthquakes</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name>
+<surname>Wickham</surname>
+<given-names>Charlotte</given-names>
+</name>
+<string-name>Charlotte Wickham</string-name>
+
+</contrib>
+</contrib-group>
+</front-stub>
+
+<body>
+<sec specific-use="notebook-content">
+<code language="r script">library(tidyverse)
 </code>
-        <boxed-text>
-          <preformat>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+<boxed-text>
+  <preformat>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.1.4     ✔ readr     2.1.5
 ✔ forcats   1.0.0     ✔ stringr   1.5.1
 ✔ ggplot2   3.5.2     ✔ tibble    3.3.0
@@ -1192,44 +1147,48 @@ ggplot(dml_counts, aes(x = chr, y = DMLs, fill = status)) +
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</preformat>
-        </boxed-text>
-      </sec>
-      <p>Read a clean version of data:</p>
-      <sec specific-use="notebook-content">
-        <code language="r script">la_palma &lt;- read_csv("la-palma.csv")
+</boxed-text>
+</sec>
+<p>Read a clean version of data:</p>
+<sec specific-use="notebook-content">
+<code language="r script">la_palma &lt;- read_csv(&quot;la-palma.csv&quot;)
 </code>
-        <boxed-text>
-          <preformat>Rows: 11347 Columns: 5
+<boxed-text>
+  <preformat>Rows: 11347 Columns: 5
 ── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
+Delimiter: &quot;,&quot;
 dbl  (4): Longitude, Latitude, Depth(km), Magnitude
 dttm (1): DateTime
 
 ℹ Use `spec()` to retrieve the full column specification for this data.
 ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</preformat>
-        </boxed-text>
-      </sec>
-      <p>Create spatial plot:</p>
-      <sec id="cell-fig-spatial-plot-nb-2" specific-use="notebook-content">
-        <code language="r script">#|   against longitude."
+</boxed-text>
+</sec>
+<p>Create spatial plot:</p>
+<sec id="cell-fig-spatial-plot-nb-2" specific-use="notebook-content">
+<code language="r script">#|   against longitude.&quot;
 la_palma |&gt; 
   ggplot(aes(Longitude, Latitude)) +
   geom_point(aes(color = Magnitude, size = 40-`Depth(km)`)) +
   scale_color_viridis_c(direction = -1) + 
-  scale_size(range = c(0.5, 2), guide = "none") +
+  scale_size(range = c(0.5, 2), guide = &quot;none&quot;) +
   theme_bw()
 </code>
-        <fig id="fig-spatial-plot-nb-2">
-          <caption>
-            <p>Locations of earthquakes on La Palma since
-  2017</p>
-          </caption>
-          <graphic mimetype="image" mime-subtype="png" xlink:href="explore-earthquakes_files/figure-jats/fig-spatial-plot-1.png"/>
-        </fig>
-      </sec>
-      <p>Y</p>
-    </body>
-    <back>
+<fig id="fig-spatial-plot-nb-2">
+  <caption><p>Locations of earthquakes on La Palma since
+  2017</p></caption>
+  <graphic mimetype="image" mime-subtype="png" xlink:href="explore-earthquakes_files/figure-jats/fig-spatial-plot-1.png" />
+</fig>
+</sec>
+<p>Y</p>
+</body>
+
+
+
+<back>
 </back>
-  </sub-article>
+
+
+</sub-article>
+
 </article>
